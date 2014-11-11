@@ -172,7 +172,7 @@ public class InitGUI extends JFrame {
 		slider.setValue(25);
 		panel_1.add(slider);
 		
-		lblNewLabel_4 = new JLabel("Dropping...");
+		lblNewLabel_4 = new JLabel("Dropping new...");
 		panel_1.add(lblNewLabel_4);
 		
 		/**
