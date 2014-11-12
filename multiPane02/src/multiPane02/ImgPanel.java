@@ -17,6 +17,7 @@ public class ImgPanel extends JPanel{
 	ImageIcon imagen;
 	String dir;
 	
+	
 	public ImgPanel(String dir) {
 		super();
 		this.dir=dir;

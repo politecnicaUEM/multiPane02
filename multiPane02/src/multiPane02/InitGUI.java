@@ -52,17 +52,17 @@ public class InitGUI extends JFrame {
 		});
 	}
 
-	{
-		for (LookAndFeelInfo info : javax.swing.UIManager
-				.getInstalledLookAndFeels()) {
-			try {
-				javax.swing.UIManager
-						.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-	}
+//	{
+//		for (LookAndFeelInfo info : javax.swing.UIManager
+//				.getInstalledLookAndFeels()) {
+//			try {
+//				javax.swing.UIManager
+//						.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
+//			} catch (Exception e) {
+//				e.printStackTrace();
+//			}
+//		}
+//	}
 
 	/**
 	 * Create the frame.
@@ -83,9 +83,8 @@ public class InitGUI extends JFrame {
 		contentPane.add(toolBar);
 
 		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
+		lblNewLabel_2.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		lblNewLabel_2.setIconTextGap(3);
-		lblNewLabel_2.setCursor(Cursor
-				.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 		lblNewLabel_2.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Sunshine@Low.png")));
 		toolBar.add(lblNewLabel_2);
@@ -93,6 +92,7 @@ public class InitGUI extends JFrame {
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel = new JLabel("Cloudy");
+		lblNewLabel.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		lblNewLabel.setIconTextGap(3);
 		lblNewLabel.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Cloudy@Low.png")));
@@ -102,12 +102,14 @@ public class InitGUI extends JFrame {
 
 		JLabel lblNewLabel_1 = new JLabel("Rains");
 		lblNewLabel_1.setIconTextGap(3);
+		lblNewLabel_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		lblNewLabel_1.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Cloud-Download@Low.png")));
 		toolBar.add(lblNewLabel_1);
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel_3 = new JLabel("Windy");
+		lblNewLabel_3.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		lblNewLabel_3.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Refresh@Low.png")));
 		toolBar.add(lblNewLabel_3);
@@ -126,7 +128,7 @@ public class InitGUI extends JFrame {
 		
 		ListModel jList1Model = new DefaultComboBoxModel(new String[] {
 				"Water", "Petrol", "Milk" });
-		JList list = new JList();
+		final JList list = new JList();
 		panel_3.add(list);
 		list.setFont(new Font("Courier New", Font.PLAIN, 14));
 		list.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null,
@@ -167,7 +169,7 @@ public class InitGUI extends JFrame {
 		contentPane.add(panel_1);
 		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
 
-		JSlider slider = new JSlider();
+		final JSlider slider = new JSlider();
 		slider.setAlignmentX(Component.LEFT_ALIGNMENT);
 		slider.setValue(25);
 		panel_1.add(slider);
