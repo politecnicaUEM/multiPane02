@@ -16,6 +16,7 @@ import javax.swing.JPanel;
 public class ImgPanel extends JPanel{
 	ImageIcon imagen;
 	String dir;
+	int grassGrowth;
 	
 	
 	public ImgPanel(String dir) {

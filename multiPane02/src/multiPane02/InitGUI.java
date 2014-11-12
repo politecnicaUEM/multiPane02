@@ -27,6 +27,7 @@ import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
+import java.awt.event.MouseAdapter;
 
 public class InitGUI extends JFrame {
 
@@ -187,7 +188,7 @@ public class InitGUI extends JFrame {
 				int answer = JOptionPane.showConfirmDialog(frame, message);
 				if (answer == JOptionPane.YES_OPTION) {
 					int[] selectedIx = list.getSelectedIndices();
-					lblNewLabel_4.setText("Dropping...");
+					lblNewLabel_4.setText(lblNewLabel_4.getText() + " and dropping...");
 				    // Get all the selected items using the indices
 				    for (int i = 0; i < selectedIx.length; i++) {
 				      sel = (String) list.getModel().getElementAt(selectedIx[i]);
@@ -203,7 +204,30 @@ public class InitGUI extends JFrame {
 			}
 		});
 
-
+		lblNewLabel_2.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				lblNewLabel_4.setText("It's a sunny day");
+			}
+		});
+		lblNewLabel.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				lblNewLabel_4.setText("It's a cloudly");
+			}
+		});
+		lblNewLabel_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				lblNewLabel_4.setText("It's raining");
+			}
+		});
+		lblNewLabel_3.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				lblNewLabel_4.setText("It's windy");
+			}
+		});
 
 		/**
 		 * calls our drawing panel
