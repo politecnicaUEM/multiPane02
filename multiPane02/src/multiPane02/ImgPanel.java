@@ -8,9 +8,11 @@ import javax.swing.JPanel;
 
 
 /**
+ * This class draws a rezisable image using Graphics abstract class
  * 
  * @author ernesto
- * draws a rezisable image
+ * @version 1.0-beta
+ * @see InitGUI
  */
 
 public class ImgPanel extends JPanel{

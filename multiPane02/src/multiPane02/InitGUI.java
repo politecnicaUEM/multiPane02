@@ -28,6 +28,14 @@ import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
 
+/**
+ * This class implements the interface main frame and its controls 
+ * @author ernesto
+ * @version 1.0-beta
+ * @see ImgPanel
+ *
+ */
+
 public class InitGUI extends JFrame {
 
 	private JPanel contentPane;
