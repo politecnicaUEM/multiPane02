@@ -126,7 +126,7 @@ public class InitGUI extends JFrame {
 		
 		ListModel jList1Model = new DefaultComboBoxModel(new String[] {
 				"Water", "Petrol", "Milk" });
-		JList list = new JList();
+		final JList list = new JList();
 		panel_3.add(list);
 		list.setFont(new Font("Courier New", Font.PLAIN, 14));
 		list.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null,
@@ -167,7 +167,7 @@ public class InitGUI extends JFrame {
 		contentPane.add(panel_1);
 		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
 
-		JSlider slider = new JSlider();
+		final JSlider slider = new JSlider();
 		slider.setAlignmentX(Component.LEFT_ALIGNMENT);
 		slider.setValue(25);
 		panel_1.add(slider);
