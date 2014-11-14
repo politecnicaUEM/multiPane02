@@ -27,6 +27,12 @@ import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeEvent;
+import javax.swing.border.LineBorder;
+import java.awt.event.MouseAdapter;
 
 /**
  * This class implements the interface main frame and its controls 
@@ -43,6 +49,7 @@ public class InitGUI extends JFrame {
 	private String hierbaDir = "Images/hierba-footer.png";
 	private JLabel lblNewLabel_4;
 	private String sel;
+	final JSlider slider;
 
 	/**
 	 * Launch the application.
@@ -59,7 +66,7 @@ public class InitGUI extends JFrame {
 			}
 		});
 	}
-	{
+	/*{
 		for (LookAndFeelInfo info : javax.swing.UIManager
 				.getInstalledLookAndFeels()) {
 			try {
@@ -69,7 +76,7 @@ public class InitGUI extends JFrame {
 				e.printStackTrace();
 			}
 		}
-	}
+	}*/
 
 	/**
 	 * Create the frame.
@@ -90,6 +97,40 @@ public class InitGUI extends JFrame {
 		contentPane.add(toolBar);
 
 		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
+		lblNewLabel_2.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				lblNewLabel_2.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
+				
+			}
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				lblNewLabel_2.setBorder(null);
+			}
+			//@Override
+			
+		});
+		
+		slider = new JSlider();
+		lblNewLabel_2.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(JSlider slider) {
+				slider.setValue(85);
+			}
+		});
+		
+		/*lblNewLabel_2.addMouseListener(new MouseAdapter() {
+			public void changeSlider(JSlider slider) {
+				slider.setValue(85);
+			}
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				lblNewLabel_2.setBorder(null);
+			}
+		});*/
+		
+				
+		//lblNewLabel_2.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
+
 		lblNewLabel_2.setIconTextGap(3);
 		lblNewLabel_2.setCursor(Cursor
 				.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
@@ -100,6 +141,16 @@ public class InitGUI extends JFrame {
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel = new JLabel("Cloudy");
+		lblNewLabel.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				lblNewLabel.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
+			}
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				lblNewLabel.setBorder(null);
+			}
+		});
 		lblNewLabel.setIconTextGap(3);
 		lblNewLabel.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Cloudy@Low.png")));
@@ -108,6 +159,16 @@ public class InitGUI extends JFrame {
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel_1 = new JLabel("Rains");
+		lblNewLabel_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				lblNewLabel_1.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
+			}
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				lblNewLabel_1.setBorder(null);
+			}
+		});
 		lblNewLabel_1.setIconTextGap(3);
 		lblNewLabel_1.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Cloud-Download@Low.png")));
@@ -115,6 +176,16 @@ public class InitGUI extends JFrame {
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel_3 = new JLabel("Windy");
+		lblNewLabel_3.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				lblNewLabel_3.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
+			}
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				lblNewLabel_3.setBorder(null);
+			}
+		});
 		lblNewLabel_3.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Refresh@Low.png")));
 		toolBar.add(lblNewLabel_3);
@@ -174,7 +245,7 @@ public class InitGUI extends JFrame {
 		contentPane.add(panel_1);
 		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
 
-		JSlider slider = new JSlider();
+		
 		slider.setAlignmentX(Component.LEFT_ALIGNMENT);
 		slider.setValue(25);
 		panel_1.add(slider);
