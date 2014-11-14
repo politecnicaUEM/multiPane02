@@ -159,10 +159,6 @@ public class InitGUI extends JFrame {
 		btnOpenDialog.setMargin(new Insets(0, 0, 0, 0));
 		panel_2.add(btnOpenDialog);
 
-		/**
-		 * JList selected
-		 * @param evt
-		 */
 		JPanel panel_1 = new JPanel();
 		contentPane.add(panel_1);
 		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
@@ -172,7 +168,7 @@ public class InitGUI extends JFrame {
 		slider.setValue(25);
 		panel_1.add(slider);
 		//init Label4
-		lblNewLabel_4 = new JLabel("Dropping new...");
+		lblNewLabel_4 = new JLabel("Dropping..");
 		panel_1.add(lblNewLabel_4);
 		
 		/**

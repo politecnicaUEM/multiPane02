@@ -26,6 +26,7 @@ public class ImgPanel extends JPanel{
 		Dimension size = getSize();
 		imagen = new ImageIcon(getClass().getClassLoader().getResource(dir));
 		if(imagen.getImage()!=null){
+//			g.drawImage(imagen.getImage(), 0, size.height/2, size.width, size.height/2, null);
 			g.drawImage(imagen.getImage(), 0, 0, size.width, size.height, null);
 			setOpaque(false);
 			super.paint(g);
