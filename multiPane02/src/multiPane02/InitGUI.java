@@ -71,16 +71,17 @@ public class InitGUI extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 390, 400);
 		setTitle("Garden care");
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		contentPane.setLayout(new GridLayout(4, 1, 0, 0));
+		getContentPane().setLayout(new GridLayout(0, 1, 0, 0));
+//		contentPane = new JPanel();
+//		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+//		setContentPane(contentPane);
+//		contentPane.setLayout(new GridLayout(4, 1, 0, 0));
 
 		JToolBar toolBar = new JToolBar();
 		toolBar.setAlignmentY(Component.CENTER_ALIGNMENT);
 		toolBar.setToolTipText("Choose weather conditions");
 		toolBar.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		contentPane.add(toolBar);
+		getContentPane().add(toolBar);
 
 		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
 		lblNewLabel_2.setIconTextGap(3);
@@ -113,7 +114,7 @@ public class InitGUI extends JFrame {
 		toolBar.add(lblNewLabel_3);
 
 		JPanel panel_2 = new JPanel();
-		contentPane.add(panel_2);
+		getContentPane().add(panel_2);
 		panel_2.setLayout(new BoxLayout(panel_2, BoxLayout.X_AXIS));
 
 		JPanel panel_3 = new JPanel();
@@ -160,7 +161,7 @@ public class InitGUI extends JFrame {
 		panel_2.add(btnOpenDialog);
 
 		JPanel panel_1 = new JPanel();
-		contentPane.add(panel_1);
+		getContentPane().add(panel_1);
 		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
 
 		JSlider slider = new JSlider();
@@ -203,6 +204,6 @@ public class InitGUI extends JFrame {
 		 * calls our drawing panel
 		 */
 		JPanel panel = new ImgPanel(hierbaDir);
-		contentPane.add(panel);
+		getContentPane().add(panel);
 	}
 }
