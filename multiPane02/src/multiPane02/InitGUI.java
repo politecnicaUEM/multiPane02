@@ -60,15 +60,15 @@ public class InitGUI extends JFrame {
 		});
 	}
 	{
-		for (LookAndFeelInfo info : javax.swing.UIManager
-				.getInstalledLookAndFeels()) {
-			try {
-				javax.swing.UIManager
-						.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
+//		for (LookAndFeelInfo info : javax.swing.UIManager
+//				.getInstalledLookAndFeels()) {
+//			try {
+//				javax.swing.UIManager
+//						.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
+//			} catch (Exception e) {
+//				e.printStackTrace();
+//			}
+//		}
 	}
 
 	/**
@@ -81,7 +81,7 @@ public class InitGUI extends JFrame {
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		contentPane.setLayout(new GridLayout(4, 1, 0, 0));
+		contentPane.setLayout(new GridLayout(0, 1, 0, 0));
 
 		JToolBar toolBar = new JToolBar();
 		toolBar.setAlignmentY(Component.CENTER_ALIGNMENT);
