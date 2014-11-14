@@ -59,7 +59,6 @@ public class InitGUI extends JFrame {
 			}
 		});
 	}
-
 	{
 		for (LookAndFeelInfo info : javax.swing.UIManager
 				.getInstalledLookAndFeels()) {
@@ -128,7 +127,7 @@ public class InitGUI extends JFrame {
 		panel_2.add(panel_3);
 		panel_3.setLayout(new GridLayout(1, 0, 0, 0));
 
-		/**
+		/*
 		 * Defining JList and its model for supplying content
 		 */
 		
@@ -154,7 +153,7 @@ public class InitGUI extends JFrame {
 	    // Get the index of the first selected item
 	  //  int firstSelIx = list.getSelectedIndex();
 
-		/**
+		/*
 		 * customized square button
 		 */
 
@@ -183,7 +182,7 @@ public class InitGUI extends JFrame {
 		lblNewLabel_4 = new JLabel("Dropping...");
 		panel_1.add(lblNewLabel_4);
 		
-		/**
+		/*
 		 * shows an optiopane with a dialog asking for confirmation
 		 */
 		btnOpenDialog.addActionListener(new ActionListener() {
@@ -209,9 +208,7 @@ public class InitGUI extends JFrame {
 			}
 		});
 
-
-
-		/**
+		/*
 		 * calls our drawing panel
 		 */
 		JPanel panel = new ImgPanel(hierbaDir);

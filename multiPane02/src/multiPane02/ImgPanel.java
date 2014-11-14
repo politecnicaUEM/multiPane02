@@ -23,7 +23,7 @@ public class ImgPanel extends JPanel{
 		super();
 		this.dir=dir;
 	}
-	
+
 	public void paint(Graphics g){
 		Dimension size = getSize();
 		imagen = new ImageIcon(getClass().getClassLoader().getResource(dir));
