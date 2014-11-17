@@ -27,6 +27,10 @@ import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
+import java.awt.BorderLayout;
+import javax.swing.JSeparator;
+import javax.swing.SwingConstants;
+import java.awt.Rectangle;
 
 public class InitGUI extends JFrame {
 
@@ -72,16 +76,20 @@ public class InitGUI extends JFrame {
 		setBounds(100, 100, 390, 400);
 		setTitle("Garden care");
 		getContentPane().setLayout(new GridLayout(0, 1, 0, 0));
+		
+		JPanel panel_4 = new JPanel();
+		getContentPane().add(panel_4);
+		panel_4.setLayout(new BorderLayout(0, 0));
 //		contentPane = new JPanel();
 //		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 //		setContentPane(contentPane);
 //		contentPane.setLayout(new GridLayout(4, 1, 0, 0));
 
 		JToolBar toolBar = new JToolBar();
+		panel_4.add(toolBar);
 		toolBar.setAlignmentY(Component.CENTER_ALIGNMENT);
 		toolBar.setToolTipText("Choose weather conditions");
 		toolBar.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		getContentPane().add(toolBar);
 
 		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
 		lblNewLabel_2.setIconTextGap(3);
@@ -90,6 +98,11 @@ public class InitGUI extends JFrame {
 		lblNewLabel_2.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Sunshine@Low.png")));
 		toolBar.add(lblNewLabel_2);
+		
+		JSeparator separator = new JSeparator();
+		separator.setBounds(new Rectangle(0, 0, 10, 10));
+		separator.setOrientation(SwingConstants.VERTICAL);
+		toolBar.add(separator);
 		// toolBar.add(new JSeparator (SwingConstants.VERTICAL));
 		toolBar.addSeparator();
 
