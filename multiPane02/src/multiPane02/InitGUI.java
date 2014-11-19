@@ -9,8 +9,6 @@ import java.awt.GridLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-
 import javax.swing.BoxLayout;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
@@ -23,12 +21,20 @@ import javax.swing.JPanel;
 import javax.swing.JSlider;
 import javax.swing.JToolBar;
 import javax.swing.ListModel;
-import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JTextPane;
+
+/**
+ * @author Carlos del Cerro
+ * @author www.carlos.com
+ * @version 1.0
+ */
 
 public class InitGUI extends JFrame {
+	
+	/**
+	 * 
+	 */
 
 	private JPanel contentPane;
 	private Component frame;
@@ -52,17 +58,17 @@ public class InitGUI extends JFrame {
 		});
 	}
 
-	{
-		for (LookAndFeelInfo info : javax.swing.UIManager
-				.getInstalledLookAndFeels()) {
-			try {
-				javax.swing.UIManager
-						.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-	}
+	//{
+	//	for (LookAndFeelInfo info : javax.swing.UIManager
+				//.getInstalledLookAndFeels()) {
+			//try {
+				//javax.swing.UIManager
+				//		.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
+			//} catch (Exception e) {
+			//	e.printStackTrace();
+			//}
+		//}
+	//}
 
 	/**
 	 * Create the frame.
@@ -126,7 +132,7 @@ public class InitGUI extends JFrame {
 		
 		ListModel jList1Model = new DefaultComboBoxModel(new String[] {
 				"Water", "Petrol", "Milk" });
-		JList list = new JList();
+		final JList list = new JList();
 		panel_3.add(list);
 		list.setFont(new Font("Courier New", Font.PLAIN, 14));
 		list.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null,
@@ -167,7 +173,7 @@ public class InitGUI extends JFrame {
 		contentPane.add(panel_1);
 		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
 
-		JSlider slider = new JSlider();
+		final JSlider slider = new JSlider();
 		slider.setAlignmentX(Component.LEFT_ALIGNMENT);
 		slider.setValue(25);
 		panel_1.add(slider);
