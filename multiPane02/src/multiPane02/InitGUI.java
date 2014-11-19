@@ -3,13 +3,17 @@ package multiPane02;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
+import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.GridLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.BoxLayout;
 import javax.swing.DefaultComboBoxModel;
@@ -60,7 +64,7 @@ public class InitGUI extends JFrame {
 		});
 	}
 	{
-		for (LookAndFeelInfo info : javax.swing.UIManager
+/*		for (LookAndFeelInfo info : javax.swing.UIManager
 				.getInstalledLookAndFeels()) {
 			try {
 				javax.swing.UIManager
@@ -68,7 +72,7 @@ public class InitGUI extends JFrame {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-		}
+		}*/
 	}
 
 	/**
@@ -76,7 +80,7 @@ public class InitGUI extends JFrame {
 	 */
 	public InitGUI() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 390, 400);
+		setBounds(100, 100, 650, 492);
 		setTitle("Garden care");
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -85,12 +89,22 @@ public class InitGUI extends JFrame {
 
 		JToolBar toolBar = new JToolBar();
 		toolBar.setAlignmentY(Component.CENTER_ALIGNMENT);
+		toolBar.setBackground(new Color(0,0,0,0));
 		toolBar.setToolTipText("Choose weather conditions");
 		toolBar.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 		contentPane.add(toolBar);
 
 		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
 		lblNewLabel_2.setIconTextGap(3);
+		lblNewLabel_2.addMouseListener(new MouseAdapter() {
+			
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				contentPane.setBackground((Color.YELLOW));
+				
+			}
+		});
 		lblNewLabel_2.setCursor(Cursor
 				.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 		lblNewLabel_2.setIcon(new ImageIcon(InitGUI.class
@@ -101,22 +115,43 @@ public class InitGUI extends JFrame {
 
 		JLabel lblNewLabel = new JLabel("Cloudy");
 		lblNewLabel.setIconTextGap(3);
-		lblNewLabel.setIcon(new ImageIcon(InitGUI.class
-				.getResource("/Images/Cloudy@Low.png")));
+		lblNewLabel.addMouseListener(new MouseAdapter() {
+					
+					@Override
+					public void mouseClicked(MouseEvent arg0) {
+						// TODO Auto-generated method stub
+						contentPane.setBackground((Color.CYAN));
+					}
+				});
+		lblNewLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/Cloudy@Low.png")));
 		toolBar.add(lblNewLabel);
 		// toolBar.add(new JSeparator (SwingConstants.VERTICAL));
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel_1 = new JLabel("Rains");
 		lblNewLabel_1.setIconTextGap(3);
-		lblNewLabel_1.setIcon(new ImageIcon(InitGUI.class
-				.getResource("/Images/Cloud-Download@Low.png")));
+		lblNewLabel_1.addMouseListener(new MouseAdapter() {
+			
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				contentPane.setBackground((Color.BLUE));
+			}
+		});
+		lblNewLabel_1.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/Cloud-Download@Low.png")));
 		toolBar.add(lblNewLabel_1);
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel_3 = new JLabel("Windy");
-		lblNewLabel_3.setIcon(new ImageIcon(InitGUI.class
-				.getResource("/Images/Refresh@Low.png")));
+		lblNewLabel_3.addMouseListener(new MouseAdapter() {
+			
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				contentPane.setBackground((Color.RED));
+			}
+		});
+		lblNewLabel_3.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/Refresh@Low.png")));
 		toolBar.add(lblNewLabel_3);
 
 		JPanel panel_2 = new JPanel();
@@ -160,8 +195,7 @@ public class InitGUI extends JFrame {
 		JButton btnOpenDialog = new JButton("");
 		btnOpenDialog.setToolTipText("Go?");
 		btnOpenDialog.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		btnOpenDialog.setIcon(new ImageIcon(InitGUI.class
-				.getResource("/Images/Water-Drop.png")));
+		btnOpenDialog.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/Water-Drop.png")));
 		btnOpenDialog.setMnemonic('W');
 		btnOpenDialog.setMargin(new Insets(0, 0, 0, 0));
 		panel_2.add(btnOpenDialog);
@@ -172,6 +206,7 @@ public class InitGUI extends JFrame {
 		 */
 		JPanel panel_1 = new JPanel();
 		contentPane.add(panel_1);
+		panel_1.setBackground(new Color(0,0,0,0));
 		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
 
 		JSlider slider = new JSlider();
