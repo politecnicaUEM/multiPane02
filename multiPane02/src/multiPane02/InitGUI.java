@@ -49,6 +49,7 @@ public class InitGUI extends JFrame {
 				try {
 					InitGUI frame = new InitGUI();
 					frame.setVisible(true);
+					frame.setBackground(new Color(64, 224, 208));
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -205,15 +206,18 @@ public class InitGUI extends JFrame {
 		 * @param evt
 		 */
 		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(new Color(64, 224, 208));
 		contentPane.add(panel_1);
 		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
 
 		JSlider slider = new JSlider();
+		slider.setBackground(new Color(64, 224, 208));
 		slider.setAlignmentX(Component.LEFT_ALIGNMENT);
 		slider.setValue(25);
 		panel_1.add(slider);
 
 		lblNewLabel_4 = new JLabel("Dropping...");
+		lblNewLabel_4.setBackground(new Color(64, 224, 208));
 		panel_1.add(lblNewLabel_4);
 
 		 imagen = new JLabel("");
@@ -252,6 +256,7 @@ public class InitGUI extends JFrame {
 		 * calls our drawing panel
 		 */
 		JPanel panel = new ImgPanel(hierbaDir);
+		panel.setBackground(new Color(64, 224, 208));
 		contentPane.add(panel);
 	}
 }
