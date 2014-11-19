@@ -14,11 +14,15 @@ import javax.swing.JPanel;
  */
 
 public class ImgPanel extends JPanel{
-	ImageIcon imagen;
-	String dir;
+	ImageIcon imagen=null;
+	String dir=null;
 	
 	public ImgPanel(String dir) {
 		super();
+		this.dir=dir;
+	}
+	
+	public void setImg(String dir){
 		this.dir=dir;
 	}
 	
