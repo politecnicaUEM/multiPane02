@@ -11,6 +11,8 @@ import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javafx.beans.value.ChangeListener;
+
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.DefaultComboBoxModel;
@@ -29,6 +31,7 @@ import javax.swing.SwingConstants;
 import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
+import javax.swing.event.ChangeEvent;
 
 public class InitGUI extends JFrame {
 
@@ -37,6 +40,7 @@ public class InitGUI extends JFrame {
 	private String hierbaDir = "Images/hierba-footer.png";
 	private JLabel lblNewLabel_4;
 	private String sel;
+	private JSlider slider;
 
 	/**
 	 * Launch the application.
@@ -206,8 +210,20 @@ public class InitGUI extends JFrame {
 		getContentPane().add(panel_1);
 		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
 
-		JSlider slider = new JSlider();
+		slider = new JSlider();
 		slider.setAlignmentX(Component.LEFT_ALIGNMENT);
+		//migueleando
+		
+//	    slider.addChangeListener(new ChangeListener() {
+//	        public void stateChanged(ChangeEvent ce) {
+//	            slider = (JSlider)ce.getSource();
+//	            if (!slider.getValueIsAdjusting()) {
+//	                slider.setToolTipText(Integer.parseInt(slider.getValue());
+//	            }
+//	        }
+//	    });
+		
+		
 		slider.setValue(25);
 		panel_1.add(slider);
 		// init Label4
