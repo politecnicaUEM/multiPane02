@@ -1,4 +1,5 @@
 
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -22,6 +23,11 @@ public class ImgPanel extends JPanel{
 		this.dir=dir;
 	}
 	
+	public void ChangeBackground (String dir) {
+		this.dir = dir;
+	}
+	
+	
 	public void paint(Graphics g){
 		Dimension size = getSize();
 		imagen = new ImageIcon(getClass().getClassLoader().getResource(dir));
@@ -33,3 +39,4 @@ public class ImgPanel extends JPanel{
 		
 	}
 }
+
