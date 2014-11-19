@@ -27,6 +27,9 @@ import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+import java.awt.event.MouseAdapter;
 
 public class InitGUI extends JFrame {
 
@@ -35,6 +38,7 @@ public class InitGUI extends JFrame {
 	private String hierbaDir = "Images/hierba-footer.png";
 	private JLabel lblNewLabel_4;
 	private String sel;
+	private JLabel imagen;
 
 	/**
 	 * Launch the application.
@@ -83,6 +87,16 @@ public class InitGUI extends JFrame {
 		contentPane.add(toolBar);
 
 		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
+		lblNewLabel_2.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				imagen.setIcon(new ImageIcon(
+						InitGUI.class
+								.getResource("/Images/photo.jpg")));
+
+			}
+		});
+
 		lblNewLabel_2.setIconTextGap(3);
 		lblNewLabel_2.setCursor(Cursor
 				.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
@@ -93,6 +107,15 @@ public class InitGUI extends JFrame {
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel = new JLabel("Cloudy");
+		lblNewLabel.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				imagen.setIcon(new ImageIcon(
+						InitGUI.class
+								.getResource("/Images/cloud.png")));
+
+			}
+		});
 		lblNewLabel.setIconTextGap(3);
 		lblNewLabel.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Cloudy@Low.png")));
@@ -101,6 +124,15 @@ public class InitGUI extends JFrame {
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel_1 = new JLabel("Rains");
+		lblNewLabel_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				imagen.setIcon(new ImageIcon(
+						InitGUI.class
+								.getResource("/Images/descarga.png")));
+				
+			}
+		});
 		lblNewLabel_1.setIconTextGap(3);
 		lblNewLabel_1.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Cloud-Download@Low.png")));
@@ -108,6 +140,15 @@ public class InitGUI extends JFrame {
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel_3 = new JLabel("Windy");
+		lblNewLabel_3.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				imagen.setIcon(new ImageIcon(
+						InitGUI.class
+								.getResource("/Images/photo.png")));
+				
+			}
+		});
 		lblNewLabel_3.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Refresh@Low.png")));
 		toolBar.add(lblNewLabel_3);
@@ -123,7 +164,7 @@ public class InitGUI extends JFrame {
 		/**
 		 * Defining JList and its model for supplying content
 		 */
-		
+
 		ListModel jList1Model = new DefaultComboBoxModel(new String[] {
 				"Water", "Petrol", "Milk" });
 		JList list = new JList();
@@ -133,18 +174,17 @@ public class InitGUI extends JFrame {
 				null));
 		list.setBackground(new Color(238, 238, 238));
 		list.setModel(jList1Model);
-		
-		
-		//multiple selection
+
+		// multiple selection
 		int[] selectedIx = list.getSelectedIndices();
 
-	    // Get all the selected items using the indices
-	    for (int i = 0; i < selectedIx.length; i++) {
-	      Object sel = list.getModel().getElementAt(selectedIx[i]);
-	    }
+		// Get all the selected items using the indices
+		for (int i = 0; i < selectedIx.length; i++) {
+			Object sel = list.getModel().getElementAt(selectedIx[i]);
+		}
 
-	    // Get the index of the first selected item
-	  //  int firstSelIx = list.getSelectedIndex();
+		// Get the index of the first selected item
+		// int firstSelIx = list.getSelectedIndex();
 
 		/**
 		 * customized square button
@@ -161,6 +201,7 @@ public class InitGUI extends JFrame {
 
 		/**
 		 * JList selected
+		 * 
 		 * @param evt
 		 */
 		JPanel panel_1 = new JPanel();
@@ -171,10 +212,13 @@ public class InitGUI extends JFrame {
 		slider.setAlignmentX(Component.LEFT_ALIGNMENT);
 		slider.setValue(25);
 		panel_1.add(slider);
-		
+
 		lblNewLabel_4 = new JLabel("Dropping...");
 		panel_1.add(lblNewLabel_4);
-		
+
+		 imagen = new JLabel("");
+		panel_1.add(imagen);
+
 		/**
 		 * shows an optiopane with a dialog asking for confirmation
 		 */
@@ -186,22 +230,23 @@ public class InitGUI extends JFrame {
 				if (answer == JOptionPane.YES_OPTION) {
 					int[] selectedIx = list.getSelectedIndices();
 					lblNewLabel_4.setText("Dropping...");
-				    // Get all the selected items using the indices
-				    for (int i = 0; i < selectedIx.length; i++) {
-				      sel = (String) list.getModel().getElementAt(selectedIx[i]);
-				      lblNewLabel_4.setText(lblNewLabel_4.getText() + " " + sel + " ");
-				      System.out.println(sel);
-				    }
-				    lblNewLabel_4.setText(lblNewLabel_4.getText() + " at " + slider.getValue() + "%");
-					// User clicked YES.				
+					// Get all the selected items using the indices
+					for (int i = 0; i < selectedIx.length; i++) {
+						sel = (String) list.getModel().getElementAt(
+								selectedIx[i]);
+						lblNewLabel_4.setText(lblNewLabel_4.getText() + " "
+								+ sel + " ");
+						System.out.println(sel);
+					}
+					lblNewLabel_4.setText(lblNewLabel_4.getText() + " at "
+							+ slider.getValue() + "%");
+					// User clicked YES.
 				} else if (answer == JOptionPane.NO_OPTION) {
 					// User clicked NO.
 					lblNewLabel_4.setText(" Dropping... nothing yet");
 				}
 			}
 		});
-
-
 
 		/**
 		 * calls our drawing panel
