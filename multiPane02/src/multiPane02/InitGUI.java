@@ -27,10 +27,11 @@ import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
+import java.awt.event.MouseAdapter;
 
 /**
  * This class implements the interface main frame and its controls 
- * @author ernesto
+ * @author david
  * @version 1.0-beta
  * @see ImgPanel
  *
@@ -59,24 +60,24 @@ public class InitGUI extends JFrame {
 			}
 		});
 	}
-	{
-		for (LookAndFeelInfo info : javax.swing.UIManager
-				.getInstalledLookAndFeels()) {
-			try {
-				javax.swing.UIManager
-						.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-	}
+//	{
+//		/*for (LookAndFeelInfo info : javax.swing.UIManager
+//				.getInstalledLookAndFeels()) {
+//			try {
+//				javax.swing.UIManager
+//						.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
+//			} catch (Exception e) {
+//				e.printStackTrace();
+//			}
+//		}
+//	}
 
 	/**
 	 * Create the frame.
 	 */
 	public InitGUI() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 390, 400);
+		setBounds(100, 100, 509, 400);
 		setTitle("Garden care");
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -88,8 +89,29 @@ public class InitGUI extends JFrame {
 		toolBar.setToolTipText("Choose weather conditions");
 		toolBar.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 		contentPane.add(toolBar);
-
-		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
+		
+		/** JLabel which name is Perfect sun and it has one event */
+		final JLabel lblNewLabel_2 = new JLabel("Perfect sun");
+		lblNewLabel_2.addMouseListener(new MouseAdapter() {
+		/** this is the event. The gui makes a user one question. It depends on the answer, the window will change*/	
+			public void mouseClicked(MouseEvent e) {
+				
+				int seleccion = JOptionPane.showOptionDialog(
+						   lblNewLabel_2,
+						   "¿En que comunidad ha hecho más calor?", 
+						   "Question",
+						   JOptionPane.YES_NO_CANCEL_OPTION,
+						   JOptionPane.QUESTION_MESSAGE,
+						   null,    // null para icono por defecto.
+						   new Object[] { "Madrid", "Valencia",},   // null para YES, NO y CANCEL
+						   "opcion 1");
+				if(seleccion== JOptionPane.YES_OPTION)
+		            JOptionPane.showMessageDialog(null, "Correcto.");
+				else if(seleccion== JOptionPane.NO_OPTION)
+		            JOptionPane.showMessageDialog(null, "Otra vez será.");
+			}
+		});
+		
 		lblNewLabel_2.setIconTextGap(3);
 		lblNewLabel_2.setCursor(Cursor
 				.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
@@ -98,23 +120,55 @@ public class InitGUI extends JFrame {
 		toolBar.add(lblNewLabel_2);
 		// toolBar.add(new JSeparator (SwingConstants.VERTICAL));
 		toolBar.addSeparator();
-
-		JLabel lblNewLabel = new JLabel("Cloudy");
+		
+		/** JLabel which name is Cloudy and it has one event */
+		final JLabel lblNewLabel = new JLabel("Cloudy");
+		lblNewLabel.addMouseListener(new MouseAdapter() {
+			
+		/**
+		 * This OptionPane allows the user to write
+		 * When the user press the button "", a new window will appear
+		 * If there isn´t any answer, the window will show "null"
+		 */
+			
+		public void mouseClicked(MouseEvent e) {
+			String ax = JOptionPane.showInputDialog("Ponga una ciudad : ");
+			JOptionPane.showMessageDialog(null, "La ciudad que ha elegido es: "+ax);
+			}
+		});
 		lblNewLabel.setIconTextGap(3);
 		lblNewLabel.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Cloudy@Low.png")));
 		toolBar.add(lblNewLabel);
 		// toolBar.add(new JSeparator (SwingConstants.VERTICAL));
 		toolBar.addSeparator();
-
+		/** JLabel which name is Rains and it has one event */
 		JLabel lblNewLabel_1 = new JLabel("Rains");
+		lblNewLabel_1.addMouseListener(new MouseAdapter() {
+		/** In this MouseEvent, the optionPane shows an image when the user press the JLabel.
+		 *  You can also add some text, but I preferred to remove it  
+		 */	
+			public void mouseClicked(MouseEvent e) {
+				JOptionPane.showMessageDialog(null, "", "The weather is not good",
+				JOptionPane.INFORMATION_MESSAGE, new ImageIcon("src/Images/rain-cloud.png"));
+				
+			}
+		});
 		lblNewLabel_1.setIconTextGap(3);
 		lblNewLabel_1.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Cloud-Download@Low.png")));
 		toolBar.add(lblNewLabel_1);
 		toolBar.addSeparator();
-
+		/** JLabel which name is Windy and it has one event */
 		JLabel lblNewLabel_3 = new JLabel("Windy");
+		lblNewLabel_3.addMouseListener(new MouseAdapter() {
+		/** this event does the same as the previous event*/	
+			public void mouseClicked(MouseEvent e) {
+				JOptionPane.showMessageDialog(null, "", "The weather is not good",
+						JOptionPane.INFORMATION_MESSAGE, new ImageIcon("src/Images/viento.png"));
+				
+			}
+		});
 		lblNewLabel_3.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Refresh@Low.png")));
 		toolBar.add(lblNewLabel_3);
@@ -128,12 +182,12 @@ public class InitGUI extends JFrame {
 		panel_3.setLayout(new GridLayout(1, 0, 0, 0));
 
 		/*
-		 * Defining JList and its model for supplying content
+		 * Defining JList and its model for supplying content 
 		 */
 		
 		ListModel jList1Model = new DefaultComboBoxModel(new String[] {
 				"Water", "Petrol", "Milk" });
-		JList list = new JList();
+		final JList list = new JList();
 		panel_3.add(list);
 		list.setFont(new Font("Courier New", Font.PLAIN, 14));
 		list.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null,
@@ -174,7 +228,7 @@ public class InitGUI extends JFrame {
 		contentPane.add(panel_1);
 		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
 
-		JSlider slider = new JSlider();
+		final JSlider slider = new JSlider();
 		slider.setAlignmentX(Component.LEFT_ALIGNMENT);
 		slider.setValue(25);
 		panel_1.add(slider);
