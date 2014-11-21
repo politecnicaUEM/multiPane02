@@ -86,7 +86,9 @@ public class InitGUI extends JFrame {
 		toolBar.setToolTipText("Choose weather conditions");
 		toolBar.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 		contentPane.add(toolBar);
-
+		/**
+		 * Here I tell you that if you click on this icon is added to the label
+		 */
 		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
 		lblNewLabel_2.addMouseListener(new MouseAdapter() {
 			@Override
@@ -106,7 +108,9 @@ public class InitGUI extends JFrame {
 		toolBar.add(lblNewLabel_2);
 		// toolBar.add(new JSeparator (SwingConstants.VERTICAL));
 		toolBar.addSeparator();
-
+/**
+ * Here I tell you that if you click on this icon is added to the label
+ */
 		JLabel lblNewLabel = new JLabel("Cloudy");
 		lblNewLabel.addMouseListener(new MouseAdapter() {
 			@Override
@@ -123,7 +127,9 @@ public class InitGUI extends JFrame {
 		toolBar.add(lblNewLabel);
 		// toolBar.add(new JSeparator (SwingConstants.VERTICAL));
 		toolBar.addSeparator();
-
+		/**
+		 * Here I tell you that if you click on this icon is added to the label
+		 */
 		JLabel lblNewLabel_1 = new JLabel("Rains");
 		lblNewLabel_1.addMouseListener(new MouseAdapter() {
 			@Override
@@ -139,7 +145,9 @@ public class InitGUI extends JFrame {
 				.getResource("/Images/Cloud-Download@Low.png")));
 		toolBar.add(lblNewLabel_1);
 		toolBar.addSeparator();
-
+		/**
+		 * Here I tell you that if you click on this icon is added to the label
+		 */
 		JLabel lblNewLabel_3 = new JLabel("Windy");
 		lblNewLabel_3.addMouseListener(new MouseAdapter() {
 			@Override
