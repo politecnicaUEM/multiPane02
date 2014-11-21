@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 
 /**
  * 
- * @author ernesto
+ * @author Owen Clazadilla
  * draws a rezisable image
  */
 
@@ -22,10 +22,17 @@ public class ImgPanel extends JPanel{
 		this.dir=dir;
 	}
 	
+	/**
+	 * Rewrites the image direction that was saved in the panel to the parameter given.
+	 * @param dir
+	 */
 	public void setImg(String dir){
 		this.dir=dir;
 	}
 	
+	/**
+	 * Resizes the image of the background panel when the frame is resized.
+	 */
 	public void paint(Graphics g){
 		Dimension size = getSize();
 		imagen = new ImageIcon(getClass().getClassLoader().getResource(dir));

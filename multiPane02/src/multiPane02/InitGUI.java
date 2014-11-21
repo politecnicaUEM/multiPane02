@@ -35,6 +35,11 @@ import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
 
+/**
+ * 
+ * @author Owen Calzadilla
+ * defines all the frames panels and resources
+ */
 public class InitGUI extends JFrame {
 
 	private ImgPanel contentPane;
