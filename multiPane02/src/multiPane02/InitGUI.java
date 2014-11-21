@@ -91,7 +91,7 @@ public class InitGUI extends JFrame {
 		panel_4.add(toolBar);
 		toolBar.setAlignmentY(Component.CENTER_ALIGNMENT);
 		toolBar.setToolTipText("Choose weather conditions");
-		toolBar.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+		toolBar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 
 		Component horizontalGlue = Box.createHorizontalGlue();
 		toolBar.add(horizontalGlue);
@@ -178,13 +178,13 @@ public class InitGUI extends JFrame {
 		list.setBackground(new Color(238, 238, 238));
 		list.setModel(jList1Model);
 
-//		// multiple selection
-//		int[] selectedIx = list.getSelectedIndices();
-//
-//		// Get all the selected items using the indices
-//		for (int i = 0; i < selectedIx.length; i++) {
-//			Object sel = list.getModel().getElementAt(selectedIx[i]);
-//		}
+		// // multiple selection
+		// int[] selectedIx = list.getSelectedIndices();
+		//
+		// // Get all the selected items using the indices
+		// for (int i = 0; i < selectedIx.length; i++) {
+		// Object sel = list.getModel().getElementAt(selectedIx[i]);
+		// }
 
 		// Get the index of the first selected item
 		// int firstSelIx = list.getSelectedIndex();
@@ -202,7 +202,7 @@ public class InitGUI extends JFrame {
 		btnOpenDialog.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		btnOpenDialog.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Water-Drop.png")));
-		btnOpenDialog.setMnemonic('W');
+		btnOpenDialog.setMnemonic('O');
 		btnOpenDialog.setMargin(new Insets(0, 0, 0, 0));
 		panel_2.add(btnOpenDialog);
 
