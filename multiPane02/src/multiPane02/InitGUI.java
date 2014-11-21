@@ -98,17 +98,17 @@ public class InitGUI extends JFrame {
 				
 				int seleccion = JOptionPane.showOptionDialog(
 						   lblNewLabel_2,
-						   "¿En que comunidad ha hecho más calor?", 
+						   "¿Hará buen tiempo este fin de semana?", 
 						   "Question",
 						   JOptionPane.YES_NO_CANCEL_OPTION,
 						   JOptionPane.QUESTION_MESSAGE,
 						   null,    // null para icono por defecto.
-						   new Object[] { "Madrid", "Valencia",},   // null para YES, NO y CANCEL
+						   new Object[] { "Sí", "No",},   // null para YES, NO y CANCEL
 						   "opcion 1");
 				if(seleccion== JOptionPane.YES_OPTION)
-		            JOptionPane.showMessageDialog(null, "Correcto.");
+		            JOptionPane.showMessageDialog(null, "!!Di que sí¡¡.");
 				else if(seleccion== JOptionPane.NO_OPTION)
-		            JOptionPane.showMessageDialog(null, "Otra vez será.");
+		            JOptionPane.showMessageDialog(null, "No seas negativo .. :)");
 			}
 		});
 		
@@ -132,8 +132,8 @@ public class InitGUI extends JFrame {
 		 */
 			
 		public void mouseClicked(MouseEvent e) {
-			String ax = JOptionPane.showInputDialog("Ponga una ciudad : ");
-			JOptionPane.showMessageDialog(null, "La ciudad que ha elegido es: "+ax);
+			String ax = JOptionPane.showInputDialog("Ponga una ciudad donde haya nubes: ");
+			JOptionPane.showMessageDialog(null, "¡¡Vaya!! Hace frio en: "+ax);
 			}
 		});
 		lblNewLabel.setIconTextGap(3);
@@ -196,10 +196,10 @@ public class InitGUI extends JFrame {
 		list.setModel(jList1Model);
 		
 		
-		//multiple selection
+		/**multiple selection*/
 		int[] selectedIx = list.getSelectedIndices();
 
-	    // Get all the selected items using the indices
+	    /** Get all the selected items using the indices*/
 	    for (int i = 0; i < selectedIx.length; i++) {
 	      Object sel = list.getModel().getElementAt(selectedIx[i]);
 	    }
