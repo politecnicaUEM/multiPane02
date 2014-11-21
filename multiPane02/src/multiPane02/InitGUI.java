@@ -155,7 +155,7 @@ public class InitGUI {
 		slider = new JSlider();
 		panel_2.add(slider);
 		// location = toString(slider);
-		slider.setToolTipText("location");
+		slider.setToolTipText("location"+slider.getValue());
 
 		JLabel lblNewLabel_4 = new JLabel("Dropping...");
 		panel_2.add(lblNewLabel_4, BorderLayout.SOUTH);
