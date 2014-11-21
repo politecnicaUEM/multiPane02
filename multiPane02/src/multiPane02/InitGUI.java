@@ -1,5 +1,6 @@
 package multiPane02;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
@@ -27,6 +28,7 @@ import javax.swing.JPanel;
 import javax.swing.JSlider;
 import javax.swing.JToolBar;
 import javax.swing.ListModel;
+import javax.swing.SwingConstants;
 import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
@@ -64,15 +66,6 @@ public class InitGUI extends JFrame {
 		});
 	}
 	{
-/*		for (LookAndFeelInfo info : javax.swing.UIManager
-				.getInstalledLookAndFeels()) {
-			try {
-				javax.swing.UIManager
-						.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}*/
 	}
 
 	/**
@@ -97,12 +90,27 @@ public class InitGUI extends JFrame {
 		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
 		lblNewLabel_2.setIconTextGap(3);
 		lblNewLabel_2.addMouseListener(new MouseAdapter() {
-			
+
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				// TODO Auto-generated method stub
+				/**
+				 * Change the Background
+				 */
 				contentPane.setBackground((Color.YELLOW));
-				
+				/**
+				 * Create new frame and  i have inserted an gif in relation to the Label.
+				 */
+				JFrame frame = new JFrame("hol");
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
+				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/gif-sol.gif")));
+				frame.getContentPane().add(textLabel,BorderLayout.CENTER);
+
+				frame.setLocationRelativeTo(null);
+				frame.pack();
+				frame.setVisible(true);
+
 			}
 		});
 		lblNewLabel_2.setCursor(Cursor
@@ -116,13 +124,30 @@ public class InitGUI extends JFrame {
 		JLabel lblNewLabel = new JLabel("Cloudy");
 		lblNewLabel.setIconTextGap(3);
 		lblNewLabel.addMouseListener(new MouseAdapter() {
-					
-					@Override
-					public void mouseClicked(MouseEvent arg0) {
-						// TODO Auto-generated method stub
-						contentPane.setBackground((Color.CYAN));
-					}
-				});
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				/**
+				 * Change the Background
+				 */
+				contentPane.setBackground((Color.CYAN));
+				/**
+				 * Create new frame and  i have inserted an gif in relation to the Label.
+				 */
+				JFrame frame = new JFrame("hol");
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
+				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/tiempo_sol_y_nube.gif")));
+				frame.getContentPane().add(textLabel,BorderLayout.CENTER);
+
+				frame.setLocationRelativeTo(null);
+				frame.pack();
+				frame.setVisible(true);
+
+			}
+
+		});
 		lblNewLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/Cloudy@Low.png")));
 		toolBar.add(lblNewLabel);
 		// toolBar.add(new JSeparator (SwingConstants.VERTICAL));
@@ -131,11 +156,26 @@ public class InitGUI extends JFrame {
 		JLabel lblNewLabel_1 = new JLabel("Rains");
 		lblNewLabel_1.setIconTextGap(3);
 		lblNewLabel_1.addMouseListener(new MouseAdapter() {
-			
+
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				// TODO Auto-generated method stub
+				/**
+				 * Change the Background
+				 */
 				contentPane.setBackground((Color.BLUE));
+				/**
+				 * Create new frame and  i have inserted an gif in relation to the Label.
+				 */
+				JFrame frame = new JFrame("hol");
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
+				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/LLuvia.gif")));
+				frame.getContentPane().add(textLabel,BorderLayout.CENTER);
+
+				frame.setLocationRelativeTo(null);
+				frame.pack();
+				frame.setVisible(true);
 			}
 		});
 		lblNewLabel_1.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/Cloud-Download@Low.png")));
@@ -144,11 +184,27 @@ public class InitGUI extends JFrame {
 
 		JLabel lblNewLabel_3 = new JLabel("Windy");
 		lblNewLabel_3.addMouseListener(new MouseAdapter() {
-			
+
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				// TODO Auto-generated method stub
+				/**
+				 * Change the Background
+				 */
 				contentPane.setBackground((Color.RED));
+				/**
+				 * Create new frame and  i have inserted an gif in relation to the Label.
+				 */
+				JFrame frame = new JFrame("hol");
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
+				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/Viento.gif")));
+				frame.getContentPane().add(textLabel,BorderLayout.CENTER);
+
+				frame.setLocationRelativeTo(null);
+				frame.pack();
+				frame.setVisible(true);
+
 			}
 		});
 		lblNewLabel_3.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/Refresh@Low.png")));
@@ -165,7 +221,7 @@ public class InitGUI extends JFrame {
 		/*
 		 * Defining JList and its model for supplying content
 		 */
-		
+
 		ListModel jList1Model = new DefaultComboBoxModel(new String[] {
 				"Water", "Petrol", "Milk" });
 		JList list = new JList();
@@ -175,23 +231,19 @@ public class InitGUI extends JFrame {
 				null));
 		list.setBackground(new Color(238, 238, 238));
 		list.setModel(jList1Model);
-		
-		
+
+
 		//multiple selection
 		int[] selectedIx = list.getSelectedIndices();
 
-	    // Get all the selected items using the indices
-	    for (int i = 0; i < selectedIx.length; i++) {
-	      Object sel = list.getModel().getElementAt(selectedIx[i]);
-	    }
-
-	    // Get the index of the first selected item
-	  //  int firstSelIx = list.getSelectedIndex();
-
+		// Get all the selected items using the indices
+		for (int i = 0; i < selectedIx.length; i++) {
+			Object sel = list.getModel().getElementAt(selectedIx[i]);
+		}
+		
 		/*
 		 * customized square button
 		 */
-
 		JButton btnOpenDialog = new JButton("");
 		btnOpenDialog.setToolTipText("Go?");
 		btnOpenDialog.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
@@ -213,10 +265,10 @@ public class InitGUI extends JFrame {
 		slider.setAlignmentX(Component.LEFT_ALIGNMENT);
 		slider.setValue(25);
 		panel_1.add(slider);
-		
+
 		lblNewLabel_4 = new JLabel("Dropping...");
 		panel_1.add(lblNewLabel_4);
-		
+
 		/*
 		 * shows an optiopane with a dialog asking for confirmation
 		 */
@@ -228,13 +280,13 @@ public class InitGUI extends JFrame {
 				if (answer == JOptionPane.YES_OPTION) {
 					int[] selectedIx = list.getSelectedIndices();
 					lblNewLabel_4.setText("Dropping...");
-				    // Get all the selected items using the indices
-				    for (int i = 0; i < selectedIx.length; i++) {
-				      sel = (String) list.getModel().getElementAt(selectedIx[i]);
-				      lblNewLabel_4.setText(lblNewLabel_4.getText() + " " + sel + " ");
-				      System.out.println(sel);
-				    }
-				    lblNewLabel_4.setText(lblNewLabel_4.getText() + " at " + slider.getValue() + "%");
+					// Get all the selected items using the indices
+					for (int i = 0; i < selectedIx.length; i++) {
+						sel = (String) list.getModel().getElementAt(selectedIx[i]);
+						lblNewLabel_4.setText(lblNewLabel_4.getText() + " " + sel + " ");
+						System.out.println(sel);
+					}
+					lblNewLabel_4.setText(lblNewLabel_4.getText() + " at " + slider.getValue() + "%");
 					// User clicked YES.				
 				} else if (answer == JOptionPane.NO_OPTION) {
 					// User clicked NO.
@@ -248,5 +300,6 @@ public class InitGUI extends JFrame {
 		 */
 		JPanel panel = new ImgPanel(hierbaDir);
 		contentPane.add(panel);
+
 	}
 }
