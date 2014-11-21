@@ -128,7 +128,7 @@ public class InitGUI extends JFrame {
 		lblNewLabel.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Cloudy@Low.png")));
 		toolBar.add(lblNewLabel);
-		
+
 		JSeparator separator2 = new JSeparator();
 		separator2.setOrientation(SwingConstants.VERTICAL);
 		toolBar.add(separator2);
@@ -178,13 +178,13 @@ public class InitGUI extends JFrame {
 		list.setBackground(new Color(238, 238, 238));
 		list.setModel(jList1Model);
 
-		// multiple selection
-		int[] selectedIx = list.getSelectedIndices();
-
-		// Get all the selected items using the indices
-		for (int i = 0; i < selectedIx.length; i++) {
-			Object sel = list.getModel().getElementAt(selectedIx[i]);
-		}
+//		// multiple selection
+//		int[] selectedIx = list.getSelectedIndices();
+//
+//		// Get all the selected items using the indices
+//		for (int i = 0; i < selectedIx.length; i++) {
+//			Object sel = list.getModel().getElementAt(selectedIx[i]);
+//		}
 
 		// Get the index of the first selected item
 		// int firstSelIx = list.getSelectedIndex();
@@ -212,18 +212,18 @@ public class InitGUI extends JFrame {
 
 		slider = new JSlider();
 		slider.setAlignmentX(Component.LEFT_ALIGNMENT);
-		//migueleando
-		
-//	    slider.addChangeListener(new ChangeListener() {
-//	        public void stateChanged(ChangeEvent ce) {
-//	            slider = (JSlider)ce.getSource();
-//	            if (!slider.getValueIsAdjusting()) {
-//	                slider.setToolTipText(Integer.parseInt(slider.getValue());
-//	            }
-//	        }
-//	    });
-		
-		
+		// migueleando
+		// try http://www.jroller.com/santhosh/entry/tooltips_can_say_more
+		// slider.setToolTipText(String.valueOf(slider.getValue()));
+		// slider.addChangeListener(new ChangeListener() {
+		// public void stateChanged(ChangeEvent ce) {
+		// slider = (JSlider)ce.getSource();
+		// if (!slider.getValueIsAdjusting()) {
+		// slider.setToolTipText(Integer.parseInt(slider.getValue());
+		// }
+		// }
+		// });
+
 		slider.setValue(25);
 		panel_1.add(slider);
 		// init Label4
@@ -241,7 +241,7 @@ public class InitGUI extends JFrame {
 				if (answer == JOptionPane.YES_OPTION) {
 					int[] selectedIx = list.getSelectedIndices();
 					lblNewLabel_4.setText("Dropping...");
-					// Get all the selected items using the indices
+					// Get all the selected items using indexes
 					for (int i = 0; i < selectedIx.length; i++) {
 						sel = (String) list.getModel().getElementAt(
 								selectedIx[i]);
