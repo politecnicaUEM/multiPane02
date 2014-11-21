@@ -27,15 +27,38 @@ import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
+
 import java.awt.event.MouseAdapter;
 
+import javax.swing.border.EtchedBorder;
+
+import sun.misc.Cleaner;
+
+/**
+ * Principal Frame of the applicaion
+ * @author Nicolas
+ *
+ */
 public class InitGUI extends JFrame {
 
 	private JPanel contentPane;
 	private Component frame;
 	private String hierbaDir = "Images/hierba-footer.png";
-	private JLabel lblNewLabel_4;
-	private String sel;
+	private JLabel lblInfoGame;
+	private boolean itsSunny;
+	private boolean itsCLouldy;
+	private boolean itsRaining;
+	private boolean itsWindy;
+	private JLabel lblPerfectSunny;
+	private JLabel lblCloudly;
+	JLabel lblWindy;
+	JSlider slider;
+	JPanel Firstpanel;
+	JToolBar toolBar;
+	JLabel lblRains;
+	JPanel panelList;
+	JLabel lblGrassHealth;
+	int grassHealth;
 
 	/**
 	 * Launch the application.
@@ -53,101 +76,114 @@ public class InitGUI extends JFrame {
 		});
 	}
 
-//	{
-//		for (LookAndFeelInfo info : javax.swing.UIManager
-//				.getInstalledLookAndFeels()) {
-//			try {
-//				javax.swing.UIManager
-//						.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
-//			} catch (Exception e) {
-//				e.printStackTrace();
-//			}
-//		}
-//	}
+	// {
+	// for (LookAndFeelInfo info : javax.swing.UIManager
+	// .getInstalledLookAndFeels()) {
+	// try {
+	// javax.swing.UIManager
+	// .setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
+	// } catch (Exception e) {
+	// e.printStackTrace();
+	// }
+	// }
+	// }
 
 	/**
 	 * Create the frame.
 	 */
 	public InitGUI() {
+
+		itsSunny = false;
+		itsCLouldy = false;
+		itsRaining = false;
+		itsWindy = false;
+		grassHealth = 100;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 390, 400);
+		setBounds(100, 100, 457, 400);
 		setTitle("Garden care");
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(new GridLayout(4, 1, 0, 0));
 
-		JToolBar toolBar = new JToolBar();
+		toolBar = new JToolBar();
 		toolBar.setAlignmentY(Component.CENTER_ALIGNMENT);
 		toolBar.setToolTipText("Choose weather conditions");
 		toolBar.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 		contentPane.add(toolBar);
 
-		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
-		lblNewLabel_2.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		lblNewLabel_2.setIconTextGap(3);
-		lblNewLabel_2.setIcon(new ImageIcon(InitGUI.class
+		lblPerfectSunny = new JLabel("Perfect sun");
+		lblPerfectSunny.setCursor(Cursor
+				.getPredefinedCursor(Cursor.HAND_CURSOR));
+		lblPerfectSunny.setIconTextGap(3);
+		lblPerfectSunny.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Sunshine@Low.png")));
-		toolBar.add(lblNewLabel_2);
+		toolBar.add(lblPerfectSunny);
 		// toolBar.add(new JSeparator (SwingConstants.VERTICAL));
 		toolBar.addSeparator();
 
-		JLabel lblNewLabel = new JLabel("Cloudy");
-		lblNewLabel.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		lblNewLabel.setIconTextGap(3);
-		lblNewLabel.setIcon(new ImageIcon(InitGUI.class
+		lblCloudly = new JLabel("Cloudy");
+		lblCloudly.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		lblCloudly.setIconTextGap(3);
+		lblCloudly.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Cloudy@Low.png")));
-		toolBar.add(lblNewLabel);
+		toolBar.add(lblCloudly);
 		// toolBar.add(new JSeparator (SwingConstants.VERTICAL));
 		toolBar.addSeparator();
 
-		JLabel lblNewLabel_1 = new JLabel("Rains");
-		lblNewLabel_1.setIconTextGap(3);
-		lblNewLabel_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		lblNewLabel_1.setIcon(new ImageIcon(InitGUI.class
+		lblRains = new JLabel("Rains");
+		lblRains.setIconTextGap(3);
+		lblRains.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		lblRains.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Cloud-Download@Low.png")));
-		toolBar.add(lblNewLabel_1);
+		toolBar.add(lblRains);
 		toolBar.addSeparator();
 
-		JLabel lblNewLabel_3 = new JLabel("Windy");
-		lblNewLabel_3.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		lblNewLabel_3.setIcon(new ImageIcon(InitGUI.class
+		lblWindy = new JLabel("Windy");
+		lblWindy.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		lblWindy.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Refresh@Low.png")));
-		toolBar.add(lblNewLabel_3);
+		toolBar.add(lblWindy);
+		toolBar.addSeparator();
 
-		JPanel panel_2 = new JPanel();
-		contentPane.add(panel_2);
-		panel_2.setLayout(new BoxLayout(panel_2, BoxLayout.X_AXIS));
+		lblGrassHealth = new JLabel(Integer.toString(grassHealth));
+		lblGrassHealth
+				.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		lblGrassHealth.setIcon(new ImageIcon(InitGUI.class
+				.getResource("/Images/Green@Low.png")));
+		toolBar.add(lblGrassHealth);
 
-		JPanel panel_3 = new JPanel();
-		panel_2.add(panel_3);
-		panel_3.setLayout(new GridLayout(1, 0, 0, 0));
+		Firstpanel = new JPanel();
+		contentPane.add(Firstpanel);
+		Firstpanel.setLayout(new BoxLayout(Firstpanel, BoxLayout.X_AXIS));
+
+		panelList = new JPanel();
+		Firstpanel.add(panelList);
+		panelList.setLayout(new GridLayout(1, 0, 0, 0));
 
 		/**
 		 * Defining JList and its model for supplying content
 		 */
-		
 		ListModel jList1Model = new DefaultComboBoxModel(new String[] {
 				"Water", "Petrol", "Milk" });
 		final JList list = new JList();
-		panel_3.add(list);
+		panelList.add(list);
 		list.setFont(new Font("Courier New", Font.PLAIN, 14));
 		list.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null,
 				null));
 		list.setBackground(new Color(238, 238, 238));
 		list.setModel(jList1Model);
-		
-		
-		//multiple selection
+
+		// multiple selection
 		int[] selectedIx = list.getSelectedIndices();
 
-	    // Get all the selected items using the indices
-	    for (int i = 0; i < selectedIx.length; i++) {
-	      Object sel = list.getModel().getElementAt(selectedIx[i]);
-	    }
+		// Get all the selected items using the indices
+		for (int i = 0; i < selectedIx.length; i++) {
+			Object sel = list.getModel().getElementAt(selectedIx[i]);
+		}
 
-	    // Get the index of the first selected item
-	  //  int firstSelIx = list.getSelectedIndex();
+		// Get the index of the first selected item
+		// int firstSelIx = list.getSelectedIndex();
 
 		/**
 		 * customized square button
@@ -160,79 +196,249 @@ public class InitGUI extends JFrame {
 				.getResource("/Images/Water-Drop.png")));
 		btnOpenDialog.setMnemonic('W');
 		btnOpenDialog.setMargin(new Insets(0, 0, 0, 0));
-		panel_2.add(btnOpenDialog);
+		Firstpanel.add(btnOpenDialog);
 
 		/**
 		 * JList selected
+		 * 
 		 * @param evt
 		 */
-		JPanel panel_1 = new JPanel();
-		contentPane.add(panel_1);
-		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
+		JPanel sliderPannel = new JPanel();
+		contentPane.add(sliderPannel);
+		sliderPannel.setLayout(new BoxLayout(sliderPannel, BoxLayout.Y_AXIS));
 
-		final JSlider slider = new JSlider();
+		slider = new JSlider();
 		slider.setAlignmentX(Component.LEFT_ALIGNMENT);
 		slider.setValue(25);
-		panel_1.add(slider);
-		
-		lblNewLabel_4 = new JLabel("Dropping...");
-		panel_1.add(lblNewLabel_4);
-		
+		sliderPannel.add(slider);
+
+		lblInfoGame = new JLabel("Dropping...");
+		sliderPannel.add(lblInfoGame);
+
 		/**
-		 * shows an optiopane with a dialog asking for confirmation
+		 * shows an option pane with a dialog asking for confirmation
 		 */
 		btnOpenDialog.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				// Dialoging
-				String message = "Are you 100% sure?";
-				int answer = JOptionPane.showConfirmDialog(frame, message);
-				if (answer == JOptionPane.YES_OPTION) {
-					int[] selectedIx = list.getSelectedIndices();
-					lblNewLabel_4.setText(lblNewLabel_4.getText() + " and dropping...");
-				    // Get all the selected items using the indices
-				    for (int i = 0; i < selectedIx.length; i++) {
-				      sel = (String) list.getModel().getElementAt(selectedIx[i]);
-				      lblNewLabel_4.setText(lblNewLabel_4.getText() + " " + sel + " ");
-				      System.out.println(sel);
-				    }
-				    lblNewLabel_4.setText(lblNewLabel_4.getText() + " at " + slider.getValue() + "%");
-					// User clicked YES.				
-				} else if (answer == JOptionPane.NO_OPTION) {
-					// User clicked NO.
-					lblNewLabel_4.setText(" Dropping... nothing yet");
+				if (itsRaining || itsCLouldy || itsSunny) {
+					String message = "Are you 100% sure?";
+					int answer = JOptionPane.showConfirmDialog(frame, message);
+					if (answer == JOptionPane.YES_OPTION) {
+						int[] selectedIx = list.getSelectedIndices();
+						lblInfoGame.setText(lblInfoGame.getText()
+								+ " and dropping...");
+						// Get all the selected items using the indices
+						for (int i = 0; i < selectedIx.length; i++) {
+							String sel;
+							sel = (String) list.getModel().getElementAt(
+									selectedIx[i]);
+							lblInfoGame.setText(lblInfoGame.getText() + " "
+									+ sel + " ");
+							System.out.println(sel);
+						}
+						calculateGrassHealth(selectedIx, slider.getValue());
+						lblInfoGame.setText(lblInfoGame.getText() + " at "
+								+ slider.getValue() + "%");
+						// User clicked YES.
+					} else if (answer == JOptionPane.NO_OPTION) {
+						// User clicked NO.
+						lblInfoGame.setText(" Dropping... nothing yet");
+					}
+					resetClimates();
+					lblGrassHealth.setText(Integer.toString(grassHealth));
 				}
+				else lblInfoGame.setText("Select a climate please!");
+					
 			}
 		});
 
-		lblNewLabel_2.addMouseListener(new MouseAdapter() {
+		
+		/**
+		 * listeners of the labe perfect sunny
+		 */
+		lblPerfectSunny.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				lblNewLabel_4.setText("It's a sunny day");
+				if (!(itsRaining || itsCLouldy)) {
+					itsSunny = !itsSunny;
+					lblInfoGame.setText(generateClimateText());
+
+				}
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				if (!itsSunny)
+					lblPerfectSunny.setBorder(new EtchedBorder(
+							EtchedBorder.LOWERED, null, null));
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				if (!itsSunny)
+					lblPerfectSunny.setBorder(null);
+
 			}
 		});
-		lblNewLabel.addMouseListener(new MouseAdapter() {
+		
+		/**
+		 * listeners of the label cloudly
+		 */
+		lblCloudly.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				lblNewLabel_4.setText("It's a cloudly");
+				if (!(itsSunny || itsRaining)) {
+					itsCLouldy = !itsCLouldy;
+					lblInfoGame.setText(generateClimateText());
+				}
 			}
-		});
-		lblNewLabel_1.addMouseListener(new MouseAdapter() {
+
 			@Override
-			public void mouseClicked(MouseEvent arg0) {
-				lblNewLabel_4.setText("It's raining");
+			public void mouseEntered(MouseEvent arg0) {
+				if (!itsCLouldy)
+					lblCloudly.setBorder(new EtchedBorder(EtchedBorder.LOWERED,
+							null, null));
 			}
+
+			public void mouseExited(MouseEvent arg0) {
+				if (!itsCLouldy)
+					lblCloudly.setBorder(null);
+			}
+
 		});
-		lblNewLabel_3.addMouseListener(new MouseAdapter() {
+
+		/**
+		 * listeners of the lable rains
+		 */
+		lblRains.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				lblNewLabel_4.setText("It's windy");
+				if (!(itsSunny || itsCLouldy)) {
+					itsRaining = !itsRaining;
+					lblInfoGame.setText(generateClimateText());
+				}
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				if (!itsRaining)
+					lblRains.setBorder(new EtchedBorder(EtchedBorder.LOWERED,
+							null, null));
+			}
+
+			public void mouseExited(MouseEvent arg0) {
+				if (!itsRaining)
+					lblRains.setBorder(null);
+			}
+
+		});
+		
+		/**
+		 * listeners of the label windy
+		 */
+		lblWindy.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				itsWindy = !itsWindy;
+				lblInfoGame.setText(generateClimateText());
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				if (!itsWindy)
+					lblWindy.setBorder(new EtchedBorder(EtchedBorder.LOWERED,
+							null, null));
+			}
+
+			public void mouseExited(MouseEvent arg0) {
+				if (!itsWindy)
+					lblWindy.setBorder(null);
 			}
 		});
 
 		/**
 		 * calls our drawing panel
 		 */
-		JPanel panel = new ImgPanel(hierbaDir);
-		contentPane.add(panel);
+		JPanel panelImage = new ImgPanel(hierbaDir);
+		contentPane.add(panelImage);
 	}
+
+	/**
+	 * uncheck all labels of the toolbar
+	 */
+	private void resetClimates() {
+		lblCloudly.setBorder(null);
+		lblPerfectSunny.setBorder(null);
+		lblWindy.setBorder(null);
+		lblRains.setBorder(null);
+		itsSunny = false;
+		itsCLouldy = false;
+		itsRaining = false;
+		itsWindy = false;
+	}
+
+	/**
+	 * generates a message depending on the climates selected by the user
+	 * @return a strings with the climates selected
+	 */
+	private String generateClimateText() {
+		String text = "";
+		if (itsSunny)
+			text = "It's sunny";
+		if (itsCLouldy)
+			text = "It's cloudly";
+		if (itsRaining)
+			text = "It's raining";
+
+		if (itsWindy) {
+			if ((itsSunny || itsCLouldy || itsRaining))
+				text = text + " and windy";
+			else
+				text = "its windy";
+		}
+		return text;
+
+	}
+
+	/**
+	 * Calculate how the grass react to the action of the user.
+	 * @param selectedIx with what liquid is the user watering (petrol,water or milk)
+	 * @param value how much quantity
+	 */
+	void calculateGrassHealth(int[] selectedIx, int value) {
+		for (int i = 0; i < selectedIx.length; i++) {
+			System.out.println(selectedIx[i]);
+			if (selectedIx[i] == 0) { // water selected
+				if (itsSunny) {
+					if (value > 70)
+						grassHealth += 5;
+					else
+						grassHealth -= 5;
+				}
+				if (itsCLouldy) {
+					if (value < 50 && value > 15)
+						grassHealth += 5;
+					else
+						grassHealth -= 5;
+				}
+				if (itsRaining) {
+					if (value < 15)
+						grassHealth += 5;
+					else
+						grassHealth -= 5;
+				}
+			}
+			if(selectedIx[i]==2){//milk
+				if(value>30)
+					grassHealth-=5;
+			}
+			if(selectedIx[i]==1){ //petrol
+				grassHealth -= (value/2);
+			}
+				
+
+		}
+	}
+
 }
