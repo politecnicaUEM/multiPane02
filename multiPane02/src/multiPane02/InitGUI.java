@@ -200,6 +200,7 @@ public class InitGUI extends JFrame {
 				lblNewLabel_4=cloudy;
 				panel_1.add(lblNewLabel_4);
 				btnOpenDialog.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/gotaPar.png")));
+				panel_1.repaint();
 			}
 		});
 		
@@ -238,6 +239,7 @@ public class InitGUI extends JFrame {
 				lblNewLabel_4=rains;
 				panel_1.add(lblNewLabel_4);
 				btnOpenDialog.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/gota.png")));
+				panel_1.repaint();
 				
 			}
 		});
@@ -285,6 +287,7 @@ public class InitGUI extends JFrame {
 				lblNewLabel_4=windy;
 				panel_1.add(lblNewLabel_4);
 				btnOpenDialog.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/gotasWindy.png")));
+				panel_1.repaint();
 			}
 		});
 		
