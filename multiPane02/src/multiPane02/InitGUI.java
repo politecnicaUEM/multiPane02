@@ -35,11 +35,10 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
 
 /**
- * This class implements the interface main frame and its controls 
- * @author ernesto
- * @version 1.0-beta
+ * This class implements the interface main frame and its controls
+ * @author Carlos Yubero Delgado
+ * @version 1.0 BETA
  * @see ImgPanel
- *
  */
 
 public class InitGUI extends JFrame {
@@ -69,9 +68,12 @@ public class InitGUI extends JFrame {
 	}
 
 	/**
-	 * Create the frame.
+	 * Create the application.
 	 */
 	public InitGUI() {
+		/**
+		 * Create the frame.
+		 */
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 650, 492);
 		setTitle("Garden care");
@@ -86,7 +88,9 @@ public class InitGUI extends JFrame {
 		toolBar.setToolTipText("Choose weather conditions");
 		toolBar.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 		contentPane.add(toolBar);
-
+		/*
+		 * customized square Label
+		 */
 		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
 		lblNewLabel_2.setIconTextGap(3);
 		lblNewLabel_2.addMouseListener(new MouseAdapter() {
@@ -113,6 +117,9 @@ public class InitGUI extends JFrame {
 
 			}
 		});
+		/*
+		 * customized square Label
+		 */
 		lblNewLabel_2.setCursor(Cursor
 				.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 		lblNewLabel_2.setIcon(new ImageIcon(InitGUI.class
@@ -155,6 +162,9 @@ public class InitGUI extends JFrame {
 
 		JLabel lblNewLabel_1 = new JLabel("Rains");
 		lblNewLabel_1.setIconTextGap(3);
+		/*
+		 * customized square Label
+		 */
 		lblNewLabel_1.addMouseListener(new MouseAdapter() {
 
 			@Override
