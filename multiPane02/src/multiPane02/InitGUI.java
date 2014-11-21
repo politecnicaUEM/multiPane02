@@ -52,7 +52,7 @@ import java.awt.event.KeyEvent;
  */
 
 /**
- * 
+ * @author Javier Martinez Miro
  * Declare the class and extends JFrame which inherit his methods
  *
  */
@@ -144,6 +144,7 @@ public class InitGUI extends JFrame {
 				lblNewLabel_4=perfectSun;
 				panel_1.add(lblNewLabel_4);
 				btnOpenDialog.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/gotas.png")));
+				panel_1.repaint();
 				
 			}
 		});
@@ -410,7 +411,7 @@ public class InitGUI extends JFrame {
 		});
 
 		/**
-		 * Calls our drawing panel/application 
+		 * Calling our drawing panel/application 
 		 */
 		JPanel panel = new ImgPanel(hierbaDir);
 		contentPane.add(panel);

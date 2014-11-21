@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 
 
 /**
- * This class draws a rezisable image using Graphics abstract class
+ * drawing a rezisable image using Graphics abstract class
  * 
  * @author ernesto
  * @version 1.0-beta
@@ -27,7 +27,6 @@ public class ImgPanel extends JPanel{
 	/**
 	 * This method draws the image and sets it to be drawable along the application layout size
 	 */
-
 	public void paint(Graphics g){
 		Dimension size = getSize();
 		imagen = new ImageIcon(getClass().getClassLoader().getResource(dir));
