@@ -7,6 +7,7 @@ import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.Insets;
+import java.awt.Label;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -93,7 +94,7 @@ public class InitGUI extends JFrame {
 		 * Sets the main view
 		 */
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 390, 400);
+		setBounds(150, 150, 390, 400);
 		setTitle("Garden care");
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -113,6 +114,9 @@ public class InitGUI extends JFrame {
 		/**
 		 * Create the first label of the JToolBar with the MouseListener which changes the label
 		 */
+		JPanel panel_1 = new JPanel();
+		slider = new JSlider();
+		JLabel perfectSun=new JLabel("Perfect-Sun: Too much water will be needed (85%)                     ");
 		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
 		lblNewLabel_2.addMouseListener(new MouseAdapter() {
 			
@@ -132,18 +136,28 @@ public class InitGUI extends JFrame {
 			public void mouseExited(MouseEvent arg0) {
 				lblNewLabel_2.setBorder(null);
 			}
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				if(true)
+				slider.setValue(85);
+				panel_1.remove(lblNewLabel_4);
+				lblNewLabel_4=perfectSun;
+				panel_1.add(lblNewLabel_4);
+				btnOpenDialog.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/gotas.png")));
+				
+			}
 		});
 		
 		/**
 		 * Declare a JSlider to set the water amount and add it a Listener to set 85 it value
 		 */
-		slider = new JSlider();
-		lblNewLabel_2.addMouseListener(new MouseAdapter() {
+		
+		/**lblNewLabel_2.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(JSlider slider) {
-				slider.setValue(85);
+				
 			}
 		});
-		
+		*
 		/**
 		 * Set the first label's icon 
 		 */
@@ -159,7 +173,7 @@ public class InitGUI extends JFrame {
 		 * Create the second label of the JToolBar with the MouseListener which changes the label 
 		 */
 		JLabel lblNewLabel = new JLabel("Cloudy");
-		
+		JLabel cloudy= new JLabel("Cloudy: Today you dont need much water, it probably rains (25%)                      ");
 		lblNewLabel.addMouseListener(new MouseAdapter() {
 			
 			/**
@@ -177,6 +191,15 @@ public class InitGUI extends JFrame {
 			public void mouseExited(MouseEvent arg0) {
 				lblNewLabel.setBorder(null);
 			}
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				slider.setValue(25);
+				//panel_1.remove(lblNewLabel_2);
+				panel_1.remove(lblNewLabel_4);
+				lblNewLabel_4=cloudy;
+				panel_1.add(lblNewLabel_4);
+				btnOpenDialog.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/gotaPar.png")));
+			}
 		});
 		
 		/**
@@ -193,6 +216,7 @@ public class InitGUI extends JFrame {
 		 * Create the third label of the JToolBar with the MouseListener which changes the label
 		 */
 		JLabel lblNewLabel_1 = new JLabel("Rains");
+		JLabel rains= new JLabel("Rains: Today you dont need any water, it's the cheaper! (5%)                ");
 		lblNewLabel_1.addMouseListener(new MouseAdapter() {
 			/**
 			 * Declare an Override method "mouseEntered" with the Listener for change the border of the label (to make an effect view)
@@ -204,6 +228,16 @@ public class InitGUI extends JFrame {
 			@Override
 			public void mouseExited(MouseEvent arg0) {
 				lblNewLabel_1.setBorder(null);
+			}
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				slider.setValue(5);
+				//panel_1.remove(lblNewLabel_2);
+				panel_1.remove(lblNewLabel_4);
+				lblNewLabel_4=rains;
+				panel_1.add(lblNewLabel_4);
+				btnOpenDialog.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/gota.png")));
+				
 			}
 		});
 		
@@ -220,6 +254,10 @@ public class InitGUI extends JFrame {
 		 * Create the fourth label of the JToolBar with the MouseListener which changes the label
 		 */
 		JLabel lblNewLabel_3 = new JLabel("Windy");
+		JLabel windy= new JLabel("Windy: Today you have to wait for the best time of the day (40%)                   ");
+		String w="Windy";
+		Font f=new Font("Impact", Font.BOLD,14);
+		
 		lblNewLabel_3.addMouseListener(new MouseAdapter() {
 			
 			/**
@@ -236,6 +274,16 @@ public class InitGUI extends JFrame {
 			@Override
 			public void mouseExited(MouseEvent arg0) {
 				lblNewLabel_3.setBorder(null);
+			}
+			@Override
+			public void mouseClicked(MouseEvent m) {
+				//if(lblNewLabel_4!=windy)
+				slider.setValue(45);
+				//panel_1.remove(lblNewLabel_2);
+				panel_1.remove(lblNewLabel_4);
+				lblNewLabel_4=windy;
+				panel_1.add(lblNewLabel_4);
+				btnOpenDialog.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/gotasWindy.png")));
 			}
 		});
 		
@@ -265,13 +313,15 @@ public class InitGUI extends JFrame {
 			 * Declare an Override method "valueChanged" with the Listener to change the button icon 
 			 */
 			@Override
-			public void valueChanged(ListSelectionEvent e) {
-				if (e.equals("Water")){
-		        	btnOpenDialog.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/Very-Low-Battery-Power.png")));
-		        	
+			public void valueChanged(ListSelectionEvent arg0) {
+					if(list.getSelectedValue()!="Water"||list.getSelectedValue()!="Petrol")
+		        	btnOpenDialog.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/milk.gif")));
+					else if(list.getSelectedValue()!="Petrol"||list.getSelectedValue()!="Milk")
+			        btnOpenDialog.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/agua.png")));
+					else// (list.getSelectedValue()!="Milk"||list.getSelectedValue()!="Water")
+			        btnOpenDialog.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/gasolina.png")));
 		        	//try if it works, but it doesn't)
 		        	System.out.println("hola");
-		        }	
 			}
 		   });
 		
@@ -314,7 +364,7 @@ public class InitGUI extends JFrame {
 		 * JList selected
 		 * @param evt
 		 */
-		JPanel panel_1 = new JPanel();
+		
 		contentPane.add(panel_1);
 		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
 

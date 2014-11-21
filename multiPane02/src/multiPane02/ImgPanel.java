@@ -23,6 +23,10 @@ public class ImgPanel extends JPanel{
 		super();
 		this.dir=dir;
 	}
+	
+	/**
+	 * This method draws the image and sets it to be drawable along the application layout size
+	 */
 
 	public void paint(Graphics g){
 		Dimension size = getSize();
