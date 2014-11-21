@@ -171,7 +171,7 @@ public class InitGUI extends JFrame {
 		slider.setAlignmentX(Component.LEFT_ALIGNMENT);
 		slider.setValue(25);
 		panel_1.add(slider);
-		
+		 
 		lblNewLabel_4 = new JLabel("Dropping...");
 		panel_1.add(lblNewLabel_4);
 		
