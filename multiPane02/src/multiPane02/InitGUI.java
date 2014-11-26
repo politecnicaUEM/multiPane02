@@ -27,6 +27,9 @@ import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
+import java.awt.event.MouseAdapter;
+import java.awt.BorderLayout;
+import javax.swing.SwingConstants;
 
 public class InitGUI extends JFrame {
 
@@ -35,6 +38,10 @@ public class InitGUI extends JFrame {
 	private String hierbaDir = "Images/hierba-footer.png";
 	private JLabel lblNewLabel_4;
 	private String sel;
+	JLabel lblWeatherSun;
+	JLabel lblWeatherCloudy;
+	JLabel lblRain;
+	JLabel lblWindy;
 
 	/**
 	 * Launch the application.
@@ -72,9 +79,10 @@ public class InitGUI extends JFrame {
 		setBounds(100, 100, 390, 400);
 		setTitle("Garden care");
 		contentPane = new JPanel();
+		contentPane.setBackground(new Color(153, 204, 255));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		contentPane.setLayout(new GridLayout(4, 1, 0, 0));
+		contentPane.setLayout(new GridLayout(5, 1, 0, 0));
 
 		JToolBar toolBar = new JToolBar();
 		toolBar.setAlignmentY(Component.CENTER_ALIGNMENT);
@@ -83,6 +91,21 @@ public class InitGUI extends JFrame {
 		contentPane.add(toolBar);
 
 		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
+		lblNewLabel_2.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				// lblWeatherCloudy.setVisible(false);
+				// lblRain.setVisible(false);
+				// lblWindy.setVisible(false);
+				if (!lblWeatherSun.isVisible()) {
+					lblWeatherSun.setVisible(true);
+					
+				} else
+//					lblWeatherSun.setEnabled(true);
+					lblWeatherSun.setVisible(false);
+
+			}
+		});
 		lblNewLabel_2.setIconTextGap(3);
 		lblNewLabel_2.setCursor(Cursor
 				.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
@@ -93,6 +116,15 @@ public class InitGUI extends JFrame {
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel = new JLabel("Cloudy");
+		lblNewLabel.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				lblWeatherSun.setVisible(false);
+				lblRain.setVisible(false);
+				lblWindy.setVisible(false);
+				lblWeatherCloudy.setVisible(true);
+			}
+		});
 		lblNewLabel.setIconTextGap(3);
 		lblNewLabel.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Cloudy@Low.png")));
@@ -101,6 +133,15 @@ public class InitGUI extends JFrame {
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel_1 = new JLabel("Rains");
+		lblNewLabel_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				lblWeatherSun.setVisible(false);
+				lblWeatherCloudy.setVisible(false);
+				lblWindy.setVisible(false);
+				lblRain.setVisible(true);
+			}
+		});
 		lblNewLabel_1.setIconTextGap(3);
 		lblNewLabel_1.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Cloud-Download@Low.png")));
@@ -108,6 +149,15 @@ public class InitGUI extends JFrame {
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel_3 = new JLabel("Windy");
+		lblNewLabel_3.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				lblWeatherSun.setVisible(false);
+				lblWeatherCloudy.setVisible(false);
+				lblRain.setVisible(false);
+				lblWindy.setVisible(true);
+			}
+		});
 		lblNewLabel_3.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Refresh@Low.png")));
 		toolBar.add(lblNewLabel_3);
@@ -123,7 +173,7 @@ public class InitGUI extends JFrame {
 		/**
 		 * Defining JList and its model for supplying content
 		 */
-		
+
 		ListModel jList1Model = new DefaultComboBoxModel(new String[] {
 				"Water", "Petrol", "Milk" });
 		JList list = new JList();
@@ -133,18 +183,17 @@ public class InitGUI extends JFrame {
 				null));
 		list.setBackground(new Color(238, 238, 238));
 		list.setModel(jList1Model);
-		
-		
-		//multiple selection
+
+		// multiple selection
 		int[] selectedIx = list.getSelectedIndices();
 
-	    // Get all the selected items using the indices
-	    for (int i = 0; i < selectedIx.length; i++) {
-	      Object sel = list.getModel().getElementAt(selectedIx[i]);
-	    }
+		// Get all the selected items using the indices
+		for (int i = 0; i < selectedIx.length; i++) {
+			Object sel = list.getModel().getElementAt(selectedIx[i]);
+		}
 
-	    // Get the index of the first selected item
-	  //  int firstSelIx = list.getSelectedIndex();
+		// Get the index of the first selected item
+		// int firstSelIx = list.getSelectedIndex();
 
 		/**
 		 * customized square button
@@ -161,20 +210,20 @@ public class InitGUI extends JFrame {
 
 		/**
 		 * JList selected
+		 * 
 		 * @param evt
 		 */
 		JPanel panel_1 = new JPanel();
 		contentPane.add(panel_1);
 		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
-
 		JSlider slider = new JSlider();
 		slider.setAlignmentX(Component.LEFT_ALIGNMENT);
 		slider.setValue(25);
 		panel_1.add(slider);
-		
+
 		lblNewLabel_4 = new JLabel("Dropping...");
 		panel_1.add(lblNewLabel_4);
-		
+
 		/**
 		 * shows an optiopane with a dialog asking for confirmation
 		 */
@@ -186,14 +235,17 @@ public class InitGUI extends JFrame {
 				if (answer == JOptionPane.YES_OPTION) {
 					int[] selectedIx = list.getSelectedIndices();
 					lblNewLabel_4.setText("Dropping...");
-				    // Get all the selected items using the indices
-				    for (int i = 0; i < selectedIx.length; i++) {
-				      sel = (String) list.getModel().getElementAt(selectedIx[i]);
-				      lblNewLabel_4.setText(lblNewLabel_4.getText() + " " + sel + " ");
-				      System.out.println(sel);
-				    }
-				    lblNewLabel_4.setText(lblNewLabel_4.getText() + " at " + slider.getValue() + "%");
-					// User clicked YES.				
+					// Get all the selected items using the indices
+					for (int i = 0; i < selectedIx.length; i++) {
+						sel = (String) list.getModel().getElementAt(
+								selectedIx[i]);
+						lblNewLabel_4.setText(lblNewLabel_4.getText() + " "
+								+ sel + " ");
+						System.out.println(sel);
+					}
+					lblNewLabel_4.setText(lblNewLabel_4.getText() + " at "
+							+ slider.getValue() + "%");
+					// User clicked YES.
 				} else if (answer == JOptionPane.NO_OPTION) {
 					// User clicked NO.
 					lblNewLabel_4.setText(" Dropping... nothing yet");
@@ -201,11 +253,39 @@ public class InitGUI extends JFrame {
 			}
 		});
 
-
-
 		/**
 		 * calls our drawing panel
 		 */
+
+		JPanel panel_4 = new JPanel();
+		panel_4.setBackground(new Color(153, 204, 255, 0));
+		contentPane.add(panel_4);
+		panel_4.setLayout(new GridLayout(0, 4, 0, 0));
+
+		lblWindy = new JLabel("");
+		lblWindy.setIcon(new ImageIcon(InitGUI.class
+				.getResource("/Images/wind-64.png")));
+		lblWindy.setVisible(false);
+		panel_4.add(lblWindy);
+
+		lblRain = new JLabel("");
+		lblRain.setIcon(new ImageIcon(InitGUI.class
+				.getResource("/Images/rain (1).png")));
+		lblRain.setVisible(false);
+		panel_4.add(lblRain);
+
+		lblWeatherCloudy = new JLabel("");
+		lblWeatherCloudy.setIcon(new ImageIcon(InitGUI.class
+				.getResource("/Images/cloudy_partly.png")));
+		lblWeatherCloudy.setVisible(false);
+		panel_4.add(lblWeatherCloudy);
+
+		lblWeatherSun = new JLabel("");
+		lblWeatherSun.setIcon(new ImageIcon(InitGUI.class
+				.getResource("/Images/sunny.png")));
+		lblWeatherSun.setVisible(false);
+		panel_4.add(lblWeatherSun);
+
 		JPanel panel = new ImgPanel(hierbaDir);
 		contentPane.add(panel);
 	}
