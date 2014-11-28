@@ -9,6 +9,8 @@ import java.awt.GridLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import javax.swing.BoxLayout;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
@@ -25,15 +27,18 @@ import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 
 /**
+ * <b><i>Principal Description of the program InitGUI:</b></i> <b><i>My program
+ * show the weather.</b></i>
+ * 
  * @author Carlos del Cerro
  * @author www.carlos.com
  * @version 1.0
  */
 
 public class InitGUI extends JFrame {
-	
+
 	/**
-	 * 
+	 * Create methods
 	 */
 
 	private JPanel contentPane;
@@ -43,7 +48,10 @@ public class InitGUI extends JFrame {
 	private String sel;
 
 	/**
-	 * Launch the application.
+	 * Launch the application. Single entry point to the class and application. 
+	 * @param args array of strings passed as parameters
+	 * @return Don´t return value
+	 * @exception exceptions No exceptions will be thrown            
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -58,17 +66,17 @@ public class InitGUI extends JFrame {
 		});
 	}
 
-	//{
-	//	for (LookAndFeelInfo info : javax.swing.UIManager
-				//.getInstalledLookAndFeels()) {
-			//try {
-				//javax.swing.UIManager
-				//		.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
-			//} catch (Exception e) {
-			//	e.printStackTrace();
-			//}
-		//}
-	//}
+	// {
+	// for (LookAndFeelInfo info : javax.swing.UIManager
+	// .getInstalledLookAndFeels()) {
+	// try {
+	// javax.swing.UIManager
+	// .setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
+	// } catch (Exception e) {
+	// e.printStackTrace();
+	// }
+	// }
+	// }
 
 	/**
 	 * Create the frame.
@@ -89,6 +97,11 @@ public class InitGUI extends JFrame {
 		contentPane.add(toolBar);
 
 		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
+		lblNewLabel_2.addMouseListener(new MouseAdapter() {
+
+			public void mouseClicked(MouseEvent arg0) {
+			}
+		});
 		lblNewLabel_2.setIconTextGap(3);
 		lblNewLabel_2.setCursor(Cursor
 				.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
@@ -129,7 +142,7 @@ public class InitGUI extends JFrame {
 		/**
 		 * Defining JList and its model for supplying content
 		 */
-		
+
 		ListModel jList1Model = new DefaultComboBoxModel(new String[] {
 				"Water", "Petrol", "Milk" });
 		final JList list = new JList();
@@ -139,25 +152,24 @@ public class InitGUI extends JFrame {
 				null));
 		list.setBackground(new Color(238, 238, 238));
 		list.setModel(jList1Model);
-		
-		
-		//multiple selection
+
+		// multiple selection
 		int[] selectedIx = list.getSelectedIndices();
 
-	    // Get all the selected items using the indices
-	    for (int i = 0; i < selectedIx.length; i++) {
-	      Object sel = list.getModel().getElementAt(selectedIx[i]);
-	    }
+		// Get all the selected items using the indices
+		for (int i = 0; i < selectedIx.length; i++) {
+			Object sel = list.getModel().getElementAt(selectedIx[i]);
+		}
 
-	    // Get the index of the first selected item
-	  //  int firstSelIx = list.getSelectedIndex();
+		// Get the index of the first selected item
+		// int firstSelIx = list.getSelectedIndex();
 
 		/**
 		 * customized square button
 		 */
 
 		JButton btnOpenDialog = new JButton("");
-		btnOpenDialog.setToolTipText("Go?");
+		btnOpenDialog.setToolTipText("Do you want come?");
 		btnOpenDialog.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		btnOpenDialog.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Water-Drop.png")));
@@ -167,6 +179,7 @@ public class InitGUI extends JFrame {
 
 		/**
 		 * JList selected
+		 * 
 		 * @param evt
 		 */
 		JPanel panel_1 = new JPanel();
@@ -177,10 +190,10 @@ public class InitGUI extends JFrame {
 		slider.setAlignmentX(Component.LEFT_ALIGNMENT);
 		slider.setValue(25);
 		panel_1.add(slider);
-		
+
 		lblNewLabel_4 = new JLabel("Dropping...");
 		panel_1.add(lblNewLabel_4);
-		
+
 		/**
 		 * shows an optiopane with a dialog asking for confirmation
 		 */
@@ -192,22 +205,23 @@ public class InitGUI extends JFrame {
 				if (answer == JOptionPane.YES_OPTION) {
 					int[] selectedIx = list.getSelectedIndices();
 					lblNewLabel_4.setText("Dropping...");
-				    // Get all the selected items using the indices
-				    for (int i = 0; i < selectedIx.length; i++) {
-				      sel = (String) list.getModel().getElementAt(selectedIx[i]);
-				      lblNewLabel_4.setText(lblNewLabel_4.getText() + " " + sel + " ");
-				      System.out.println(sel);
-				    }
-				    lblNewLabel_4.setText(lblNewLabel_4.getText() + " at " + slider.getValue() + "%");
-					// User clicked YES.				
+					// Get all the selected items using the indices
+					for (int i = 0; i < selectedIx.length; i++) {
+						sel = (String) list.getModel().getElementAt(
+								selectedIx[i]);
+						lblNewLabel_4.setText(lblNewLabel_4.getText() + " "
+								+ sel + " ");
+						System.out.println(sel);
+					}
+					lblNewLabel_4.setText(lblNewLabel_4.getText() + " at "
+							+ slider.getValue() + "%");
+					// User clicked YES.
 				} else if (answer == JOptionPane.NO_OPTION) {
 					// User clicked NO.
 					lblNewLabel_4.setText(" Dropping... nothing yet");
 				}
 			}
 		});
-
-
 
 		/**
 		 * calls our drawing panel
