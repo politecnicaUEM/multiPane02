@@ -1,19 +1,11 @@
 package multiPane02;
 
-/**
- * Interface Garden Care (not finished)
- * 
- * @author Vladimir
- */
 
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JToolBar;
-
 import java.awt.GridLayout;
 import java.awt.Insets;
-
 import javax.swing.JList;
 import javax.swing.JOptionPane;
 import javax.swing.JSlider;
@@ -30,7 +22,14 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.Component;
 import javax.swing.Box;
+import java.awt.BorderLayout;
 
+
+/**
+ * Interface Garden Care (not finished)
+ * 
+ * @author Vladimir Bocancea
+ */
 public class InitGUI {
 
 	private JFrame frame;
@@ -52,6 +51,8 @@ public class InitGUI {
 	private Component horizontalGlue_2;
 	private Component horizontalGlue_3;
 	private Component horizontalGlue_4;
+	private Component verticalStrut;
+	private Box horizontalBox;
 
 	/**
 	 * Launch the application.
@@ -102,17 +103,33 @@ public class InitGUI {
 
 		jPanelToolBar = new JPanel();
 		jToolBar.add(jPanelToolBar);
-		jPanelToolBar.setLayout(new BoxLayout(jPanelToolBar, BoxLayout.X_AXIS));
-
-		horizontalGlue_1 = Box.createHorizontalGlue();
-		jPanelToolBar.add(horizontalGlue_1);
-
-		jLabelSun = new JLabel("Perfect sun");
-		jPanelToolBar.add(jLabelSun);
 
 		/**
 		 * listener of button jLabelSun, change selection of jList and jSlider
 		 */
+
+		/**
+		 * listener of button jLabelCloudy, change selection of jList and
+		 * jSlider
+		 */
+
+		/**
+		 * listener of button jLabelRain, change selection of jList and jSlider
+		 */
+
+		/**
+		 * listener of button jLabelWindy, change selection of jList and jSlider
+		 */
+		jPanelToolBar.setLayout(new BorderLayout(0, 0));
+
+		horizontalBox = Box.createHorizontalBox();
+		jPanelToolBar.add(horizontalBox, BorderLayout.SOUTH);
+
+		horizontalGlue_1 = Box.createHorizontalGlue();
+		horizontalBox.add(horizontalGlue_1);
+
+		jLabelSun = new JLabel("Perfect sun");
+		horizontalBox.add(jLabelSun);
 		jLabelSun.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
@@ -122,18 +139,13 @@ public class InitGUI {
 			}
 		});
 		jLabelSun.setIcon(new ImageIcon(InitGUI.class
-				.getResource("/imgs/Sunshine.png")));
+				.getResource("/Images/Sunshine.png")));
 
 		horizontalGlue_2 = Box.createHorizontalGlue();
-		jPanelToolBar.add(horizontalGlue_2);
+		horizontalBox.add(horizontalGlue_2);
 
 		jLabelCloudy = new JLabel("Cloudy");
-		jPanelToolBar.add(jLabelCloudy);
-
-		/**
-		 * listener of button jLabelCloudy, change selection of jList and
-		 * jSlider
-		 */
+		horizontalBox.add(jLabelCloudy);
 		jLabelCloudy.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
@@ -144,17 +156,13 @@ public class InitGUI {
 			}
 		});
 		jLabelCloudy.setIcon(new ImageIcon(InitGUI.class
-				.getResource("/imgs/Cloudy.png")));
+				.getResource("/Images/Cloudy.png")));
 
 		horizontalGlue_3 = Box.createHorizontalGlue();
-		jPanelToolBar.add(horizontalGlue_3);
+		horizontalBox.add(horizontalGlue_3);
 
 		jLabelRain = new JLabel("Rains");
-		jPanelToolBar.add(jLabelRain);
-
-		/**
-		 * listener of button jLabelRain, change selection of jList and jSlider
-		 */
+		horizontalBox.add(jLabelRain);
 		jLabelRain.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
@@ -165,17 +173,13 @@ public class InitGUI {
 			}
 		});
 		jLabelRain.setIcon(new ImageIcon(InitGUI.class
-				.getResource("/imgs/Cloud-Download.png")));
+				.getResource("/Images/Cloud-Download.png")));
 
 		horizontalGlue_4 = Box.createHorizontalGlue();
-		jPanelToolBar.add(horizontalGlue_4);
+		horizontalBox.add(horizontalGlue_4);
 
 		jLabelWindy = new JLabel("Windy");
-		jPanelToolBar.add(jLabelWindy);
-
-		/**
-		 * listener of button jLabelWindy, change selection of jList and jSlider
-		 */
+		horizontalBox.add(jLabelWindy);
 		jLabelWindy.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
@@ -186,10 +190,13 @@ public class InitGUI {
 			}
 		});
 		jLabelWindy.setIcon(new ImageIcon(InitGUI.class
-				.getResource("/imgs/Refresh.png")));
+				.getResource("/Images/Refresh.png")));
+
+		verticalStrut = Box.createVerticalStrut(2);
+		horizontalBox.add(verticalStrut);
 
 		horizontalGlue = Box.createHorizontalGlue();
-		jPanelToolBar.add(horizontalGlue);
+		horizontalBox.add(horizontalGlue);
 
 		/**
 		 * second row has a JPanel with a jList and a JButon
@@ -242,7 +249,7 @@ public class InitGUI {
 			}
 		});
 		jButtonGota.setIcon(new ImageIcon(InitGUI.class
-				.getResource("/imgs/Water-Drop.png")));
+				.getResource("/Images/Water-Drop.png")));
 		jButtonGota.setMargin(new Insets(0, 0, 0, 0));
 
 		jPanelActions.add(jButtonGota);
@@ -261,7 +268,7 @@ public class InitGUI {
 		/**
 		 * jPanelGreen is class Green, extends JPanel
 		 */
-		jPanelGreen = new ImgPanel("imgs/hierba-footer.png");
+		jPanelGreen = new ImgPanel("Images/hierba-footer.png");
 		frame.getContentPane().add(jPanelGreen);
 
 	}
