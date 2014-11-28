@@ -1,5 +1,7 @@
 package multiPane02;
 
+import java.awt.BorderLayout;
+
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
@@ -27,6 +29,12 @@ import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
+/**
+ * Declare the Garden Care Class
+ *@author Iván Reyes
+ *@author www.uem.es
+ *@version 2.0
+ */
 
 public class InitGUI extends JFrame {
 
@@ -37,7 +45,10 @@ public class InitGUI extends JFrame {
 	private String sel;
 
 	/**
-	 * Launch the application.
+	 * Launch the main application
+	 * Call Class ImgPanel
+	 * @see ImgPanel
+	 * @param args adds arguments
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {

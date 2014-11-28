@@ -9,8 +9,9 @@ import javax.swing.JPanel;
 
 /**
  * 
- * @author ernesto
- * draws a rezisable image
+ * @author Ivan Reyes
+ * This Class is for resize an image
+ *
  */
 
 public class ImgPanel extends JPanel{
