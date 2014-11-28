@@ -9,7 +9,6 @@ import java.awt.GridLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
 
 import javax.swing.BoxLayout;
 import javax.swing.DefaultComboBoxModel;
@@ -26,7 +25,15 @@ import javax.swing.ListModel;
 import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JTextPane;
+
+/**
+ * 
+ * @author Antonio Toril Calvo
+ * @version 1.0
+ * @since 0.0
+ * @see InitGUI
+ * @see ImgPanel
+ */
 
 public class InitGUI extends JFrame {
 
@@ -123,7 +130,7 @@ public class InitGUI extends JFrame {
 		/**
 		 * Defining JList and its model for supplying content
 		 */
-		
+
 		ListModel jList1Model = new DefaultComboBoxModel(new String[] {
 				"Water", "Petrol", "Milk" });
 		JList list = new JList();
@@ -133,18 +140,17 @@ public class InitGUI extends JFrame {
 				null));
 		list.setBackground(new Color(238, 238, 238));
 		list.setModel(jList1Model);
-		
-		
-		//multiple selection
+
+		// multiple selection
 		int[] selectedIx = list.getSelectedIndices();
 
-	    // Get all the selected items using the indices
-	    for (int i = 0; i < selectedIx.length; i++) {
-	      Object sel = list.getModel().getElementAt(selectedIx[i]);
-	    }
+		// Get all the selected items using the indices
+		for (int i = 0; i < selectedIx.length; i++) {
+			Object sel = list.getModel().getElementAt(selectedIx[i]);
+		}
 
-	    // Get the index of the first selected item
-	  //  int firstSelIx = list.getSelectedIndex();
+		// Get the index of the first selected item
+		// int firstSelIx = list.getSelectedIndex();
 
 		/**
 		 * customized square button
@@ -161,6 +167,7 @@ public class InitGUI extends JFrame {
 
 		/**
 		 * JList selected
+		 * 
 		 * @param evt
 		 */
 		JPanel panel_1 = new JPanel();
@@ -171,10 +178,10 @@ public class InitGUI extends JFrame {
 		slider.setAlignmentX(Component.LEFT_ALIGNMENT);
 		slider.setValue(25);
 		panel_1.add(slider);
-		
+
 		lblNewLabel_4 = new JLabel("Dropping...");
 		panel_1.add(lblNewLabel_4);
-		
+
 		/**
 		 * shows an optiopane with a dialog asking for confirmation
 		 */
@@ -186,22 +193,23 @@ public class InitGUI extends JFrame {
 				if (answer == JOptionPane.YES_OPTION) {
 					int[] selectedIx = list.getSelectedIndices();
 					lblNewLabel_4.setText("Dropping...");
-				    // Get all the selected items using the indices
-				    for (int i = 0; i < selectedIx.length; i++) {
-				      sel = (String) list.getModel().getElementAt(selectedIx[i]);
-				      lblNewLabel_4.setText(lblNewLabel_4.getText() + " " + sel + " ");
-				      System.out.println(sel);
-				    }
-				    lblNewLabel_4.setText(lblNewLabel_4.getText() + " at " + slider.getValue() + "%");
-					// User clicked YES.				
+					// Get all the selected items using the indices
+					for (int i = 0; i < selectedIx.length; i++) {
+						sel = (String) list.getModel().getElementAt(
+								selectedIx[i]);
+						lblNewLabel_4.setText(lblNewLabel_4.getText() + " "
+								+ sel + " ");
+						System.out.println(sel);
+					}
+					lblNewLabel_4.setText(lblNewLabel_4.getText() + " at "
+							+ slider.getValue() + "%");
+					// User clicked YES.
 				} else if (answer == JOptionPane.NO_OPTION) {
 					// User clicked NO.
 					lblNewLabel_4.setText(" Dropping... nothing yet");
 				}
 			}
 		});
-
-
 
 		/**
 		 * calls our drawing panel
