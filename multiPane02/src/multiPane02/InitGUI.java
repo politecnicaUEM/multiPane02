@@ -28,8 +28,19 @@ import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
 
+/**
+ * actions on the toolbar, button and more
+ * @author Victor Uriarte
+ * @version 1.0
+ * @see ImgPanel
+ */
+
 public class InitGUI extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private Component frame;
 	private String hierbaDir = "Images/hierba-footer.png";
@@ -52,17 +63,17 @@ public class InitGUI extends JFrame {
 		});
 	}
 
-	{
-		for (LookAndFeelInfo info : javax.swing.UIManager
-				.getInstalledLookAndFeels()) {
-			try {
-				javax.swing.UIManager
-						.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-	}
+//	{
+//		for (LookAndFeelInfo info : javax.swing.UIManager
+//				.getInstalledLookAndFeels()) {
+//			try {
+//				javax.swing.UIManager
+//						.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
+//			} catch (Exception e) {
+//				e.printStackTrace();
+//			}
+//		}
+//	}
 
 	/**
 	 * Create the frame.
