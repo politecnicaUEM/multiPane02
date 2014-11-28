@@ -51,7 +51,7 @@ import java.awt.event.KeyEvent;
  * @author Miguel Martin 
  */
  
-public class GardenCare {
+public class InitGUI {
 	
 	private JFrame frame;
 	
@@ -65,7 +65,7 @@ public class GardenCare {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					GardenCare window = new GardenCare();	
+					InitGUI window = new InitGUI();	
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -75,9 +75,9 @@ public class GardenCare {
 
 	/**
 	 * Initializes the initial method
-	 * @see GardenCare Initializes the initial method
+	 * @see InitGUI Initializes the initial method
 	 */
-	public GardenCare() {
+	public InitGUI() {
 		initialize();
 		frame.pack();
 		frame.setVisible(true);
@@ -134,7 +134,7 @@ public class GardenCare {
 			
 			JLabel textLabel = new JLabel("",SwingConstants.CENTER);
 			textLabel.setPreferredSize(new Dimension(300,100));
-			textLabel.setIcon(new ImageIcon(GardenCare.class.getResource("/Images/soleado.gif")));
+			textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/soleado.gif")));
 			frame.getContentPane().add(textLabel,BorderLayout.CENTER);
 			
 			frame.setLocationRelativeTo(null);
@@ -146,7 +146,7 @@ public class GardenCare {
 		});
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel.setIcon(new ImageIcon(GardenCare.class.getResource("/Images/sol.PNG")));
+		lblNewLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/sol.PNG")));
 		toolBar.add(lblNewLabel);
 		JToolbarSeparator separator = new JToolbarSeparator();
 		toolBar.add(separator);
@@ -163,7 +163,7 @@ public class GardenCare {
 				
 				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
 				textLabel.setPreferredSize(new Dimension(300,100));
-				textLabel.setIcon(new ImageIcon(GardenCare.class.getResource("/Images/nublado.gif")));
+				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/nublado.gif")));
 				frame.getContentPane().add(textLabel,BorderLayout.CENTER);
 				
 				frame.setLocationRelativeTo(null);
@@ -173,7 +173,7 @@ public class GardenCare {
 		});
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.LEFT);
-		lblNewLabel_1.setIcon(new ImageIcon(GardenCare.class.getResource("/Images/nube.PNG")));
+		lblNewLabel_1.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/nube.PNG")));
 		toolBar.add(lblNewLabel_1);
 		JToolbarSeparator separator2 = new JToolbarSeparator();
 		toolBar.add(separator2);
@@ -190,7 +190,7 @@ public class GardenCare {
 				
 				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
 				textLabel.setPreferredSize(new Dimension(300,100));
-				textLabel.setIcon(new ImageIcon(GardenCare.class.getResource("/Images/lluvia.gif")));
+				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/lluvia.gif")));
 				frame.getContentPane().add(textLabel,BorderLayout.CENTER);
 				
 				frame.setLocationRelativeTo(null);
@@ -199,7 +199,7 @@ public class GardenCare {
 			}
 		});
 		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel_3.setIcon(new ImageIcon(GardenCare.class.getResource("/Images/nubes.PNG")));
+		lblNewLabel_3.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/nubes.PNG")));
 		toolBar.add(lblNewLabel_3);
 		JToolbarSeparator separator3 = new JToolbarSeparator();
 		toolBar.add(separator3);
@@ -216,7 +216,7 @@ public class GardenCare {
 				
 				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
 				textLabel.setPreferredSize(new Dimension(300,100));
-				textLabel.setIcon(new ImageIcon(GardenCare.class.getResource("/Images/niebla.jpg")));
+				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/niebla.jpg")));
 				frame.getContentPane().add(textLabel,BorderLayout.CENTER);
 				
 				frame.setLocationRelativeTo(null);
@@ -225,7 +225,7 @@ public class GardenCare {
 			}
 		});
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel_2.setIcon(new ImageIcon(GardenCare.class.getResource("/Images/wind.PNG")));
+		lblNewLabel_2.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/wind.PNG")));
 		toolBar.add(lblNewLabel_2);
 
 		JPanel panel_4 = new JPanel();
@@ -320,7 +320,7 @@ public class GardenCare {
 				
 				int seleccion = JOptionPane.showOptionDialog(button, "Are you 100% sure?", 
 				
-						   "Selecciona una opción",
+						   "Selecciona una opciï¿½n",
 						   JOptionPane.YES_NO_CANCEL_OPTION,
 						   JOptionPane.QUESTION_MESSAGE,
 						   null,    // null for default icon.
@@ -360,7 +360,7 @@ public class GardenCare {
 			}
 		});
 		//image for Button
-		button.setIcon(new ImageIcon(GardenCare.class.getResource("/Images/gota.PNG")));
+		button.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/gota.PNG")));
 		GridBagConstraints gbc_button = new GridBagConstraints();
 		gbc_button.insets = new Insets(0, 0, 5, 0);
 		gbc_button.gridx = 13;
