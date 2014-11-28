@@ -1,8 +1,12 @@
 package multiPane02;
 
+
+
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
+import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.GridLayout;
@@ -23,11 +27,21 @@ import javax.swing.JPanel;
 import javax.swing.JSlider;
 import javax.swing.JToolBar;
 import javax.swing.ListModel;
+import javax.swing.SwingConstants;
 import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
 
+import java.awt.event.MouseAdapter;
+
+/**
+ * @author David
+ * @version 1.8
+ * 
+ *
+ */
+ //Start principal class
 public class InitGUI extends JFrame {
 
 	private JPanel contentPane;
@@ -53,15 +67,7 @@ public class InitGUI extends JFrame {
 	}
 
 	{
-		for (LookAndFeelInfo info : javax.swing.UIManager
-				.getInstalledLookAndFeels()) {
-			try {
-				javax.swing.UIManager
-						.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
+
 	}
 
 	/**
@@ -83,6 +89,25 @@ public class InitGUI extends JFrame {
 		contentPane.add(toolBar);
 
 		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
+		lblNewLabel_2.addMouseListener(new MouseAdapter() {
+			@Override
+			// Create frame to show when you clicked at label
+			public void mouseClicked(MouseEvent arg0) {
+
+				JFrame frame = new JFrame("Soleado");
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+				JLabel textLabel = new JLabel("", SwingConstants.CENTER);
+				textLabel.setPreferredSize(new Dimension(300, 100));
+				textLabel.setIcon(new ImageIcon(InitGUI.class
+						.getResource("/Images/sol.gif")));
+				frame.getContentPane().add(textLabel, BorderLayout.CENTER);
+
+				frame.setLocationRelativeTo(null);
+				frame.pack();
+				frame.setVisible(true);
+			}
+		});
 		lblNewLabel_2.setIconTextGap(3);
 		lblNewLabel_2.setCursor(Cursor
 				.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
@@ -91,16 +116,51 @@ public class InitGUI extends JFrame {
 		toolBar.add(lblNewLabel_2);
 		// toolBar.add(new JSeparator (SwingConstants.VERTICAL));
 		toolBar.addSeparator();
-
+		// Create frame to show when you clicked at label
 		JLabel lblNewLabel = new JLabel("Cloudy");
+		lblNewLabel.addMouseListener(new MouseAdapter() {
+			@Override
+			// Create frame to show when you clicked at label
+			public void mouseClicked(MouseEvent arg0) {
+				JFrame frame = new JFrame("Nublado");
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+				JLabel textLabel = new JLabel("", SwingConstants.CENTER);
+				textLabel.setPreferredSize(new Dimension(300, 100));
+				textLabel.setIcon(new ImageIcon(InitGUI.class
+						.getResource("/Images/nublado.gif")));
+				frame.getContentPane().add(textLabel, BorderLayout.CENTER);
+
+				frame.setLocationRelativeTo(null);
+				frame.pack();
+				frame.setVisible(true);
+			}
+		});
 		lblNewLabel.setIconTextGap(3);
 		lblNewLabel.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Cloudy@Low.png")));
 		toolBar.add(lblNewLabel);
 		// toolBar.add(new JSeparator (SwingConstants.VERTICAL));
 		toolBar.addSeparator();
-
+		// Create frame to show when you clicked at label
 		JLabel lblNewLabel_1 = new JLabel("Rains");
+		lblNewLabel_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				JFrame frame = new JFrame("Lluvioso");
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+				JLabel textLabel = new JLabel("", SwingConstants.CENTER);
+				textLabel.setPreferredSize(new Dimension(300, 100));
+				textLabel.setIcon(new ImageIcon(InitGUI.class
+						.getResource("/Images/lluvia.gif")));
+				frame.getContentPane().add(textLabel, BorderLayout.CENTER);
+
+				frame.setLocationRelativeTo(null);
+				frame.pack();
+				frame.setVisible(true);
+			}
+		});
 		lblNewLabel_1.setIconTextGap(3);
 		lblNewLabel_1.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Cloud-Download@Low.png")));
@@ -108,6 +168,24 @@ public class InitGUI extends JFrame {
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel_3 = new JLabel("Windy");
+		lblNewLabel_3.addMouseListener(new MouseAdapter() {
+			@Override
+			// Create frame to show when you clicked at label
+			public void mouseClicked(MouseEvent arg0) {
+				JFrame frame = new JFrame("Viento");
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+				JLabel textLabel = new JLabel("", SwingConstants.CENTER);
+				textLabel.setPreferredSize(new Dimension(300, 100));
+				textLabel.setIcon(new ImageIcon(InitGUI.class
+						.getResource("/Images/nubes.gif")));
+				frame.getContentPane().add(textLabel, BorderLayout.CENTER);
+
+				frame.setLocationRelativeTo(null);
+				frame.pack();
+				frame.setVisible(true);
+			}
+		});
 		lblNewLabel_3.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Refresh@Low.png")));
 		toolBar.add(lblNewLabel_3);
@@ -123,7 +201,7 @@ public class InitGUI extends JFrame {
 		/**
 		 * Defining JList and its model for supplying content
 		 */
-		
+
 		ListModel jList1Model = new DefaultComboBoxModel(new String[] {
 				"Water", "Petrol", "Milk" });
 		final JList list = new JList();
@@ -133,18 +211,14 @@ public class InitGUI extends JFrame {
 				null));
 		list.setBackground(new Color(238, 238, 238));
 		list.setModel(jList1Model);
-		
-		
-		//multiple selection
+
+		// multiple selection
 		int[] selectedIx = list.getSelectedIndices();
 
-	    // Get all the selected items using the indices
-	    for (int i = 0; i < selectedIx.length; i++) {
-	      Object sel = list.getModel().getElementAt(selectedIx[i]);
-	    }
-
-	    // Get the index of the first selected item
-	  //  int firstSelIx = list.getSelectedIndex();
+		// Get all the selected items using the indices
+		for (int i = 0; i < selectedIx.length; i++) {
+			Object sel = list.getModel().getElementAt(selectedIx[i]);
+		}
 
 		/**
 		 * customized square button
@@ -161,6 +235,7 @@ public class InitGUI extends JFrame {
 
 		/**
 		 * JList selected
+		 * 
 		 * @param evt
 		 */
 		JPanel panel_1 = new JPanel();
@@ -171,10 +246,10 @@ public class InitGUI extends JFrame {
 		slider.setAlignmentX(Component.LEFT_ALIGNMENT);
 		slider.setValue(25);
 		panel_1.add(slider);
-		
+
 		lblNewLabel_4 = new JLabel("Dropping...");
 		panel_1.add(lblNewLabel_4);
-		
+
 		/**
 		 * shows an optiopane with a dialog asking for confirmation
 		 */
@@ -186,14 +261,17 @@ public class InitGUI extends JFrame {
 				if (answer == JOptionPane.YES_OPTION) {
 					int[] selectedIx = list.getSelectedIndices();
 					lblNewLabel_4.setText("Dropping...");
-				    // Get all the selected items using the indices
-				    for (int i = 0; i < selectedIx.length; i++) {
-				      sel = (String) list.getModel().getElementAt(selectedIx[i]);
-				      lblNewLabel_4.setText(lblNewLabel_4.getText() + " " + sel + " ");
-				      System.out.println(sel);
-				    }
-				    lblNewLabel_4.setText(lblNewLabel_4.getText() + " at " + slider.getValue() + "%");
-					// User clicked YES.				
+					// Get all the selected items using the indices
+					for (int i = 0; i < selectedIx.length; i++) {
+						sel = (String) list.getModel().getElementAt(
+								selectedIx[i]);
+						lblNewLabel_4.setText(lblNewLabel_4.getText() + " "
+								+ sel + " ");
+						System.out.println(sel);
+					}
+					lblNewLabel_4.setText(lblNewLabel_4.getText() + " at "
+							+ slider.getValue() + "%");
+					// User clicked YES.
 				} else if (answer == JOptionPane.NO_OPTION) {
 					// User clicked NO.
 					lblNewLabel_4.setText(" Dropping... nothing yet");
@@ -201,12 +279,11 @@ public class InitGUI extends JFrame {
 			}
 		});
 
-
-
 		/**
 		 * calls our drawing panel
 		 */
 		JPanel panel = new ImgPanel(hierbaDir);
 		contentPane.add(panel);
 	}
+
 }
