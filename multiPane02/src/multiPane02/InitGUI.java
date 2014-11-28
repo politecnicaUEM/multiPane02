@@ -1,15 +1,16 @@
 package multiPane02;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
+import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
 
 import javax.swing.BoxLayout;
 import javax.swing.DefaultComboBoxModel;
@@ -23,11 +24,17 @@ import javax.swing.JPanel;
 import javax.swing.JSlider;
 import javax.swing.JToolBar;
 import javax.swing.ListModel;
+import javax.swing.SwingConstants;
 import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JTextPane;
 
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+/**
+* <b>Javadoc</b>
+* @author Matias
+*/
 public class InitGUI extends JFrame {
 
 	private JPanel contentPane;
@@ -52,18 +59,6 @@ public class InitGUI extends JFrame {
 		});
 	}
 
-	{
-		for (LookAndFeelInfo info : javax.swing.UIManager
-				.getInstalledLookAndFeels()) {
-			try {
-				javax.swing.UIManager
-						.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-	}
-
 	/**
 	 * Create the frame.
 	 */
@@ -83,6 +78,22 @@ public class InitGUI extends JFrame {
 		contentPane.add(toolBar);
 
 		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
+		lblNewLabel_2.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				JFrame frame = new JFrame("Perfect sun");
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				
+				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
+				textLabel.setPreferredSize(new Dimension(300,100));
+				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/sol-04.gif")));
+				frame.getContentPane().add(textLabel,BorderLayout.CENTER);
+				
+				frame.setLocationRelativeTo(null);
+				frame.pack();
+				frame.setVisible(true);
+			}
+		});
 		lblNewLabel_2.setIconTextGap(3);
 		lblNewLabel_2.setCursor(Cursor
 				.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
@@ -93,6 +104,22 @@ public class InitGUI extends JFrame {
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel = new JLabel("Cloudy");
+		lblNewLabel.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				JFrame frame = new JFrame("Cloudy");
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				
+				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
+				textLabel.setPreferredSize(new Dimension(300,100));
+				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/Imagen-animada-nube-10.gif")));
+				frame.getContentPane().add(textLabel,BorderLayout.CENTER);
+				
+				frame.setLocationRelativeTo(null);
+				frame.pack();
+				frame.setVisible(true);
+			}
+		});
 		lblNewLabel.setIconTextGap(3);
 		lblNewLabel.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Cloudy@Low.png")));
@@ -101,6 +128,22 @@ public class InitGUI extends JFrame {
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel_1 = new JLabel("Rains");
+		lblNewLabel_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				JFrame frame = new JFrame("Rains");
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				
+				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
+				textLabel.setPreferredSize(new Dimension(300,100));
+				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/wet-re.gif")));
+				frame.getContentPane().add(textLabel,BorderLayout.CENTER);
+				
+				frame.setLocationRelativeTo(null);
+				frame.pack();
+				frame.setVisible(true);
+			}
+		});
 		lblNewLabel_1.setIconTextGap(3);
 		lblNewLabel_1.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Cloud-Download@Low.png")));
@@ -108,6 +151,22 @@ public class InitGUI extends JFrame {
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel_3 = new JLabel("Windy");
+		lblNewLabel_3.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				JFrame frame = new JFrame("Windy");
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				
+				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
+				textLabel.setPreferredSize(new Dimension(300,100));
+				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/gif-animados-Tiempo-Viento_15779.gif")));
+				frame.getContentPane().add(textLabel,BorderLayout.CENTER);
+				
+				frame.setLocationRelativeTo(null);
+				frame.pack();
+				frame.setVisible(true);
+			}
+		});
 		lblNewLabel_3.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Refresh@Low.png")));
 		toolBar.add(lblNewLabel_3);
