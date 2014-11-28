@@ -28,6 +28,14 @@ import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
 
+/**
+ * Button events 
+ * @author LuisSalgado
+ * @version 1.0
+ * @see ImgPanel
+ * @param args Array of Arguments
+ */
+
 public class InitGUI extends JFrame {
 
 	private JPanel contentPane;
@@ -52,17 +60,17 @@ public class InitGUI extends JFrame {
 		});
 	}
 
-	{
-		for (LookAndFeelInfo info : javax.swing.UIManager
-				.getInstalledLookAndFeels()) {
-			try {
-				javax.swing.UIManager
-						.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-	}
+//	{
+//		for (LookAndFeelInfo info : javax.swing.UIManager
+//				.getInstalledLookAndFeels()) {
+//			try {
+//				javax.swing.UIManager
+//						.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
+//			} catch (Exception e) {
+//				e.printStackTrace();
+//			}
+//		}
+//	}
 
 	/**
 	 * Create the frame.
