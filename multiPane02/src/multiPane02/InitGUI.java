@@ -106,7 +106,7 @@ public class InitGUI extends JFrame {
 				 * Create new frame and  i have inserted an gif in relation to the Label.
 				 */
 				JFrame frame = new JFrame("hol");
-				frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+				frame.setDefaultCloseOperation(frame.DISPOSE_ON_CLOSE);
 				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
 				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/gif-sol.gif")));
 				frame.getContentPane().add(textLabel,BorderLayout.CENTER);
@@ -143,7 +143,7 @@ public class InitGUI extends JFrame {
 				 * Create new frame and  i have inserted an gif in relation to the Label.
 				 */
 				JFrame frame = new JFrame("hol");
-				frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+				frame.setDefaultCloseOperation(frame.DISPOSE_ON_CLOSE);
 				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
 				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/tiempo_sol_y_nube.gif")));
 				frame.getContentPane().add(textLabel,BorderLayout.CENTER);
@@ -178,7 +178,7 @@ public class InitGUI extends JFrame {
 				 * Create new frame and  i have inserted an gif in relation to the Label.
 				 */
 				JFrame frame = new JFrame("hol");
-				frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+				frame.setDefaultCloseOperation(frame.DISPOSE_ON_CLOSE);
 				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
 				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/LLuvia.gif")));
 				frame.getContentPane().add(textLabel,BorderLayout.CENTER);
@@ -206,7 +206,7 @@ public class InitGUI extends JFrame {
 				 * Create new frame and  i have inserted an gif in relation to the Label.
 				 */
 				JFrame frame = new JFrame("hol");
-				frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+				frame.setDefaultCloseOperation(frame.DISPOSE_ON_CLOSE);
 				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
 				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/Viento.gif")));
 				frame.getContentPane().add(textLabel,BorderLayout.CENTER);
