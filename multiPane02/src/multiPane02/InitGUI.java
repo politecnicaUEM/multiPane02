@@ -31,6 +31,12 @@ import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.event.MouseAdapter;
 
+/**
+ * gardencare
+ * Aplicacion para cuidar tu cesped 
+ * @author Guillermo Valenzuela
+ *
+ */
 public class InitGUI extends JFrame {
 
 	private JPanel contentPane;
@@ -40,9 +46,8 @@ public class InitGUI extends JFrame {
 	private String sel;
 	private JLabel imagen;
 
-	/**
-	 * Launch the application.
-	 */
+
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
