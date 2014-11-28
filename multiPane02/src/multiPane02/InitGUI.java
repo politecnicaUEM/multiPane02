@@ -32,7 +32,7 @@ import java.awt.event.MouseAdapter;
 
 import javax.swing.border.EtchedBorder;
 
-import sun.misc.Cleaner;
+//import sun.misc.Cleaner;
 
 /**
  * Principal Frame of the applicaion
