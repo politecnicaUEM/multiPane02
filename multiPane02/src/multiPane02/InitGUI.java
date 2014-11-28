@@ -31,6 +31,12 @@ import java.awt.event.MouseAdapter;
 import java.awt.BorderLayout;
 import javax.swing.SwingConstants;
 
+/**
+ * 
+ * @author daniel
+ *
+ */
+
 public class InitGUI extends JFrame {
 
 	private JPanel contentPane;
