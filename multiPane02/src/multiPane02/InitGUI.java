@@ -35,12 +35,6 @@ import javax.swing.border.EmptyBorder;
  * @see ImgPanel
  */
 
-/**
- * 
- * @author Antonio Toril Calvo
- *
- */
-
 public class InitGUI extends JFrame {
 
 	private JPanel contentPane;
