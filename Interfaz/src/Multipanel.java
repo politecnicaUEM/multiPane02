@@ -1,6 +1,10 @@
+import java.awt.Color;
 import java.awt.Component;
+import java.awt.Dimension;
 import java.awt.EventQueue;
+import java.awt.Graphics;
 import java.awt.GridLayout;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
@@ -22,10 +26,13 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
+
 import java.awt.Cursor;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 /**
- * Este un panel con imágenes
+ * Este un panel con imágenes.
  * 
  * @author Samuel García
  * @verion v.0.1
@@ -38,7 +45,10 @@ public class Multipanel extends JFrame {
 	private String hierbaDir = "/res/grass.png";
 	private JSlider slider;
 	private JLabel lblDropping;
-
+	private JLabel lblNewLabel_3;
+	private JList list;
+	
+	
 	/**
 	 * Launch the application.
 	 */
@@ -71,12 +81,13 @@ public class Multipanel extends JFrame {
 
 	}
 
-	// Aquí el look&Feel
-
+	
+	
 	/**
 	 * Create the frame.
 	 */
 	public Multipanel() {
+		
 		setTitle("Garden care");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 381);
@@ -93,6 +104,12 @@ public class Multipanel extends JFrame {
 		panel.add(toolBar);
 
 		JLabel lblNewLabel = new JLabel("Perfect Sun");
+		lblNewLabel.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				
+			}
+		});
 		lblNewLabel.setIcon(new ImageIcon(Multipanel.class
 				.getResource("/res/Sunshine.png")));
 		toolBar.add(lblNewLabel);
@@ -103,6 +120,15 @@ public class Multipanel extends JFrame {
 		toolBar.add(separator);
 
 		JLabel lblNewLabel_1 = new JLabel("Cloudy");
+		lblNewLabel_1.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				VentanaSecundaria nuevaventana = new VentanaSecundaria();
+				nuevaventana.setVisible(true);
+				
+				lblDropping.setText("It's cloudy.");
+			}
+		});
 		lblNewLabel_1.setIcon(new ImageIcon(Multipanel.class
 				.getResource("/res/Cloudy.png")));
 		toolBar.add(lblNewLabel_1);
@@ -113,6 +139,25 @@ public class Multipanel extends JFrame {
 		toolBar.add(separator_1);
 
 		JLabel lblNewLabel_2 = new JLabel("Rains");
+		lblNewLabel_2.addMouseListener(new MouseAdapter() {
+			
+			public void mousePressed(MouseEvent e) {
+				
+				String s = (String) JOptionPane.showInputDialog(contentPane,
+	                    "Complete the sentence:\n"
+	                    + "\"It's raining...\"",
+	                    "Customized Dialog",
+	                    JOptionPane.PLAIN_MESSAGE,
+	                    null,
+	                    null,
+	                    "ham");
+				//list.addElement(s);
+						        
+				list.setBackground(Color.cyan);
+				lblDropping.setText(s);
+			}
+			
+		});
 		lblNewLabel_2.setIcon(new ImageIcon(Multipanel.class
 				.getResource("/res/Cloud-Download.png")));
 		toolBar.add(lblNewLabel_2);
@@ -122,7 +167,28 @@ public class Multipanel extends JFrame {
 		separator_2.setBorder(new EmptyBorder(20, 10, 20, 10));
 		toolBar.add(separator_2);
 
-		JLabel lblNewLabel_3 = new JLabel("Windy");
+		lblNewLabel_3 = new JLabel("Windy");
+		lblNewLabel_3.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				// dimensión de la ventana
+				Dimension dimVentana = getSize();
+				
+				// dimensión de la pantalla
+				Dimension dimScreen = getToolkit().getScreenSize();
+				
+				// nuevas coordenadas aleatorias para reubicar la ventana
+				int x = (int) (Math.random()*(dimScreen.width-dimVentana.width));
+				int y = (int) (Math.random()*(dimScreen.height-dimVentana.height));
+				
+				//cambio de ubicación la ventana
+				setLocation(x,y);
+				lblDropping.setText("There is a hurricane. The window is moving!!!!");
+				
+						
+				list.setBackground(Color.orange);
+			}
+		});
 		lblNewLabel_3.setIcon(new ImageIcon(Multipanel.class
 				.getResource("/res/Refresh.png")));
 		toolBar.add(lblNewLabel_3);
@@ -136,7 +202,7 @@ public class Multipanel extends JFrame {
 				null, null));
 		panel_1.add(panel_4);
 		panel_4.setLayout(new GridLayout(0, 1, 0, 0));
-		JList list = new JList();
+		list = new JList();
 		panel_4.add(list);
 		list.setModel(new AbstractListModel() {
 			String[] values = new String[] { "Water", "Petrol", "Milk", "Toad" };
@@ -187,6 +253,16 @@ public class Multipanel extends JFrame {
 
 				} else if (answer == JOptionPane.NO_OPTION) {
 					// User clicked NO.
+					JOptionPane.showMessageDialog(frame, 
+							"It is about to rain.\n Don't forget your umbrella",
+							"GO BACK",
+							JOptionPane.WARNING_MESSAGE);
+				} else if (answer == JOptionPane.CANCEL_OPTION) {
+					JOptionPane.showMessageDialog(frame,
+						    "Option Cancelled.",
+						    "CANCEL",
+						    JOptionPane.ERROR_MESSAGE);
+					list.setBackground(Color.white);
 				}
 			}
 
