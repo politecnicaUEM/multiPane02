@@ -1,12 +1,14 @@
 package multiPane02;
 
 import java.awt.BorderLayout;
-
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
+import java.awt.Desktop;
+import java.awt.Dialog;
 import java.awt.EventQueue;
 import java.awt.Font;
+import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
@@ -17,6 +19,7 @@ import javax.swing.BoxLayout;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
@@ -29,6 +32,11 @@ import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
+
+import java.awt.event.MouseAdapter;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 /**
  * Declare the Garden Care Class
  *@author Iván Reyes
@@ -43,6 +51,7 @@ public class InitGUI extends JFrame {
 	private String hierbaDir = "Images/hierba-footer.png";
 	private JLabel lblNewLabel_4;
 	private String sel;
+	private String amigos = "Images/Folks.png";
 
 	/**
 	 * Launch the main application
@@ -92,30 +101,59 @@ public class InitGUI extends JFrame {
 		toolBar.setToolTipText("Choose weather conditions");
 		toolBar.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 		contentPane.add(toolBar);
-
-		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
-		lblNewLabel_2.setIconTextGap(3);
-		lblNewLabel_2.setCursor(Cursor
-				.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-		lblNewLabel_2.setIcon(new ImageIcon(InitGUI.class
-				.getResource("/Images/Sunshine@Low.png")));
-		toolBar.add(lblNewLabel_2);
+		//meto un escuchador para abrir una página WEB
+		
+		JButton Mensaje= new JButton("Url");
+		Mensaje.addActionListener(new ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+				 try {
+					Desktop.getDesktop().browse(new URI("http://www.frikipedia.es/friki/Linux"));
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (URISyntaxException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			}
+		});
+		Mensaje.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/Sunshine@Low.png")));
+		toolBar.add(Mensaje);
 		// toolBar.add(new JSeparator (SwingConstants.VERTICAL));
 		toolBar.addSeparator();
+		
+		JButton butonDisplay = new JButton("Cloudly");
+		butonDisplay.addActionListener(new ActionListener() {
+				//abro un Jdialog <<ventana nueva>>>
+			
+				public void actionPerformed(ActionEvent e) {
+					
+					ventana1 ven = new ventana1();
+					ven.setDefaultCloseOperation(JDialog.HIDE_ON_CLOSE);
+					ven.setVisible(true); 
+					
+				    
+				
+			}
 
-		JLabel lblNewLabel = new JLabel("Cloudy");
-		lblNewLabel.setIconTextGap(3);
-		lblNewLabel.setIcon(new ImageIcon(InitGUI.class
-				.getResource("/Images/Cloudy@Low.png")));
-		toolBar.add(lblNewLabel);
+		});
+		
+		
+		butonDisplay.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/Cloud-Download@Low.png")));
+		toolBar.add(butonDisplay);
 		// toolBar.add(new JSeparator (SwingConstants.VERTICAL));
 		toolBar.addSeparator();
-
-		JLabel lblNewLabel_1 = new JLabel("Rains");
-		lblNewLabel_1.setIconTextGap(3);
-		lblNewLabel_1.setIcon(new ImageIcon(InitGUI.class
-				.getResource("/Images/Cloud-Download@Low.png")));
-		toolBar.add(lblNewLabel_1);
+		
+		JButton btnRains = new JButton("Rains");
+		
+		btnRains.addMouseListener(new MouseAdapter() {
+				public void mouseClicked(MouseEvent arg0) {
+				toolBar.setBackground((Color.yellow));
+				}
+		});
+		toolBar.add(btnRains);
+		btnRains.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/Cloud-Download@Low.png")));
 		toolBar.addSeparator();
 
 		JLabel lblNewLabel_3 = new JLabel("Windy");
@@ -187,12 +225,13 @@ public class InitGUI extends JFrame {
 		panel_1.add(lblNewLabel_4);
 		
 		/**
-		 * shows an optiopane with a dialog asking for confirmation
+		 * shows an optioJpane with a dialog asking for confirmation
 		 */
 		btnOpenDialog.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				// Dialoging
 				String message = "Are you 100% sure?";
+				
 				int answer = JOptionPane.showConfirmDialog(frame, message);
 				if (answer == JOptionPane.YES_OPTION) {
 					int[] selectedIx = list.getSelectedIndices();
@@ -218,6 +257,23 @@ public class InitGUI extends JFrame {
 		 * calls our drawing panel
 		 */
 		JPanel panel = new ImgPanel(hierbaDir);
+		//meto un escuchador para que salga un mensaje de texto cuando saque el raton del Panel
+		panel.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseExited(MouseEvent e) {
+				String message = "Do you want to close this windows?";
+				String cadena = "THAT'S IS ALL FOLKS";
+				//si digo yes cerrara la apliacion
+				int answer = JOptionPane.showConfirmDialog(frame, message);
+				if (answer == JOptionPane.YES_OPTION) {
+					int respuesta = JOptionPane.showConfirmDialog(frame, cadena);
+					System.exit(answer);
+					//si digo no me mostrará escribirá un mensaje en otra area
+				}else if (answer == JOptionPane.NO_OPTION){
+					lblNewLabel_4.setText("so you can continue doing THE FRIKI");
+				}
+			}
+		});
 		contentPane.add(panel);
 	}
 }
