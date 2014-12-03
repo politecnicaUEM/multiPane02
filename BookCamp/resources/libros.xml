@@ -1,0 +1,3419 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libros>
+    <Libro>
+        <id>1</id>
+        <titulo>El amor en los tiempos del cólera</titulo>
+        <autor>1</autor>
+        <editorial>83</editorial>
+        <anio>1996</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>2</id>
+        <titulo>El amor inteligente</titulo>
+        <autor>2</autor>
+        <editorial>67</editorial>
+        <anio>1999</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>3</id>
+        <titulo>Amor y sexualidad después de los 40</titulo>
+        <autor>3</autor>
+        <editorial>57</editorial>
+        <anio>2011</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>4</id>
+        <titulo>El anatomista</titulo>
+        <autor>4</autor>
+        <editorial>67</editorial>
+        <anio>2012</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>5</id>
+        <titulo>Los anillos de la memoria</titulo>
+        <autor>5</autor>
+        <editorial>86</editorial>
+        <anio>1990</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>6</id>
+        <titulo>Anthony Hopkins</titulo>
+        <autor>6</autor>
+        <editorial>29</editorial>
+        <anio>2006</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>7</id>
+        <titulo>Antigua vida mía</titulo>
+        <autor>7</autor>
+        <editorial>4</editorial>
+        <anio>1993</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>8</id>
+        <titulo>Antología</titulo>
+        <autor>8</autor>
+        <editorial>38</editorial>
+        <anio>2000</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>9</id>
+        <titulo>Antología autobiográfica</titulo>
+        <autor>9</autor>
+        <editorial>51</editorial>
+        <anio>1992</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>10</id>
+        <titulo>Antologia cuarta</titulo>
+        <autor>10</autor>
+        <editorial>52</editorial>
+        <anio>2004</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>11</id>
+        <titulo>Antología de Cuentos de terror II</titulo>
+        <autor>11</autor>
+        <editorial>5</editorial>
+        <anio>2012</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>12</id>
+        <titulo>Antología de la literatura fantástica</titulo>
+        <autor>11</autor>
+        <editorial>83</editorial>
+        <anio>2010</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>13</id>
+        <titulo>Antología del Cuento chileno</titulo>
+        <autor>11</autor>
+        <editorial>88</editorial>
+        <anio>2008</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>14</id>
+        <titulo>Antología del Cuento fantástico hispanoamericano</titulo>
+        <autor>11</autor>
+        <editorial>88</editorial>
+        <anio>2010</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>15</id>
+        <titulo>Antología del Cuento moderno</titulo>
+        <autor>11</autor>
+        <editorial>88</editorial>
+        <anio>2002</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>16</id>
+        <titulo>Antología fundamental</titulo>
+        <autor>12</autor>
+        <editorial>66</editorial>
+        <anio>2005</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>17</id>
+        <titulo>Antología poética</titulo>
+        <autor>13</autor>
+        <editorial>38</editorial>
+        <anio>1999</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>18</id>
+        <titulo>Antología poética</titulo>
+        <autor>14</autor>
+        <editorial>75</editorial>
+        <anio>2004</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>19</id>
+        <titulo>Anton quiere ser dragón</titulo>
+        <autor>15</autor>
+        <editorial>74</editorial>
+        <anio>2006</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>20</id>
+        <titulo>El año de la muerte de Ricardo Reis</titulo>
+        <autor>16</autor>
+        <editorial>4</editorial>
+        <anio>2003</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>21</id>
+        <titulo>Apuntes para el fin de siglo</titulo>
+        <autor>17</autor>
+        <editorial>52</editorial>
+        <anio>2002</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>22</id>
+        <titulo>La Araucana</titulo>
+        <autor>18</autor>
+        <editorial>88</editorial>
+        <anio>1996</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>23</id>
+        <titulo>El árbol del conocimiento</titulo>
+        <autor>19</autor>
+        <editorial>88</editorial>
+        <anio>1999</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>24</id>
+        <titulo>Ardiente paciencia</titulo>
+        <autor>20</autor>
+        <editorial>83</editorial>
+        <anio>1992</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>25</id>
+        <titulo>Armonía rota</titulo>
+        <autor>21</autor>
+        <editorial>44</editorial>
+        <anio>1990</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>26</id>
+        <titulo>Aromaterapia y masaje</titulo>
+        <autor>22</autor>
+        <editorial>90</editorial>
+        <anio>2004</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>27</id>
+        <titulo>El arpa y la sombra</titulo>
+        <autor>23</autor>
+        <editorial>40</editorial>
+        <anio>1992</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>28</id>
+        <titulo>Las armas secretas</titulo>
+        <autor>24</autor>
+        <editorial>83</editorial>
+        <anio>2002</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>29</id>
+        <titulo>Arráncame la vida</titulo>
+        <autor>25</autor>
+        <editorial>4</editorial>
+        <anio>2000</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>30</id>
+        <titulo>Artistas, locos y criminales</titulo>
+        <autor>26</autor>
+        <editorial>83</editorial>
+        <anio>1990</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>31</id>
+        <titulo>Los asesinatos de la calle Morgue</titulo>
+        <autor>27</autor>
+        <editorial>10</editorial>
+        <anio>1996</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>32</id>
+        <titulo>Así es la vida Carlota</titulo>
+        <autor>28</autor>
+        <editorial>74</editorial>
+        <anio>1999</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>33</id>
+        <titulo>Asterix 1 (El Galo)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2013</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>34</id>
+        <titulo>Asterix 2 (Y los Godos)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2013</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>35</id>
+        <titulo>Asterix 3 (Hoz de Oro)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2010</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>36</id>
+        <titulo>Asterix 4 (Gladiador)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>1993</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>37</id>
+        <titulo>Asterix 5 (En los juegos Olímpicos)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2003</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>38</id>
+        <titulo>Asterix 6 (La vuelta a la Galia)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2011</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>39</id>
+        <titulo>Asterix 7 (y Cleopatra)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2006</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>40</id>
+        <titulo>Asterix 8 (Y los Normandos)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2012</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>41</id>
+        <titulo>Asterix 9 (Legionario)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>1997</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>42</id>
+        <titulo>Asterix 10 (Combate de los Jefes)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2009</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>43</id>
+        <titulo>Asterix 11 (Escudo Arverno)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>1999</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>44</id>
+        <titulo>Asterix 12 (En Bretaña)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2010</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>45</id>
+        <titulo>Asterix 13 (Y el Caldero)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2012</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>46</id>
+        <titulo>Asterix 15 (Cizaña)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>1993</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>47</id>
+        <titulo>Asterix 16 (En Helvecia)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2013</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>48</id>
+        <titulo>Asterix 17 (Residencia de los Dioses)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>1995</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>49</id>
+        <titulo>Asterix 18 (Los laureles del Cesar)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>1997</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>50</id>
+        <titulo>Asterix 19 (Adivino)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>1995</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>51</id>
+        <titulo>Asterix 20 (En Córcega)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2007</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>52</id>
+        <titulo>Asterix 21 (Regalo del César)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2006</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>53</id>
+        <titulo>Asterix 22 (Gran Travesía)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2011</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>54</id>
+        <titulo>Asterix 23 (Obelix y Compañía)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2004</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>55</id>
+        <titulo>Asterix 24 (en Bélgica)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>1993</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>56</id>
+        <titulo>Asterix 25 (Gran Zanja)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>1990</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>57</id>
+        <titulo>Asterix 26 (Odisea de Asterix)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2012</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>58</id>
+        <titulo>Asterix 27 (Hijo de Asterix)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>1995</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>59</id>
+        <titulo>Asterix 28 (En la India)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2012</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>60</id>
+        <titulo>Asterix 29 (La Rosa y la Espada)</titulo>
+        <autor>29</autor>
+        <editorial>44</editorial>
+        <anio>2006</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>61</id>
+        <titulo>Atlántida</titulo>
+        <autor>30</autor>
+        <editorial>43</editorial>
+        <anio>2007</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>62</id>
+        <titulo>Atlas de los animales</titulo>
+        <autor>11</autor>
+        <editorial>74</editorial>
+        <anio>2011</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>63</id>
+        <titulo>Aura</titulo>
+        <autor>31</autor>
+        <editorial>36</editorial>
+        <anio>2012</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>64</id>
+        <titulo>Las aventuras de Tom Sawyer</titulo>
+        <autor>32</autor>
+        <editorial>10</editorial>
+        <anio>2011</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>65</id>
+        <titulo>Las aventuras de Vania</titulo>
+        <autor>33</autor>
+        <editorial>74</editorial>
+        <anio>2012</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>66</id>
+        <titulo>El avión</titulo>
+        <autor>34</autor>
+        <editorial>74</editorial>
+        <anio>2000</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>67</id>
+        <titulo>Ay Mama Inés</titulo>
+        <autor>35</autor>
+        <editorial>10</editorial>
+        <anio>1998</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>68</id>
+        <titulo>Ayer</titulo>
+        <autor>36</autor>
+        <editorial>51</editorial>
+        <anio>1999</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>69</id>
+        <titulo>La azucarera</titulo>
+        <autor>37</autor>
+        <editorial>3</editorial>
+        <anio>2008</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>70</id>
+        <titulo>Bajo el volcán</titulo>
+        <autor>38</autor>
+        <editorial>86</editorial>
+        <anio>1999</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>71</id>
+        <titulo>Bajo la tierra</titulo>
+        <autor>34</autor>
+        <editorial>74</editorial>
+        <anio>1990</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>72</id>
+        <titulo>Balneario</titulo>
+        <autor>39</autor>
+        <editorial>67</editorial>
+        <anio>2001</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>73</id>
+        <titulo>El barco</titulo>
+        <autor>34</autor>
+        <editorial>74</editorial>
+        <anio>2006</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>74</id>
+        <titulo>El bebedor de cerveza</titulo>
+        <autor>40</autor>
+        <editorial>16</editorial>
+        <anio>2008</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>75</id>
+        <titulo>La bella y las bestias</titulo>
+        <autor>41</autor>
+        <editorial>67</editorial>
+        <anio>2010</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>76</id>
+        <titulo>Ben-Hur</titulo>
+        <autor>42</autor>
+        <editorial>10</editorial>
+        <anio>2004</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>77</id>
+        <titulo>Benito Cereno</titulo>
+        <autor>43</autor>
+        <editorial>5</editorial>
+        <anio>2008</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>78</id>
+        <titulo>Besos</titulo>
+        <autor>44</autor>
+        <editorial>74</editorial>
+        <anio>1992</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>79</id>
+        <titulo>La bestia en casa</titulo>
+        <autor>45</autor>
+        <editorial>4</editorial>
+        <anio>1996</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>80</id>
+        <titulo>Billy y el vestido rosa</titulo>
+        <autor>46</autor>
+        <editorial>4</editorial>
+        <anio>2006</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>81</id>
+        <titulo>Bisa bea, Bisa del</titulo>
+        <autor>47</autor>
+        <editorial>40</editorial>
+        <anio>1998</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>82</id>
+        <titulo>Bola de sebo y otros Cuentos</titulo>
+        <autor>48</autor>
+        <editorial>88</editorial>
+        <anio>2003</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>83</id>
+        <titulo>Boleros en La Habana</titulo>
+        <autor>49</autor>
+        <editorial>67</editorial>
+        <anio>1997</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>84</id>
+        <titulo>Boquitas pintadas</titulo>
+        <autor>50</autor>
+        <editorial>76</editorial>
+        <anio>1998</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>85</id>
+        <titulo>Borges, una biografía</titulo>
+        <autor>51</autor>
+        <editorial>40</editorial>
+        <anio>2013</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>86</id>
+        <titulo>La borra del café</titulo>
+        <autor>52</autor>
+        <editorial>9</editorial>
+        <anio>2006</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>87</id>
+        <titulo>Breve antología de cuentos</titulo>
+        <autor>11</autor>
+        <editorial>83</editorial>
+        <anio>2008</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>88</id>
+        <titulo>La broma</titulo>
+        <autor>53</autor>
+        <editorial>86</editorial>
+        <anio>1994</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>89</id>
+        <titulo>La bruja Mon</titulo>
+        <autor>54</autor>
+        <editorial>74</editorial>
+        <anio>2012</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>90</id>
+        <titulo>Bruno el rezongon</titulo>
+        <autor>55</autor>
+        <editorial>40</editorial>
+        <anio>2004</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>91</id>
+        <titulo>El caballero de la armadura oxidada</titulo>
+        <autor>56</autor>
+        <editorial>65</editorial>
+        <anio>2004</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>92</id>
+        <titulo>Caballo de Troya I (1)</titulo>
+        <autor>57</autor>
+        <editorial>67</editorial>
+        <anio>1997</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>93</id>
+        <titulo>Caballo de Troya II (2)</titulo>
+        <autor>57</autor>
+        <editorial>67</editorial>
+        <anio>1990</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>94</id>
+        <titulo>Caballo de Troya III (3)</titulo>
+        <autor>57</autor>
+        <editorial>67</editorial>
+        <anio>1991</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>95</id>
+        <titulo>Caballo de Troya IV (4)</titulo>
+        <autor>57</autor>
+        <editorial>67</editorial>
+        <anio>1990</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>96</id>
+        <titulo>Caballo de Troya V (5)</titulo>
+        <autor>57</autor>
+        <editorial>67</editorial>
+        <anio>2009</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>97</id>
+        <titulo>El caballo y su niño</titulo>
+        <autor>58</autor>
+        <editorial>10</editorial>
+        <anio>2008</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>98</id>
+        <titulo>La cabaña del tío Tom</titulo>
+        <autor>59</autor>
+        <editorial>10</editorial>
+        <anio>2010</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>99</id>
+        <titulo>Cacao</titulo>
+        <autor>60</autor>
+        <editorial>5</editorial>
+        <anio>1990</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>100</id>
+        <titulo>Cada tigre en su jungla</titulo>
+        <autor>61</autor>
+        <editorial>74</editorial>
+        <anio>1997</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>101</id>
+        <titulo>Cae la noche tropical</titulo>
+        <autor>50</autor>
+        <editorial>76</editorial>
+        <anio>1992</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>102</id>
+        <titulo>Café nostalgia</titulo>
+        <autor>62</autor>
+        <editorial>76</editorial>
+        <anio>2002</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>103</id>
+        <titulo>El caldero mágico</titulo>
+        <autor>63</autor>
+        <editorial>74</editorial>
+        <anio>2008</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>104</id>
+        <titulo>Cambios</titulo>
+        <autor>64</autor>
+        <editorial>40</editorial>
+        <anio>1998</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>105</id>
+        <titulo>Camila</titulo>
+        <autor>65</autor>
+        <editorial>4</editorial>
+        <anio>1990</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>106</id>
+        <titulo>Camille y los girasoles</titulo>
+        <autor>66</autor>
+        <editorial>78</editorial>
+        <anio>2010</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>107</id>
+        <titulo>Camilón, comilón</titulo>
+        <autor>47</autor>
+        <editorial>74</editorial>
+        <anio>1992</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>108</id>
+        <titulo>Camino a Selma </titulo>
+        <autor>67</autor>
+        <editorial>25</editorial>
+        <anio>2010</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>109</id>
+        <titulo>La camiseta de Max</titulo>
+        <autor>68</autor>
+        <editorial>74</editorial>
+        <anio>1998</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>110</id>
+        <titulo>Canalla, traidor, morirás</titulo>
+        <autor>69</autor>
+        <editorial>74</editorial>
+        <anio>2001</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>111</id>
+        <titulo>Canción de Navidad</titulo>
+        <autor>70</autor>
+        <editorial>88</editorial>
+        <anio>2009</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>112</id>
+        <titulo>Canciones del mas acá</titulo>
+        <autor>52</autor>
+        <editorial>76</editorial>
+        <anio>2002</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>113</id>
+        <titulo>Cantando con Mazapán</titulo>
+        <autor>71</autor>
+        <editorial>88</editorial>
+        <anio>2010</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>114</id>
+        <titulo>Canto a su amor desaparecido</titulo>
+        <autor>72</autor>
+        <editorial>88</editorial>
+        <anio>2006</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>115</id>
+        <titulo>Canto general I y II</titulo>
+        <autor>12</autor>
+        <editorial>67</editorial>
+        <anio>1998</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>116</id>
+        <titulo>Canto y cuento</titulo>
+        <autor>73</autor>
+        <editorial>74</editorial>
+        <anio>2003</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>117</id>
+        <titulo>La capa de ozono</titulo>
+        <autor>74</autor>
+        <editorial>74</editorial>
+        <anio>2002</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>118</id>
+        <titulo>El capitán Tormenta</titulo>
+        <autor>75</autor>
+        <editorial>10</editorial>
+        <anio>1996</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>119</id>
+        <titulo>Capitanes de la arena</titulo>
+        <autor>60</autor>
+        <editorial>5</editorial>
+        <anio>1998</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>120</id>
+        <titulo>El capricho de los dioses</titulo>
+        <autor>76</autor>
+        <editorial>34</editorial>
+        <anio>1993</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>121</id>
+        <titulo>Carlota descubre a los impresionistas</titulo>
+        <autor>77</autor>
+        <editorial>78</editorial>
+        <anio>1996</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>122</id>
+        <titulo>Cartas a Theo</titulo>
+        <autor>78</autor>
+        <editorial>49</editorial>
+        <anio>1990</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>123</id>
+        <titulo>Cartas para Tomás</titulo>
+        <autor>79</autor>
+        <editorial>67</editorial>
+        <anio>2009</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>124</id>
+        <titulo>La casa</titulo>
+        <autor>34</autor>
+        <editorial>74</editorial>
+        <anio>2009</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>125</id>
+        <titulo>Casa de campo</titulo>
+        <autor>80</autor>
+        <editorial>76</editorial>
+        <anio>2001</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>126</id>
+        <titulo>La casa de los espíritus</titulo>
+        <autor>81</autor>
+        <editorial>83</editorial>
+        <anio>1996</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>127</id>
+        <titulo>Casa grande</titulo>
+        <autor>82</autor>
+        <editorial>10</editorial>
+        <anio>2013</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>128</id>
+        <titulo>La casa negra</titulo>
+        <autor>83</autor>
+        <editorial>5</editorial>
+        <anio>1999</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>129</id>
+        <titulo>La casa verde</titulo>
+        <autor>84</autor>
+        <editorial>76</editorial>
+        <anio>2011</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>130</id>
+        <titulo>Casas en el agua</titulo>
+        <autor>85</autor>
+        <editorial>51</editorial>
+        <anio>1993</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>131</id>
+        <titulo>Casi un objeto</titulo>
+        <autor>16</autor>
+        <editorial>4</editorial>
+        <anio>2012</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>132</id>
+        <titulo>El caso de Charles Dexter Ward</titulo>
+        <autor>86</autor>
+        <editorial>5</editorial>
+        <anio>2005</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>133</id>
+        <titulo>La casta de los Metabarones </titulo>
+        <autor>87</autor>
+        <editorial>25</editorial>
+        <anio>2013</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>134</id>
+        <titulo>Catedral</titulo>
+        <autor>88</autor>
+        <editorial>7</editorial>
+        <anio>2009</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>135</id>
+        <titulo>La caza del gran tesoro</titulo>
+        <autor>89</autor>
+        <editorial>46</editorial>
+        <anio>2005</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>136</id>
+        <titulo>El cazador de Cuentos</titulo>
+        <autor>90</autor>
+        <editorial>10</editorial>
+        <anio>1997</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>137</id>
+        <titulo>La cazadora de Indiana Jones</titulo>
+        <autor>91</autor>
+        <editorial>74</editorial>
+        <anio>2002</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>138</id>
+        <titulo>La celestina</titulo>
+        <autor>92</autor>
+        <editorial>88</editorial>
+        <anio>2009</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>139</id>
+        <titulo>Cementerio de animales</titulo>
+        <autor>93</autor>
+        <editorial>34</editorial>
+        <anio>2003</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>140</id>
+        <titulo>La cenicienta en San Francisco</titulo>
+        <autor>20</autor>
+        <editorial>10</editorial>
+        <anio>1998</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>141</id>
+        <titulo>El cepillo de dientes</titulo>
+        <autor>94</autor>
+        <editorial>88</editorial>
+        <anio>1993</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>142</id>
+        <titulo>Chagall</titulo>
+        <autor>95</autor>
+        <editorial>84</editorial>
+        <anio>2013</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>143</id>
+        <titulo>Charcos en el camino</titulo>
+        <autor>96</autor>
+        <editorial>74</editorial>
+        <anio>1993</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>144</id>
+        <titulo>La chica del Crillon</titulo>
+        <autor>97</autor>
+        <editorial>88</editorial>
+        <anio>1992</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>145</id>
+        <titulo>Las chicas buenas se van al cielo y las malas a …</titulo>
+        <autor>98</autor>
+        <editorial>44</editorial>
+        <anio>1990</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>146</id>
+        <titulo>Chile actual : anatomia de un mito</titulo>
+        <autor>99</autor>
+        <editorial>52</editorial>
+        <anio>2009</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>147</id>
+        <titulo>Chile o una loca geografía</titulo>
+        <autor>100</autor>
+        <editorial>88</editorial>
+        <anio>1998</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>148</id>
+        <titulo>Chile perplejo</titulo>
+        <autor>101</autor>
+        <editorial>67</editorial>
+        <anio>2002</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>149</id>
+        <titulo>Las chilenas de la colonia</titulo>
+        <autor>102</autor>
+        <editorial>51</editorial>
+        <anio>1990</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>150</id>
+        <titulo>El chofer que no era</titulo>
+        <autor>103</autor>
+        <editorial>10</editorial>
+        <anio>1996</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>151</id>
+        <titulo>Cien años de soledad</titulo>
+        <autor>104</autor>
+        <editorial>83</editorial>
+        <anio>1998</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>152</id>
+        <titulo>Cien pajaros volando</titulo>
+        <autor>45</autor>
+        <editorial>67</editorial>
+        <anio>1997</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>153</id>
+        <titulo>Cinco días de Agosto</titulo>
+        <autor>105</autor>
+        <editorial>74</editorial>
+        <anio>1996</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>154</id>
+        <titulo>Cinco panes de cebada</titulo>
+        <autor>106</autor>
+        <editorial>74</editorial>
+        <anio>1993</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>155</id>
+        <titulo>Cinco pepitas de naranja</titulo>
+        <autor>107</autor>
+        <editorial>10</editorial>
+        <anio>2005</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>156</id>
+        <titulo>Cine chileno 20 años</titulo>
+        <autor>108</autor>
+        <editorial>59</editorial>
+        <anio>2002</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>157</id>
+        <titulo>El cine norteamericano en 120 películas</titulo>
+        <autor>109</autor>
+        <editorial>5</editorial>
+        <anio>1998</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>158</id>
+        <titulo>El circo de Cirilo</titulo>
+        <autor>110</autor>
+        <editorial>10</editorial>
+        <anio>2011</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>159</id>
+        <titulo>Cisnes salvajes</titulo>
+        <autor>111</autor>
+        <editorial>19</editorial>
+        <anio>2006</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>160</id>
+        <titulo>Cita con la muerte</titulo>
+        <autor>112</autor>
+        <editorial>67</editorial>
+        <anio>2005</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>161</id>
+        <titulo>La ciudad anterior</titulo>
+        <autor>113</autor>
+        <editorial>67</editorial>
+        <anio>2005</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>162</id>
+        <titulo>La ciudad de la alegría</titulo>
+        <autor>114</autor>
+        <editorial>76</editorial>
+        <anio>2011</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>163</id>
+        <titulo>La ciudad y los perros</titulo>
+        <autor>84</autor>
+        <editorial>76</editorial>
+        <anio>2008</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>164</id>
+        <titulo>Las ciudades invisibles</titulo>
+        <autor>115</autor>
+        <editorial>60</editorial>
+        <anio>2011</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>165</id>
+        <titulo>Claude Monet</titulo>
+        <autor>116</autor>
+        <editorial>84</editorial>
+        <anio>2000</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>166</id>
+        <titulo>Claves de la historia del cine</titulo>
+        <autor>117</autor>
+        <editorial>72</editorial>
+        <anio>1992</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>167</id>
+        <titulo>Cobro revertido</titulo>
+        <autor>118</autor>
+        <editorial>67</editorial>
+        <anio>2013</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>168</id>
+        <titulo>La cocina erótica del Conde de Lafourchette</titulo>
+        <autor>119</autor>
+        <editorial>52</editorial>
+        <anio>1999</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>169</id>
+        <titulo>El cocodrilo pintor</titulo>
+        <autor>120</autor>
+        <editorial>74</editorial>
+        <anio>2001</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>170</id>
+        <titulo>Cofradía blindada</titulo>
+        <autor>121</autor>
+        <editorial>67</editorial>
+        <anio>2000</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>171</id>
+        <titulo>Colmillo blanco</titulo>
+        <autor>122</autor>
+        <editorial>10</editorial>
+        <anio>1994</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>172</id>
+        <titulo>El color</titulo>
+        <autor>34</autor>
+        <editorial>74</editorial>
+        <anio>1990</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>173</id>
+        <titulo>Los colores de Maisy</titulo>
+        <autor>123</autor>
+        <editorial>78</editorial>
+        <anio>1996</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>174</id>
+        <titulo>Colorin colorado, ovulito fecundado</titulo>
+        <autor>90</autor>
+        <editorial>88</editorial>
+        <anio>2008</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>175</id>
+        <titulo>Coma</titulo>
+        <autor>124</autor>
+        <editorial>34</editorial>
+        <anio>1992</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>176</id>
+        <titulo>La comedia del arte</titulo>
+        <autor>39</autor>
+        <editorial>67</editorial>
+        <anio>2005</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>177</id>
+        <titulo>La comezon de ser mujer</titulo>
+        <autor>125</autor>
+        <editorial>67</editorial>
+        <anio>1993</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>178</id>
+        <titulo>Comienza la aventura</titulo>
+        <autor>63</autor>
+        <editorial>74</editorial>
+        <anio>2005</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>179</id>
+        <titulo>Como agua para chocolate</titulo>
+        <autor>126</autor>
+        <editorial>61</editorial>
+        <anio>2013</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>180</id>
+        <titulo>Como brilla el mar</titulo>
+        <autor>63</autor>
+        <editorial>74</editorial>
+        <anio>2006</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>181</id>
+        <titulo>Como escuchar la música</titulo>
+        <autor>127</autor>
+        <editorial>40</editorial>
+        <anio>1991</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>182</id>
+        <titulo>Como funcionan los perros</titulo>
+        <autor>128</autor>
+        <editorial>29</editorial>
+        <anio>2005</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>183</id>
+        <titulo>Como hacer el amor con la misma persona......</titulo>
+        <autor>129</autor>
+        <editorial>89</editorial>
+        <anio>1993</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>184</id>
+        <titulo>Como se hace una película</titulo>
+        <autor>130</autor>
+        <editorial>74</editorial>
+        <anio>1999</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>185</id>
+        <titulo>Como ser mujer y no morir en el intento</titulo>
+        <autor>131</autor>
+        <editorial>85</editorial>
+        <anio>1996</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>186</id>
+        <titulo>Como ser padres hoy</titulo>
+        <autor>132</autor>
+        <editorial>57</editorial>
+        <anio>2009</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>187</id>
+        <titulo>Como sobrevivir en Chile despues de los 30</titulo>
+        <autor>133</autor>
+        <editorial>2</editorial>
+        <anio>2001</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>188</id>
+        <titulo>Como un salto de campana</titulo>
+        <autor>134</autor>
+        <editorial>4</editorial>
+        <anio>2001</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>189</id>
+        <titulo>El concierto de rock</titulo>
+        <autor>135</autor>
+        <editorial>74</editorial>
+        <anio>1993</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>190</id>
+        <titulo>La condición humana</titulo>
+        <autor>136</autor>
+        <editorial>10</editorial>
+        <anio>1997</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>191</id>
+        <titulo>Confesiones de un vampiro</titulo>
+        <autor>137</autor>
+        <editorial>28</editorial>
+        <anio>2000</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>192</id>
+        <titulo>Confieso que he vivido</titulo>
+        <autor>12</autor>
+        <editorial>67</editorial>
+        <anio>1998</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>193</id>
+        <titulo>Conjeturas sobre la memoria de mi tribu</titulo>
+        <autor>138</autor>
+        <editorial>4</editorial>
+        <anio>2005</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>194</id>
+        <titulo>Conociendo a Gabriela Mistral</titulo>
+        <autor>139</autor>
+        <editorial>74</editorial>
+        <anio>2013</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>195</id>
+        <titulo>El conocimiento silencioso</titulo>
+        <autor>140</autor>
+        <editorial>34</editorial>
+        <anio>1991</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>196</id>
+        <titulo>Constancia y otras novelas para vírgenes</titulo>
+        <autor>31</autor>
+        <editorial>40</editorial>
+        <anio>2010</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>197</id>
+        <titulo>El consumo me consume</titulo>
+        <autor>141</autor>
+        <editorial>51</editorial>
+        <anio>2000</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>198</id>
+        <titulo>Contra la muerte</titulo>
+        <autor>142</autor>
+        <editorial>88</editorial>
+        <anio>2000</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>199</id>
+        <titulo>Contrapartes</titulo>
+        <autor>143</autor>
+        <editorial>35</editorial>
+        <anio>2011</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>200</id>
+        <titulo>Conversaciones en la catedral</titulo>
+        <autor>84</autor>
+        <editorial>76</editorial>
+        <anio>1992</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>201</id>
+        <titulo>El corazón a contraluz</titulo>
+        <autor>144</autor>
+        <editorial>34</editorial>
+        <anio>1992</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>202</id>
+        <titulo>El corazón de las tinieblas</titulo>
+        <autor>145</autor>
+        <editorial>5</editorial>
+        <anio>2000</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>203</id>
+        <titulo>Corazones rojos</titulo>
+        <autor>146</autor>
+        <editorial>44</editorial>
+        <anio>1996</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>204</id>
+        <titulo>El correo de Bagdad</titulo>
+        <autor>147</autor>
+        <editorial>67</editorial>
+        <anio>2002</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>205</id>
+        <titulo>Correr tras el viento</titulo>
+        <autor>148</autor>
+        <editorial>67</editorial>
+        <anio>1998</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>206</id>
+        <titulo>Cosecha roja</titulo>
+        <autor>149</autor>
+        <editorial>5</editorial>
+        <anio>2011</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>207</id>
+        <titulo>Crazy Cock</titulo>
+        <autor>150</autor>
+        <editorial>34</editorial>
+        <anio>2001</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>208</id>
+        <titulo>Crimen y castigo</titulo>
+        <autor>151</autor>
+        <editorial>82</editorial>
+        <anio>1997</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>209</id>
+        <titulo>Cristóbal Nonato</titulo>
+        <autor>31</autor>
+        <editorial>40</editorial>
+        <anio>2010</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>210</id>
+        <titulo>Crónica de una muerte anunciada</titulo>
+        <autor>1</autor>
+        <editorial>83</editorial>
+        <anio>1996</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>211</id>
+        <titulo>Crónicas marcianas</titulo>
+        <autor>152</autor>
+        <editorial>60</editorial>
+        <anio>1996</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>212</id>
+        <titulo>Cruzada en jeans</titulo>
+        <autor>153</autor>
+        <editorial>74</editorial>
+        <anio>2005</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>213</id>
+        <titulo>Los cuadernos de don Rigoberto</titulo>
+        <autor>154</autor>
+        <editorial>4</editorial>
+        <anio>1999</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>214</id>
+        <titulo>Cuando los gigantes aman</titulo>
+        <autor>155</autor>
+        <editorial>40</editorial>
+        <anio>2000</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>215</id>
+        <titulo>Cuando los políticos eran inteligentes</titulo>
+        <autor>119</autor>
+        <editorial>67</editorial>
+        <anio>2002</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>216</id>
+        <titulo>Cuando papá y mamá ya no viven juntos</titulo>
+        <autor>156</autor>
+        <editorial>62</editorial>
+        <anio>2006</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>217</id>
+        <titulo>Cuando Tina berrea</titulo>
+        <autor>157</autor>
+        <editorial>74</editorial>
+        <anio>2002</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>218</id>
+        <titulo>Cuando ya no importe</titulo>
+        <autor>158</autor>
+        <editorial>4</editorial>
+        <anio>1996</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>219</id>
+        <titulo>El cuarto del bebé</titulo>
+        <autor>159</autor>
+        <editorial>74</editorial>
+        <anio>2009</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>220</id>
+        <titulo>Cuartos oscuros</titulo>
+        <autor>160</autor>
+        <editorial>74</editorial>
+        <anio>1999</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>221</id>
+        <titulo>Los cuatro amores</titulo>
+        <autor>58</autor>
+        <editorial>88</editorial>
+        <anio>1999</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>222</id>
+        <titulo>Las cuatro estaciones I y II</titulo>
+        <autor>161</autor>
+        <editorial>10</editorial>
+        <anio>2008</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>223</id>
+        <titulo>Cucho</titulo>
+        <autor>130</autor>
+        <editorial>74</editorial>
+        <anio>2003</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>224</id>
+        <titulo>Los cucos de Midwich</titulo>
+        <autor>162</autor>
+        <editorial>1</editorial>
+        <anio>1992</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>225</id>
+        <titulo>Cuenta con Maisy</titulo>
+        <autor>123</autor>
+        <editorial>78</editorial>
+        <anio>2004</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>226</id>
+        <titulo>Cuentamundo</titulo>
+        <autor>163</autor>
+        <editorial>88</editorial>
+        <anio>2002</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>227</id>
+        <titulo>Cuento aparte</titulo>
+        <autor>164</autor>
+        <editorial>67</editorial>
+        <anio>1996</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>228</id>
+        <titulo>El Cuento hispanoamericano</titulo>
+        <autor>165</autor>
+        <editorial>88</editorial>
+        <anio>2003</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>229</id>
+        <titulo>Cuentos</titulo>
+        <autor>80</autor>
+        <editorial>76</editorial>
+        <anio>2009</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>230</id>
+        <titulo>Cuentos</titulo>
+        <autor>166</autor>
+        <editorial>5</editorial>
+        <anio>2009</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>231</id>
+        <titulo>Cuentos araucanos</titulo>
+        <autor>167</autor>
+        <editorial>10</editorial>
+        <anio>2002</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>232</id>
+        <titulo>Cuentos chilenos</titulo>
+        <autor>11</autor>
+        <editorial>10</editorial>
+        <anio>1993</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>233</id>
+        <titulo>Cuentos clásicos juveniles</titulo>
+        <autor>11</autor>
+        <editorial>4</editorial>
+        <anio>1999</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>234</id>
+        <titulo>Cuentos completos</titulo>
+        <autor>168</autor>
+        <editorial>4</editorial>
+        <anio>1999</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>235</id>
+        <titulo>Cuentos completos</titulo>
+        <autor>158</autor>
+        <editorial>4</editorial>
+        <anio>2002</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>236</id>
+        <titulo>Cuentos completos 1964-1974</titulo>
+        <autor>168</autor>
+        <editorial>5</editorial>
+        <anio>1991</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>237</id>
+        <titulo>Cuentos con maravilla</titulo>
+        <autor>161</autor>
+        <editorial>10</editorial>
+        <anio>2008</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>238</id>
+        <titulo>Cuentos con walkman</titulo>
+        <autor>11</autor>
+        <editorial>67</editorial>
+        <anio>1991</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>239</id>
+        <titulo>Cuentos de Eva Luna</titulo>
+        <autor>81</autor>
+        <editorial>83</editorial>
+        <anio>2000</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>240</id>
+        <titulo>Cuentos de fútbol</titulo>
+        <autor>11</autor>
+        <editorial>4</editorial>
+        <anio>2009</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>241</id>
+        <titulo>Cuentos de la Alhambra</titulo>
+        <autor>169</autor>
+        <editorial>5</editorial>
+        <anio>2010</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>242</id>
+        <titulo>Cuentos de la selva</titulo>
+        <autor>170</autor>
+        <editorial>10</editorial>
+        <anio>1996</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>243</id>
+        <titulo>Cuentos de los años felices</titulo>
+        <autor>26</autor>
+        <editorial>83</editorial>
+        <anio>2001</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>244</id>
+        <titulo>Cuentos de los reinos inquietos</titulo>
+        <autor>171</autor>
+        <editorial>10</editorial>
+        <anio>1992</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>245</id>
+        <titulo>Cuentos de perros, gatos y canarios</titulo>
+        <autor>161</autor>
+        <editorial>88</editorial>
+        <anio>2012</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>246</id>
+        <titulo>Cuentos de príncipes, garzas y manzanas</titulo>
+        <autor>11</autor>
+        <editorial>74</editorial>
+        <anio>1996</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>247</id>
+        <titulo>Cuentos de terror</titulo>
+        <autor>11</autor>
+        <editorial>10</editorial>
+        <anio>2010</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>248</id>
+        <titulo>Cuentos de tesoros y monedas de oro</titulo>
+        <autor>167</autor>
+        <editorial>74</editorial>
+        <anio>2007</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>249</id>
+        <titulo>Cuentos I</titulo>
+        <autor>27</autor>
+        <editorial>5</editorial>
+        <anio>2005</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>250</id>
+        <titulo>Cuentos inconclusos de Númenor</titulo>
+        <autor>172</autor>
+        <editorial>60</editorial>
+        <anio>2006</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>251</id>
+        <titulo>Cuentos para leer sin rimmel</titulo>
+        <autor>173</autor>
+        <editorial>64</editorial>
+        <anio>2007</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>252</id>
+        <titulo>El cuerpo humano</titulo>
+        <autor>174</autor>
+        <editorial>74</editorial>
+        <anio>2005</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>253</id>
+        <titulo>Cuerpos prohibidos</titulo>
+        <autor>175</autor>
+        <editorial>67</editorial>
+        <anio>2013</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>254</id>
+        <titulo>Cuestión de astronomía</titulo>
+        <autor>176</autor>
+        <editorial>61</editorial>
+        <anio>1993</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>255</id>
+        <titulo>La cultura huachaca</titulo>
+        <autor>177</autor>
+        <editorial>63</editorial>
+        <anio>2008</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>256</id>
+        <titulo>El cumpleaños de Juan Angel</titulo>
+        <autor>52</autor>
+        <editorial>4</editorial>
+        <anio>1998</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>257</id>
+        <titulo>El cura de la camioneta verde</titulo>
+        <autor>178</autor>
+        <editorial>44</editorial>
+        <anio>2006</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>258</id>
+        <titulo>La curación por las flores</titulo>
+        <autor>179</autor>
+        <editorial>24</editorial>
+        <anio>2010</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>259</id>
+        <titulo>Curarse en salud</titulo>
+        <autor>180</autor>
+        <editorial>70</editorial>
+        <anio>1994</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>260</id>
+        <titulo>Dali</titulo>
+        <autor>181</autor>
+        <editorial>84</editorial>
+        <anio>1995</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>261</id>
+        <titulo>El daño</titulo>
+        <autor>182</autor>
+        <editorial>4</editorial>
+        <anio>2002</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>262</id>
+        <titulo>De amor y de sombra</titulo>
+        <autor>81</autor>
+        <editorial>83</editorial>
+        <anio>1996</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>263</id>
+        <titulo>Los de abajo</titulo>
+        <autor>183</autor>
+        <editorial>88</editorial>
+        <anio>2007</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>264</id>
+        <titulo>De cómo Stella recobró la marcha</titulo>
+        <autor>184</autor>
+        <editorial>7</editorial>
+        <anio>2008</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>265</id>
+        <titulo>De día y de noche</titulo>
+        <autor>167</autor>
+        <editorial>10</editorial>
+        <anio>1997</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>266</id>
+        <titulo>De la tierra a la luna</titulo>
+        <autor>185</autor>
+        <editorial>10</editorial>
+        <anio>1993</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>267</id>
+        <titulo>De norte a sur con Mazapán</titulo>
+        <autor>71</autor>
+        <editorial>88</editorial>
+        <anio>2012</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>268</id>
+        <titulo>De perlas y cicatrices</titulo>
+        <autor>186</autor>
+        <editorial>51</editorial>
+        <anio>2013</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>269</id>
+        <titulo>Degas</titulo>
+        <autor>187</autor>
+        <editorial>84</editorial>
+        <anio>1998</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>270</id>
+        <titulo>Degas</titulo>
+        <autor>187</autor>
+        <editorial>84</editorial>
+        <anio>2010</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>271</id>
+        <titulo>Del aire al aire</titulo>
+        <autor>94</autor>
+        <editorial>88</editorial>
+        <anio>1995</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>272</id>
+        <titulo>Del amor y otros demonios</titulo>
+        <autor>104</autor>
+        <editorial>83</editorial>
+        <anio>2010</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>273</id>
+        <titulo>Delgado niño Neftalí</titulo>
+        <autor>188</autor>
+        <editorial>81</editorial>
+        <anio>2002</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>274</id>
+        <titulo>Demian</titulo>
+        <autor>189</autor>
+        <editorial>5</editorial>
+        <anio>1998</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>275</id>
+        <titulo>Los derechos del niño</titulo>
+        <autor>11</autor>
+        <editorial>87</editorial>
+        <anio>1992</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>276</id>
+        <titulo>Desencuentros</titulo>
+        <autor>190</autor>
+        <editorial>86</editorial>
+        <anio>2009</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>277</id>
+        <titulo>Deshoras</titulo>
+        <autor>24</autor>
+        <editorial>83</editorial>
+        <anio>2004</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>278</id>
+        <titulo>Desolación</titulo>
+        <autor>163</autor>
+        <editorial>10</editorial>
+        <anio>2005</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>279</id>
+        <titulo>La despedida</titulo>
+        <autor>53</autor>
+        <editorial>86</editorial>
+        <anio>1993</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>280</id>
+        <titulo>Despistes y franquezas</titulo>
+        <autor>52</autor>
+        <editorial>4</editorial>
+        <anio>1999</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>281</id>
+        <titulo>El diablo de los números</titulo>
+        <autor>191</autor>
+        <editorial>80</editorial>
+        <anio>2012</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>282</id>
+        <titulo>El diablo en la botella y otros cuentos</titulo>
+        <autor>192</autor>
+        <editorial>5</editorial>
+        <anio>2005</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>283</id>
+        <titulo>Diario de muerte</titulo>
+        <autor>193</autor>
+        <editorial>88</editorial>
+        <anio>1995</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>284</id>
+        <titulo>Diario de un killer sentimental</titulo>
+        <autor>190</autor>
+        <editorial>86</editorial>
+        <anio>2010</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>285</id>
+        <titulo>Días y noches de amor y de guerra</titulo>
+        <autor>17</autor>
+        <editorial>5</editorial>
+        <anio>2001</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>286</id>
+        <titulo>Diccionario de directores de cine</titulo>
+        <autor>109</autor>
+        <editorial>83</editorial>
+        <anio>2006</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>287</id>
+        <titulo>Diez años con Mafalda</titulo>
+        <autor>194</autor>
+        <editorial>30</editorial>
+        <anio>2009</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>288</id>
+        <titulo>Diez Cuentos de lobos</titulo>
+        <autor>195</autor>
+        <editorial>74</editorial>
+        <anio>2000</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>289</id>
+        <titulo>El dinamitero</titulo>
+        <autor>192</autor>
+        <editorial>5</editorial>
+        <anio>2001</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>290</id>
+        <titulo>El dinosaurio</titulo>
+        <autor>34</autor>
+        <editorial>74</editorial>
+        <anio>2012</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>291</id>
+        <titulo>Dinosaurios y otros animales prehistóricos</titulo>
+        <autor>196</autor>
+        <editorial>50</editorial>
+        <anio>2011</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>292</id>
+        <titulo>Disco duro</titulo>
+        <autor>11</autor>
+        <editorial>67</editorial>
+        <anio>1997</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>293</id>
+        <titulo>Doce Cuentos peregrinos</titulo>
+        <autor>104</autor>
+        <editorial>83</editorial>
+        <anio>2003</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>294</id>
+        <titulo>Doce relatos de mujeres</titulo>
+        <autor>197</autor>
+        <editorial>5</editorial>
+        <anio>2002</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>295</id>
+        <titulo>El documento R</titulo>
+        <autor>198</autor>
+        <editorial>44</editorial>
+        <anio>2003</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>296</id>
+        <titulo>Los dominios perdidos</titulo>
+        <autor>199</autor>
+        <editorial>40</editorial>
+        <anio>2008</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>297</id>
+        <titulo>Don Juan Tenorio</titulo>
+        <autor>200</autor>
+        <editorial>88</editorial>
+        <anio>2002</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>298</id>
+        <titulo>Don Quijote de la Mancha I y II</titulo>
+        <autor>201</autor>
+        <editorial>88</editorial>
+        <anio>2001</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>299</id>
+        <titulo>Doña Barbara</titulo>
+        <autor>202</autor>
+        <editorial>10</editorial>
+        <anio>1994</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>300</id>
+        <titulo>Doña Flor y sus dos maridos</titulo>
+        <autor>60</autor>
+        <editorial>54</editorial>
+        <anio>1996</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>301</id>
+        <titulo>Donde el corazón te lleve </titulo>
+        <autor>203</autor>
+        <editorial>14</editorial>
+        <anio>2002</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>302</id>
+        <titulo>Donde esta Wally ?</titulo>
+        <autor>204</autor>
+        <editorial>29</editorial>
+        <anio>1998</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>303</id>
+        <titulo>Dónde está Wally ? en Hollywood</titulo>
+        <autor>204</autor>
+        <editorial>25</editorial>
+        <anio>2003</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>304</id>
+        <titulo>Donde esta Wally ahora ?</titulo>
+        <autor>204</autor>
+        <editorial>29</editorial>
+        <anio>1993</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>305</id>
+        <titulo>Donde van a morir los elefantes</titulo>
+        <autor>80</autor>
+        <editorial>4</editorial>
+        <anio>2007</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>306</id>
+        <titulo>Donde vuelan los cóndores</titulo>
+        <autor>205</autor>
+        <editorial>10</editorial>
+        <anio>1993</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>307</id>
+        <titulo>Los dos Borges</titulo>
+        <autor>206</autor>
+        <editorial>15</editorial>
+        <anio>2005</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>308</id>
+        <titulo>Dracula</titulo>
+        <autor>207</autor>
+        <editorial>8</editorial>
+        <anio>1997</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>309</id>
+        <titulo>Drácula (el cómix)</titulo>
+        <autor>208</autor>
+        <editorial>25</editorial>
+        <anio>1992</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>310</id>
+        <titulo>El duende pinpon</titulo>
+        <autor>209</autor>
+        <editorial>10</editorial>
+        <anio>1991</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>311</id>
+        <titulo>Dune</titulo>
+        <autor>210</autor>
+        <editorial>68</editorial>
+        <anio>2012</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>312</id>
+        <titulo>La edad de oro</titulo>
+        <autor>211</autor>
+        <editorial>44</editorial>
+        <anio>1991</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>313</id>
+        <titulo>La edad del pavo</titulo>
+        <autor>212</autor>
+        <editorial>88</editorial>
+        <anio>1998</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>314</id>
+        <titulo>Edades de oro del teatro</titulo>
+        <autor>213</autor>
+        <editorial>40</editorial>
+        <anio>2008</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>315</id>
+        <titulo>Edipo rey</titulo>
+        <autor>214</autor>
+        <editorial>88</editorial>
+        <anio>2005</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>316</id>
+        <titulo>El efecto invernadero</titulo>
+        <autor>74</autor>
+        <editorial>74</editorial>
+        <anio>2000</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>317</id>
+        <titulo>El Bosco</titulo>
+        <autor>215</autor>
+        <editorial>84</editorial>
+        <anio>2012</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>318</id>
+        <titulo>En el camino</titulo>
+        <autor>216</autor>
+        <editorial>7</editorial>
+        <anio>2005</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>319</id>
+        <titulo>En el país de los Incas</titulo>
+        <autor>217</autor>
+        <editorial>74</editorial>
+        <anio>1997</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>320</id>
+        <titulo>En la cripta</titulo>
+        <autor>86</autor>
+        <editorial>5</editorial>
+        <anio>2011</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>321</id>
+        <titulo>En las montañas de la locura</titulo>
+        <autor>218</autor>
+        <editorial>76</editorial>
+        <anio>2004</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>322</id>
+        <titulo>En voz baja</titulo>
+        <autor>219</autor>
+        <editorial>51</editorial>
+        <anio>2005</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>323</id>
+        <titulo>Los enanos de Mantua</titulo>
+        <autor>220</autor>
+        <editorial>74</editorial>
+        <anio>2000</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>324</id>
+        <titulo>Enciclopedia mega chiquitín</titulo>
+        <autor>11</autor>
+        <editorial>50</editorial>
+        <anio>1990</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>325</id>
+        <titulo>Enciclopedia mega naturaleza y ecología</titulo>
+        <autor>11</autor>
+        <editorial>50</editorial>
+        <anio>2000</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>326</id>
+        <titulo>La encrucijada</titulo>
+        <autor>221</autor>
+        <editorial>74</editorial>
+        <anio>2003</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>327</id>
+        <titulo>Las enseñanzas de Don Juan</titulo>
+        <autor>140</autor>
+        <editorial>40</editorial>
+        <anio>2010</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>328</id>
+        <titulo>Entre gallos y conejos</titulo>
+        <autor>171</autor>
+        <editorial>10</editorial>
+        <anio>1995</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>329</id>
+        <titulo>Entrevista con el vampiro</titulo>
+        <autor>137</autor>
+        <editorial>28</editorial>
+        <anio>2004</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>330</id>
+        <titulo>Envejecer es vivir</titulo>
+        <autor>222</autor>
+        <editorial>70</editorial>
+        <anio>2007</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>331</id>
+        <titulo>Es tu tierra, cuídala</titulo>
+        <autor>223</autor>
+        <editorial>45</editorial>
+        <anio>2009</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>332</id>
+        <titulo>Los escarabajos vuelan al atardecer</titulo>
+        <autor>224</autor>
+        <editorial>74</editorial>
+        <anio>2004</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>333</id>
+        <titulo>El escritor y sus fantasmas</titulo>
+        <autor>225</autor>
+        <editorial>76</editorial>
+        <anio>1992</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>334</id>
+        <titulo>Ese dulce mal</titulo>
+        <autor>83</autor>
+        <editorial>5</editorial>
+        <anio>2008</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>335</id>
+        <titulo>La esfera media del aire</titulo>
+        <autor>226</autor>
+        <editorial>4</editorial>
+        <anio>2003</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>336</id>
+        <titulo>El espejo roto</titulo>
+        <autor>112</autor>
+        <editorial>67</editorial>
+        <anio>2007</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>337</id>
+        <titulo>El estanque de fuego</titulo>
+        <autor>227</autor>
+        <editorial>4</editorial>
+        <anio>1995</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>338</id>
+        <titulo>Este domingo</titulo>
+        <autor>80</autor>
+        <editorial>10</editorial>
+        <anio>2012</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>339</id>
+        <titulo>Estudio en escarlata</titulo>
+        <autor>107</autor>
+        <editorial>5</editorial>
+        <anio>2002</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>340</id>
+        <titulo>Eugenia Grandet</titulo>
+        <autor>228</autor>
+        <editorial>88</editorial>
+        <anio>1991</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>341</id>
+        <titulo>Eva Luna</titulo>
+        <autor>81</autor>
+        <editorial>83</editorial>
+        <anio>2010</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>342</id>
+        <titulo>El evangelio según Jesucristo</titulo>
+        <autor>16</autor>
+        <editorial>4</editorial>
+        <anio>2002</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>343</id>
+        <titulo>Los evangelios para sanar</titulo>
+        <autor>87</autor>
+        <editorial>23</editorial>
+        <anio>2010</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>344</id>
+        <titulo>La expedición de los vikingos</titulo>
+        <autor>229</autor>
+        <editorial>74</editorial>
+        <anio>2005</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>345</id>
+        <titulo>La extracción de la piedra de locura</titulo>
+        <autor>230</autor>
+        <editorial>91</editorial>
+        <anio>1991</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>346</id>
+        <titulo>El extranjero</titulo>
+        <autor>231</autor>
+        <editorial>5</editorial>
+        <anio>1994</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>347</id>
+        <titulo>Extraño testamento</titulo>
+        <autor>76</autor>
+        <editorial>34</editorial>
+        <anio>2003</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>348</id>
+        <titulo>El fabricante de lluvia</titulo>
+        <autor>232</autor>
+        <editorial>74</editorial>
+        <anio>1992</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>349</id>
+        <titulo>Fábulas y leyendas americanas</titulo>
+        <autor>233</autor>
+        <editorial>10</editorial>
+        <anio>1995</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>350</id>
+        <titulo>El factor Matusalem</titulo>
+        <autor>234</autor>
+        <editorial>1</editorial>
+        <anio>1998</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>351</id>
+        <titulo>Factótum</titulo>
+        <autor>235</autor>
+        <editorial>7</editorial>
+        <anio>2003</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>352</id>
+        <titulo>El fantasma de palacio</titulo>
+        <autor>236</autor>
+        <editorial>74</editorial>
+        <anio>2011</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>353</id>
+        <titulo>Fantasmas de carne y hueso</titulo>
+        <autor>237</autor>
+        <editorial>83</editorial>
+        <anio>2004</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>354</id>
+        <titulo>Fantasmas de día</titulo>
+        <autor>106</autor>
+        <editorial>74</editorial>
+        <anio>1993</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>355</id>
+        <titulo>Los fantasmas del amor</titulo>
+        <autor>238</autor>
+        <editorial>83</editorial>
+        <anio>2001</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>356</id>
+        <titulo>Farenheit 451</titulo>
+        <autor>152</autor>
+        <editorial>60</editorial>
+        <anio>2012</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>357</id>
+        <titulo>Fatamorgana de amor con banda de música</titulo>
+        <autor>239</autor>
+        <editorial>67</editorial>
+        <anio>2004</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>358</id>
+        <titulo>Federico se hizo pis</titulo>
+        <autor>240</autor>
+        <editorial>83</editorial>
+        <anio>2001</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>359</id>
+        <titulo>Fernando el magnifico</titulo>
+        <autor>241</autor>
+        <editorial>74</editorial>
+        <anio>1993</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>360</id>
+        <titulo>Ficcionario</titulo>
+        <autor>242</autor>
+        <editorial>40</editorial>
+        <anio>1996</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>361</id>
+        <titulo>El fin de la tercera edad</titulo>
+        <autor>172</autor>
+        <editorial>60</editorial>
+        <anio>2010</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>362</id>
+        <titulo>La flaca y el gordo</titulo>
+        <autor>130</autor>
+        <editorial>74</editorial>
+        <anio>2003</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>363</id>
+        <titulo>La flor</titulo>
+        <autor>34</autor>
+        <editorial>74</editorial>
+        <anio>2003</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>364</id>
+        <titulo>Folklor chileno</titulo>
+        <autor>243</autor>
+        <editorial>44</editorial>
+        <anio>2001</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>365</id>
+        <titulo>Frankenstein</titulo>
+        <autor>244</autor>
+        <editorial>8</editorial>
+        <anio>2004</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>366</id>
+        <titulo>Frankenstein (el cómix)</titulo>
+        <autor>244</autor>
+        <editorial>25</editorial>
+        <anio>1995</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>367</id>
+        <titulo>Fray Andrés, otra vez</titulo>
+        <autor>134</autor>
+        <editorial>74</editorial>
+        <anio>2007</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>368</id>
+        <titulo>Fray Perico en la guerra</titulo>
+        <autor>245</autor>
+        <editorial>74</editorial>
+        <anio>2012</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>369</id>
+        <titulo>Fray Perico y su borrico</titulo>
+        <autor>246</autor>
+        <editorial>74</editorial>
+        <anio>2000</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>370</id>
+        <titulo>Frida Kahlo</titulo>
+        <autor>247</autor>
+        <editorial>27</editorial>
+        <anio>1993</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>371</id>
+        <titulo>La frontera invisible</titulo>
+        <autor>248</autor>
+        <editorial>74</editorial>
+        <anio>1993</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>372</id>
+        <titulo>El fuego de cada día</titulo>
+        <autor>249</autor>
+        <editorial>67</editorial>
+        <anio>2011</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>373</id>
+        <titulo>El fuego interior</titulo>
+        <autor>140</autor>
+        <editorial>34</editorial>
+        <anio>1996</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>374</id>
+        <titulo>Fuenteovejuna</titulo>
+        <autor>250</autor>
+        <editorial>88</editorial>
+        <anio>2012</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>375</id>
+        <titulo>Fundación</titulo>
+        <autor>251</autor>
+        <editorial>4</editorial>
+        <anio>2011</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>376</id>
+        <titulo>Fundación e imperio</titulo>
+        <autor>251</autor>
+        <editorial>4</editorial>
+        <anio>1999</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>377</id>
+        <titulo>Fundación y tierra</titulo>
+        <autor>251</autor>
+        <editorial>4</editorial>
+        <anio>2000</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>378</id>
+        <titulo>La fuerza de la experiencia</titulo>
+        <autor>252</autor>
+        <editorial>70</editorial>
+        <anio>2011</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>379</id>
+        <titulo>La fuerza de Sheccid</titulo>
+        <autor>253</autor>
+        <editorial>21</editorial>
+        <anio>2004</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>380</id>
+        <titulo>Los funerales de la mama grande</titulo>
+        <autor>104</autor>
+        <editorial>83</editorial>
+        <anio>1992</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>381</id>
+        <titulo>Gabriela</titulo>
+        <autor>60</autor>
+        <editorial>5</editorial>
+        <anio>2002</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>382</id>
+        <titulo>Gabriela Mistral</titulo>
+        <autor>206</autor>
+        <editorial>15</editorial>
+        <anio>2004</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>383</id>
+        <titulo>El gato con botas</titulo>
+        <autor>254</autor>
+        <editorial>88</editorial>
+        <anio>1990</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>384</id>
+        <titulo>El gato Mog</titulo>
+        <autor>255</autor>
+        <editorial>74</editorial>
+        <anio>1990</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>385</id>
+        <titulo>Gauguin</titulo>
+        <autor>256</autor>
+        <editorial>84</editorial>
+        <anio>2006</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>386</id>
+        <titulo>Los gemidos</titulo>
+        <autor>257</autor>
+        <editorial>51</editorial>
+        <anio>1995</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>387</id>
+        <titulo>Generación X</titulo>
+        <autor>258</autor>
+        <editorial>25</editorial>
+        <anio>1993</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>388</id>
+        <titulo>El general en su laberinto</titulo>
+        <autor>104</autor>
+        <editorial>83</editorial>
+        <anio>2010</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>389</id>
+        <titulo>Génesis de una leyenda africana</titulo>
+        <autor>259</autor>
+        <editorial>68</editorial>
+        <anio>1997</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>390</id>
+        <titulo>Gente al acecho</titulo>
+        <autor>45</autor>
+        <editorial>67</editorial>
+        <anio>2005</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>391</id>
+        <titulo>La gesta del marrano</titulo>
+        <autor>260</autor>
+        <editorial>67</editorial>
+        <anio>2001</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>392</id>
+        <titulo>El gigante egoísta</titulo>
+        <autor>261</autor>
+        <editorial>10</editorial>
+        <anio>2010</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>393</id>
+        <titulo>Glosario chileno del amor</titulo>
+        <autor>262</autor>
+        <editorial>67</editorial>
+        <anio>2008</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>394</id>
+        <titulo>Golfo de Penas</titulo>
+        <autor>263</autor>
+        <editorial>67</editorial>
+        <anio>2001</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>395</id>
+        <titulo>Golondrina de invierno</titulo>
+        <autor>264</autor>
+        <editorial>10</editorial>
+        <anio>2009</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>396</id>
+        <titulo>Gracias por el fuego</titulo>
+        <autor>52</autor>
+        <editorial>36</editorial>
+        <anio>2010</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>397</id>
+        <titulo>El gran desastre</titulo>
+        <autor>265</autor>
+        <editorial>45</editorial>
+        <anio>1998</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>398</id>
+        <titulo>El gran Gatsby</titulo>
+        <autor>266</autor>
+        <editorial>10</editorial>
+        <anio>2012</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>399</id>
+        <titulo>El gran gigante bonachon</titulo>
+        <autor>267</autor>
+        <editorial>4</editorial>
+        <anio>2005</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>400</id>
+        <titulo>Gran lobo salvaje</titulo>
+        <autor>268</autor>
+        <editorial>74</editorial>
+        <anio>1990</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>401</id>
+        <titulo>Grandes éxitos</titulo>
+        <autor>175</autor>
+        <editorial>67</editorial>
+        <anio>1997</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>402</id>
+        <titulo>Grigri hace una tarta</titulo>
+        <autor>269</autor>
+        <editorial>74</editorial>
+        <anio>1991</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>403</id>
+        <titulo>Gringo viejo</titulo>
+        <autor>31</autor>
+        <editorial>40</editorial>
+        <anio>2004</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>404</id>
+        <titulo>El grito del amor</titulo>
+        <autor>270</autor>
+        <editorial>51</editorial>
+        <anio>2004</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>405</id>
+        <titulo>El guanaco blanco</titulo>
+        <autor>263</autor>
+        <editorial>51</editorial>
+        <anio>1999</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>406</id>
+        <titulo>El guardián entre el centeno</titulo>
+        <autor>271</autor>
+        <editorial>5</editorial>
+        <anio>1998</anio>
+        <stock>4</stock>
+    </Libro>
+    <Libro>
+        <id>407</id>
+        <titulo>La guerra de los mundos</titulo>
+        <autor>272</autor>
+        <editorial>10</editorial>
+        <anio>2004</anio>
+        <stock>1</stock>
+    </Libro>
+    <Libro>
+        <id>408</id>
+        <titulo>La guerra de Troya</titulo>
+        <autor>273</autor>
+        <editorial>47</editorial>
+        <anio>2009</anio>
+        <stock>9</stock>
+    </Libro>
+    <Libro>
+        <id>409</id>
+        <titulo>La guerra del fin del mundo</titulo>
+        <autor>84</autor>
+        <editorial>76</editorial>
+        <anio>1999</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>410</id>
+        <titulo>La guerra y la paz</titulo>
+        <autor>274</autor>
+        <editorial>67</editorial>
+        <anio>2005</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>411</id>
+        <titulo>La guerrilla literaria</titulo>
+        <autor>275</autor>
+        <editorial>15</editorial>
+        <anio>2013</anio>
+        <stock>5</stock>
+    </Libro>
+    <Libro>
+        <id>412</id>
+        <titulo>Guillermo el líder</titulo>
+        <autor>276</autor>
+        <editorial>10</editorial>
+        <anio>1990</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>413</id>
+        <titulo>El gusto literario</titulo>
+        <autor>277</autor>
+        <editorial>41</editorial>
+        <anio>2010</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>414</id>
+        <titulo>Habla mi viejo</titulo>
+        <autor>278</autor>
+        <editorial>74</editorial>
+        <anio>1994</anio>
+        <stock>3</stock>
+    </Libro>
+    <Libro>
+        <id>415</id>
+        <titulo>El hablador</titulo>
+        <autor>84</autor>
+        <editorial>76</editorial>
+        <anio>1997</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>416</id>
+        <titulo>La hacedora de claros</titulo>
+        <autor>171</autor>
+        <editorial>88</editorial>
+        <anio>2002</anio>
+        <stock>0</stock>
+    </Libro>
+    <Libro>
+        <id>417</id>
+        <titulo>Las hadas y otros Cuentos</titulo>
+        <autor>254</autor>
+        <editorial>88</editorial>
+        <anio>2013</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>418</id>
+        <titulo>El halcón maltés</titulo>
+        <autor>149</autor>
+        <editorial>5</editorial>
+        <anio>2007</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>419</id>
+        <titulo>Hamlet</titulo>
+        <autor>279</autor>
+        <editorial>88</editorial>
+        <anio>2005</anio>
+        <stock>8</stock>
+    </Libro>
+    <Libro>
+        <id>420</id>
+        <titulo>Hasta el domingo</titulo>
+        <autor>280</autor>
+        <editorial>62</editorial>
+        <anio>1995</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>421</id>
+        <titulo>Hasta no verte Jesús mío</titulo>
+        <autor>281</autor>
+        <editorial>5</editorial>
+        <anio>2009</anio>
+        <stock>10</stock>
+    </Libro>
+    <Libro>
+        <id>422</id>
+        <titulo>Hay un ratón en la casa</titulo>
+        <autor>282</autor>
+        <editorial>41</editorial>
+        <anio>1990</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>423</id>
+        <titulo>Henri Toulouse-Lautrec</titulo>
+        <autor>283</autor>
+        <editorial>84</editorial>
+        <anio>2001</anio>
+        <stock>2</stock>
+    </Libro>
+    <Libro>
+        <id>424</id>
+        <titulo>Henry Miller, su mujer y yo</titulo>
+        <autor>284</autor>
+        <editorial>34</editorial>
+        <anio>2009</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>425</id>
+        <titulo>Los hermanos Karamazov I y II</titulo>
+        <autor>151</autor>
+        <editorial>10</editorial>
+        <anio>2011</anio>
+        <stock>6</stock>
+    </Libro>
+    <Libro>
+        <id>426</id>
+        <titulo>Hernan Cortes</titulo>
+        <autor>285</autor>
+        <editorial>40</editorial>
+        <anio>2010</anio>
+        <stock>7</stock>
+    </Libro>
+    <Libro>
+        <id>427</id>
+        <titulo>El higo mas dulce</titulo>
+        <autor>286</autor>
+        <editorial>40</editorial>
+        <anio>1990</anio>
+        <stock>6</stock>
+    </Libro>
+</libros>
