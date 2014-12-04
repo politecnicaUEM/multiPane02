@@ -1,5 +1,6 @@
 package multiPane02;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
@@ -9,8 +10,11 @@ import java.awt.GridLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
 
+import javax.swing.AbstractButton;
 import javax.swing.BoxLayout;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
@@ -23,6 +27,7 @@ import javax.swing.JPanel;
 import javax.swing.JSlider;
 import javax.swing.JToolBar;
 import javax.swing.ListModel;
+import javax.swing.SwingConstants;
 import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.border.BevelBorder;
 import javax.swing.border.EmptyBorder;
@@ -43,6 +48,7 @@ public class InitGUI extends JFrame {
 	private String hierbaDir = "Images/hierba-footer.png";
 	private JLabel lblNewLabel_4;
 	private String sel;
+	protected AbstractButton btnOpenDialog02;
 
 	/**
 	 * Launch the application.
@@ -60,17 +66,6 @@ public class InitGUI extends JFrame {
 		});
 	}
 
-//	{
-//		for (LookAndFeelInfo info : javax.swing.UIManager
-//				.getInstalledLookAndFeels()) {
-//			try {
-//				javax.swing.UIManager
-//						.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
-//			} catch (Exception e) {
-//				e.printStackTrace();
-//			}
-//		}
-//	}
 
 	/**
 	 * Create the frame.
@@ -99,6 +94,23 @@ public class InitGUI extends JFrame {
 		toolBar.add(lblNewLabel_2);
 		// toolBar.add(new JSeparator (SwingConstants.VERTICAL));
 		toolBar.addSeparator();
+		lblNewLabel_2.addMouseListener(new MouseAdapter() {
+			public void  mouseClicked(MouseEvent arg0){
+				
+				contentPane.setBackground((Color.YELLOW));
+				JFrame frame = new JFrame("jF");
+				frame.setDefaultCloseOperation(frame.DISPOSE_ON_CLOSE);
+				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
+				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/solAnimado.jpg")));
+				frame.getContentPane().add(textLabel,BorderLayout.AFTER_LINE_ENDS);
+				frame.setLocationRelativeTo(null);
+				frame.pack();
+				frame.setVisible(true);
+			}
+		
+		});
+
+
 
 		JLabel lblNewLabel = new JLabel("Cloudy");
 		lblNewLabel.setIconTextGap(3);
@@ -107,6 +119,22 @@ public class InitGUI extends JFrame {
 		toolBar.add(lblNewLabel);
 		// toolBar.add(new JSeparator (SwingConstants.VERTICAL));
 		toolBar.addSeparator();
+		
+		lblNewLabel.addMouseListener(new MouseAdapter() {
+			public void  mouseClicked(MouseEvent arg0){
+				
+				contentPane.setBackground((Color.GRAY));
+				JFrame frame2 = new JFrame("jF");
+				frame2.setDefaultCloseOperation(frame2.DISPOSE_ON_CLOSE);
+				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
+				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/nublado.png")));
+				frame2.getContentPane().add(textLabel,BorderLayout.AFTER_LINE_ENDS);
+				frame2.setLocationRelativeTo(null);
+				frame2.pack();
+				frame2.setVisible(true);
+			}
+		
+		});
 
 		JLabel lblNewLabel_1 = new JLabel("Rains");
 		lblNewLabel_1.setIconTextGap(3);
@@ -114,11 +142,41 @@ public class InitGUI extends JFrame {
 				.getResource("/Images/Cloud-Download@Low.png")));
 		toolBar.add(lblNewLabel_1);
 		toolBar.addSeparator();
+		lblNewLabel_1.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent arg0){
+				contentPane.setBackground((Color.BLUE));
+				JFrame frame = new JFrame("jF");
+				frame.setDefaultCloseOperation(frame.DISPOSE_ON_CLOSE);
+				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
+				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/lluvia.png")));
+				frame.getContentPane().add(textLabel,BorderLayout.AFTER_LINE_ENDS);
+				frame.setLocationRelativeTo(null);
+				frame.pack();
+				frame.setVisible(true);
+			}
+		});
+		
+		
 
 		JLabel lblNewLabel_3 = new JLabel("Windy");
 		lblNewLabel_3.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Refresh@Low.png")));
 		toolBar.add(lblNewLabel_3);
+		
+		lblNewLabel_3.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent arg0){
+				contentPane.setBackground((Color.CYAN));
+				JFrame frame = new JFrame("jF");
+				frame.setDefaultCloseOperation(frame.DISPOSE_ON_CLOSE);
+				JLabel textLabel = new JLabel("",SwingConstants.CENTER);
+				textLabel.setIcon(new ImageIcon(InitGUI.class.getResource("/Images/viento.gif")));
+				frame.getContentPane().add(textLabel,BorderLayout.AFTER_LINE_ENDS);
+				frame.setLocationRelativeTo(null);
+				frame.pack();
+				frame.setVisible(true);
+				
+			}
+		});
 
 		JPanel panel_2 = new JPanel();
 		contentPane.add(panel_2);
@@ -166,6 +224,10 @@ public class InitGUI extends JFrame {
 		btnOpenDialog.setMnemonic('W');
 		btnOpenDialog.setMargin(new Insets(0, 0, 0, 0));
 		panel_2.add(btnOpenDialog);
+		
+		
+		
+		
 
 		/**
 		 * JList selected
