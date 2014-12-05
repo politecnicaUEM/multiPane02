@@ -35,9 +35,13 @@ public class InitGUI extends JFrame {
 	private String hierbaDir = "Images/hierba-footer.png";
 	private JLabel lblNewLabel_4;
 	private String sel;
+	private JList list;
+	private JSlider slider;
 
 	/**
 	 * Launch the application.
+	 * @author danielsalez
+	 * @see ImgPanel
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -126,7 +130,7 @@ public class InitGUI extends JFrame {
 		
 		ListModel jList1Model = new DefaultComboBoxModel(new String[] {
 				"Water", "Petrol", "Milk" });
-		JList list = new JList();
+		list = new JList();
 		panel_3.add(list);
 		list.setFont(new Font("Courier New", Font.PLAIN, 14));
 		list.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null,
@@ -167,7 +171,7 @@ public class InitGUI extends JFrame {
 		contentPane.add(panel_1);
 		panel_1.setLayout(new BoxLayout(panel_1, BoxLayout.Y_AXIS));
 
-		JSlider slider = new JSlider();
+		slider = new JSlider();
 		slider.setAlignmentX(Component.LEFT_ALIGNMENT);
 		slider.setValue(25);
 		panel_1.add(slider);
