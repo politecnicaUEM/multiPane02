@@ -96,21 +96,39 @@ public class InitGUI extends JFrame {
 		toolBar.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 		contentPane.add(toolBar);
 
+
+
+		
+
+		JPanel panel_2 = new JPanel();
+		contentPane.add(panel_2);
+		panel_2.setLayout(new BoxLayout(panel_2, BoxLayout.X_AXIS));
+
+		JPanel panel_3 = new JPanel();
+		panel_2.add(panel_3);
+		panel_3.setLayout(new GridLayout(1, 0, 0, 0));
+		
+		JPanel panel_4 = new JPanel();
+		panel_4.setBackground(new Color(153, 204, 255, 0));
+		contentPane.add(panel_4);
+		panel_4.setLayout(new GridLayout(0, 4, 0, 0));
+
+//all toolbar labels here
+		
 		JLabel lblNewLabel_2 = new JLabel("Perfect sun");
 		lblNewLabel_2.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				// lblWeatherCloudy.setVisible(false);
-				// lblRain.setVisible(false);
-				// lblWindy.setVisible(false);
-				if (!lblWeatherSun.isVisible()) {
 					lblWeatherSun.setVisible(true);
-					
-				} else
-//					lblWeatherSun.setEnabled(true);
-					lblWeatherSun.setVisible(false);
+					lblRain.setVisible(false);
+					lblWindy.setVisible(false);
+					lblWeatherCloudy.setVisible(false);
+					//redrawing the parent pane to apply invisibility superpower
+					contentPane.repaint();
 
 			}
+
+			
 		});
 		lblNewLabel_2.setIconTextGap(3);
 		lblNewLabel_2.setCursor(Cursor
@@ -120,15 +138,18 @@ public class InitGUI extends JFrame {
 		toolBar.add(lblNewLabel_2);
 		// toolBar.add(new JSeparator (SwingConstants.VERTICAL));
 		toolBar.addSeparator();
+		
 
 		JLabel lblNewLabel = new JLabel("Cloudy");
 		lblNewLabel.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				lblWeatherSun.setVisible(false);
-				lblRain.setVisible(false);
-				lblWindy.setVisible(false);
-				lblWeatherCloudy.setVisible(true);
+					lblWeatherSun.setVisible(false);
+					lblRain.setVisible(false);
+					lblWindy.setVisible(false);
+					lblWeatherCloudy.setVisible(true);
+					contentPane.repaint();
+
 			}
 		});
 		lblNewLabel.setIconTextGap(3);
@@ -137,15 +158,16 @@ public class InitGUI extends JFrame {
 		toolBar.add(lblNewLabel);
 		// toolBar.add(new JSeparator (SwingConstants.VERTICAL));
 		toolBar.addSeparator();
-
 		JLabel lblNewLabel_1 = new JLabel("Rains");
 		lblNewLabel_1.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				lblWeatherSun.setVisible(false);
-				lblWeatherCloudy.setVisible(false);
-				lblWindy.setVisible(false);
-				lblRain.setVisible(true);
+					lblWeatherSun.setVisible(false);
+					lblRain.setVisible(true);
+					lblWindy.setVisible(false);
+					lblWeatherCloudy.setVisible(false);
+					contentPane.repaint();
+
 			}
 		});
 		lblNewLabel_1.setIconTextGap(3);
@@ -158,24 +180,18 @@ public class InitGUI extends JFrame {
 		lblNewLabel_3.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				lblWeatherSun.setVisible(false);
-				lblWeatherCloudy.setVisible(false);
-				lblRain.setVisible(false);
-				lblWindy.setVisible(true);
+			     	lblWeatherSun.setVisible(false);
+					lblRain.setVisible(false);
+					lblWindy.setVisible(true);
+					lblWeatherCloudy.setVisible(false);
+					contentPane.repaint();
+
 			}
 		});
 		lblNewLabel_3.setIcon(new ImageIcon(InitGUI.class
 				.getResource("/Images/Refresh@Low.png")));
 		toolBar.add(lblNewLabel_3);
-
-		JPanel panel_2 = new JPanel();
-		contentPane.add(panel_2);
-		panel_2.setLayout(new BoxLayout(panel_2, BoxLayout.X_AXIS));
-
-		JPanel panel_3 = new JPanel();
-		panel_2.add(panel_3);
-		panel_3.setLayout(new GridLayout(1, 0, 0, 0));
-
+		
 		/**
 		 * Defining JList and its model for supplying content
 		 */
@@ -263,10 +279,7 @@ public class InitGUI extends JFrame {
 		 * calls our drawing panel
 		 */
 
-		JPanel panel_4 = new JPanel();
-		panel_4.setBackground(new Color(153, 204, 255, 0));
-		contentPane.add(panel_4);
-		panel_4.setLayout(new GridLayout(0, 4, 0, 0));
+
 
 		lblWindy = new JLabel("");
 		lblWindy.setIcon(new ImageIcon(InitGUI.class
