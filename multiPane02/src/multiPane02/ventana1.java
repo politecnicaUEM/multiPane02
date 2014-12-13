@@ -9,13 +9,29 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.BoxLayout;
+
 import java.awt.Rectangle;
 
+
+/**
+ * Declare mi ventana
+ *@author Iván Reyes
+ *@author www.uem.es
+ *@version 2.0
+ */
 public class ventana1 extends JDialog {
 
 
 	 private Container contenedor;
 	
+	 
+
+		/**
+		 * Voy a abrir una ventana
+		 * Call Class ventana1
+		 * @see ventana1
+		 * @param args adds arguments
+		 */
 	 
 	 public ventana1(){
 	  contenedor=getContentPane();

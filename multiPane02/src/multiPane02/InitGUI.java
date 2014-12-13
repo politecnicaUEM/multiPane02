@@ -52,11 +52,13 @@ public class InitGUI extends JFrame {
 	private JLabel lblNewLabel_4;
 	private String sel;
 	private String amigos = "Images/Folks.png";
+	private JButton btnOpenDialog;
 
 	/**
 	 * Launch the main application
 	 * Call Class ImgPanel
 	 * @see ImgPanel
+	 * @see ventana1
 	 * @param args adds arguments
 	 */
 	public static void main(String[] args) {
@@ -132,8 +134,6 @@ public class InitGUI extends JFrame {
 					ventana1 ven = new ventana1();
 					ven.setDefaultCloseOperation(JDialog.HIDE_ON_CLOSE);
 					ven.setVisible(true); 
-					
-				    
 				
 			}
 
@@ -146,6 +146,10 @@ public class InitGUI extends JFrame {
 		toolBar.addSeparator();
 		
 		JButton btnRains = new JButton("Rains");
+		btnRains.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		
 		btnRains.addMouseListener(new MouseAdapter() {
 				public void mouseClicked(MouseEvent arg0) {
@@ -199,7 +203,7 @@ public class InitGUI extends JFrame {
 		 * customized square button
 		 */
 
-		JButton btnOpenDialog = new JButton("");
+		btnOpenDialog = new JButton("");
 		btnOpenDialog.setToolTipText("Go?");
 		btnOpenDialog.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 		btnOpenDialog.setIcon(new ImageIcon(InitGUI.class

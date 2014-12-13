@@ -12,6 +12,7 @@ import javax.swing.JMenuBar;
 import java.awt.FlowLayout;
 
 import javax.swing.BoxLayout;
+import javax.swing.ButtonGroup;
 import javax.swing.JOptionPane;
 import javax.swing.JToolBar;
 import javax.swing.SwingConstants;
@@ -42,15 +43,26 @@ import javax.swing.Box;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+/**
+ * 
+ * @author ivan Reyes
+ * @version 1
+ *
+ */
+
 public class Interfaz_Estrabismificador extends JFrame {
 
 	private JPanel contentPane;
 	private JToolBar toolBar;
 	private JTable table;
 	private JLabel lblAnswer;
+	private ButtonGroup bGroup; 
 
 	/**
 	 * Launch the application.
+	 * @since 10/12/2014
+	 * @param args adds arguments
+	 * 
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -190,16 +202,25 @@ public class Interfaz_Estrabismificador extends JFrame {
 		panel_2.add(panel_5);
 		panel_5.setLayout(new GridLayout(4, 0, 0, 0));
 		
+		//creamos ButtonGroup instanciado arriba 
+				ButtonGroup bGroup = new ButtonGroup(); 
+
+		
 		JRadioButton rdbtnNewRadioButton = new JRadioButton("Mami");
+		
+		bGroup.add(rdbtnNewRadioButton); //añadidmos el JButton al ButtonGroup
 		panel_5.add(rdbtnNewRadioButton);
 		
 		JRadioButton rdbtnNewRadioButton_1 = new JRadioButton("Papi");
+		bGroup.add(rdbtnNewRadioButton_1);
 		panel_5.add(rdbtnNewRadioButton_1);
 		
 		JRadioButton rdbtnNewRadioButton_2 = new JRadioButton("Jander");
+		bGroup.add(rdbtnNewRadioButton_2);
 		panel_5.add(rdbtnNewRadioButton_2);
 		
 		JRadioButton rdbtnNewRadioButton_3 = new JRadioButton("Dander");
+		bGroup.add(rdbtnNewRadioButton_3);
 		panel_5.add(rdbtnNewRadioButton_3);
 		
 		JPanel panel_6 = new JPanel();
